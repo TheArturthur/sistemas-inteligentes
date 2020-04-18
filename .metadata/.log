@@ -1,0 +1,12 @@
+!SESSION 2020-04-16 15:53:12.760 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/avidal/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/avidal/.eclipse_keyring
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-16 15:54:13.089
+!MESSAGE Exception caught during execution of command '[git, --version]' in '/usr/bin', return code '69', error message '
+You have not agreed to the Xcode license agreements, please run 'sudo xcodebuild -license' from within a Terminal window to review and agree to the Xcode license agreements.
+'
