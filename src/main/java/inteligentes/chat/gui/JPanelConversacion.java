@@ -73,18 +73,19 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	
 	public boolean offensiveMessagePopUp() {
 	      Object[] options = {"Yes, im sure.",
-          "Not send the message"};
+	        "Not send the message"};
 	      int seleccion = JOptionPane.showOptionDialog(
-	    		   this,
-	    		   "Seleccione opcion", 
-	    		   "Mensaje de alerta",
-	    		   JOptionPane.YES_NO_CANCEL_OPTION,
-	    		   JOptionPane.QUESTION_MESSAGE,
-	    		   null,    // null para icono por defecto.
-	    		   options,   // null para YES, NO y CANCEL
-	    		   "opcion 1");
-    
-    return true;
+	           this,
+	           "Seleccione opcion", 
+	           "Mensaje de alerta",
+	           JOptionPane.YES_NO_OPTION,
+	           JOptionPane.WARNING_MESSAGE,
+	           null,    // null para icono por defecto.
+	           options,   // null para YES, NO y CANCEL
+	           "opcion 1");
+	      
+	      if (seleccion == JOptionPane.YES_OPTION) { return true; }
+	      else {return false;}
 
 	}
 
