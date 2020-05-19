@@ -31,17 +31,19 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
             if(!em1.getMessage().equals(em2.getMessage())) {
             	em2.getMessageListener().enviarMensaje(em2.getSendTo(), em2.getMessage());
             } else {
-            	Utils.enviarMensaje(myAgent, "analyzer", em1);
-                ACLMessage msg3=this.myAgent.blockingReceive(mt1);
-                
-                EncodedMessage em3 = (EncodedMessage)msg3.getContentObject();
-                if(em3.isOffensive()) {
-                	em1.getConver().offensiveMessagePopUp();
-                	//Ver si lo quiere enviar o no, y enviarlo o no
-                	
-                }
-
-            }
+                //TODO cc.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), null).start();
+                Utils.enviarMensaje(myAgent, "analyzer", em1);
+                  ACLMessage msg3=this.myAgent.blockingReceive(mt1);
+                  
+                  EncodedMessage em3 = (EncodedMessage)msg3.getContentObject();
+                  if(em3.isOffensive()) {
+                    boolean enviar = em1.getConver().offensiveMessagePopUp();
+                    //Ver si lo quiere enviar o no, y enviarlo o no
+                    if(enviar) {
+                      em1.getMessageListener().enviarMensaje(em1.getSendTo(), em1.getMessage());
+                    }
+                  }
+              }
         	
         	//System.out.println(msg.getSender().getName()+":"+ (EncodedMessage)msg.getContentObject());
         	
