@@ -1,5 +1,6 @@
 package inteligentes.chat.basics;
 
+
 public class Report {
 
 	
@@ -7,13 +8,7 @@ public class Report {
 	private String receptor;
 	private String motivo;
 	private String mensaje;
-	
-	public Report() {
-		this.mensaje = "";
-		this.motivo = "";
-		this.emisor = "";
-		this.receptor = "";
-	}
+
 
 	public String getEmisor() {
 		return emisor;

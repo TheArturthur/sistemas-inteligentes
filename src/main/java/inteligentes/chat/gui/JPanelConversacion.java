@@ -13,6 +13,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 
+import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.interfaces.*;
 
@@ -31,15 +32,14 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	protected SendMessageListener sendMessageListener;
 	protected String nombre;
 	protected String amigo;
-	private String coord;
+	private int avisos;
 	
 	public JPanelConversacion(String nombre, String amigo, SendMessageListener sendMessageListener) {
 		this.sendMessageListener=sendMessageListener;
 		this.nombre=nombre;
 		this.amigo=amigo;
-		//TODO
-		this.coord = "manager";
-		
+		this.avisos = 0;
+
 		jEditorPaneHistorico=new JEditorPane();
 		jEditorPaneHistorico.setContentType("text/html");
 		jEditorPaneHistorico.setBackground(Color.gray);
@@ -88,13 +88,29 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	      else {return false;}
 
 	}
+	
+	public void reportAdvice() {
+		this.avisos++;
+		switch (this.avisos) {
+		case 1:
+			JOptionPane.showMessageDialog(this, "Has sido reportado por un usuario\n por actitud ofensiva.\n\n"
+					+ "A la siguiente se te expulsa del chat.", "AVISO",
+			        JOptionPane.WARNING_MESSAGE);
+			break;	
+		default:
+			JOptionPane.showMessageDialog(this, "Has sido reportado por segunda vez. Quedas expulsado\n", "AVISO",
+			        JOptionPane.WARNING_MESSAGE);
+			sendMessageListener.finalizar();
+			break;
+		}
+	}
 
 	@Override
 	public void keyPressed(KeyEvent e) {
 	}
 
 	@Override
-	//Cada vez que se envia un mensaje, se envia al coordinador para que lo desvie y se procese.
+	//Cada vez que se envia un mensaje, se envia al manager para que lo procese.
 	public void keyReleased(KeyEvent e) {
 		if(e.getKeyChar()==KeyEvent.VK_ENTER) {
 			addMensaje(nombre, jTextAreaMensaje.getText());
@@ -104,10 +120,9 @@ public class JPanelConversacion extends JPanel implements KeyListener
 			em.setMessage(jTextAreaMensaje.getText());
 			em.setMessageListener(sendMessageListener);
 			em.setConver(this);
-			sendMessageListener.enviarEncodedMensaje(coord, em);
+			sendMessageListener.sendMsgToManager(em);
 			jTextAreaMensaje.setText("");
 		}
-		
 	}
 
 	@Override

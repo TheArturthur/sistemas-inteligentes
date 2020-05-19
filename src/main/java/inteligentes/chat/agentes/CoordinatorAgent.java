@@ -1,9 +1,14 @@
 package inteligentes.chat.agentes;
 
 import inteligentes.chat.auxiliar.Utils;
+import inteligentes.chat.behaviours.ManagerAgentBehaviour;
+import jade.content.lang.sl.SLCodec;
 import jade.core.AID;
 import jade.core.Agent;
+import jade.domain.DFService;
+import jade.domain.FIPAException;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.wrapper.ControllerException;
 import jade.wrapper.PlatformController;
 import jade.wrapper.PlatformEvent;
@@ -22,16 +27,21 @@ public class CoordinatorAgent extends Agent implements PlatformController.Listen
 	public void setup() {
 		
         try {
-			cc.createNewAgent(ManagerAgent.NAME, ManagerAgent.class.getName(), null).start();
-			//TODO
-			//cc.createNewAgent(ClasificatorAgent.NAME, ClasificatorAgent.class.getName(), null).start();
-			//cc.createNewAgent(ReportManagerAgent.NAME, ManagerAgent.class.getName(), null).start();
-
+        	this.setEnvironment();
 			this.getContainerController().addPlatformListener(this);
 		} catch (ControllerException e) {
 			e.printStackTrace();
 		}
 	}
+	
+	public void setEnvironment() throws ControllerException {
+		cc.createNewAgent(ManagerAgent.NAME, ManagerAgent.class.getName(), new Object[] { }).start();
+		//TODO
+		//cc.createNewAgent(ClasificatorAgent.NAME, ClasificatorAgent.class.getName() , new Object[] { }).start();
+		cc.createNewAgent(ReportManagerAgent.NAME, ReportManagerAgent.class.getName(), new Object[] { }).start();
+	}
+
+	
 	@Override
 	public void bornAgent(PlatformEvent arg0) {
 		DFAgentDescription dFAgentDescription=new DFAgentDescription();

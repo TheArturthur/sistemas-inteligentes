@@ -91,31 +91,12 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		}
 	}
 
-	@Override
-	//Para env�o de mensajes que no son del tipo "mensajer�a"
-	public void enviarEncodedMensaje(String destinatario, EncodedMessage mensaje) {
-    	ACLMessage aclMessage = new ACLMessage(ACLMessage.REQUEST);
-    	
-    	for(int i=0;i<dfd.length;i++)
-    	{
-    		if(dfd[i].getName().getLocalName().equals(destinatario))
-    			aclMessage.addReceiver(dfd[i].getName());
-    	}
-    	
-        aclMessage.setOntology("ontologia");
-        //el lenguaje que se define para el servicio
-        aclMessage.setLanguage(new SLCodec().getName());
-        //el mensaje se transmita en XML
-        aclMessage.setEnvelope(new Envelope());
-		//cambio la codificacion de la carta
-		aclMessage.getEnvelope().setPayloadEncoding("ISO8859_1");
-        //aclMessage.getEnvelope().setAclRepresentation(FIPANames.ACLCodec.XML); 
-		try {
-			aclMessage.setContentObject((Serializable)mensaje);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		send(aclMessage);  
+	public void sendMsgToManager(Object objeto) {
+		Utils.enviarMensaje(this, "manager", objeto);
+	}
+	
+	public void sendReport(Object objeto) {
+		Utils.enviarMensaje(this, "reportmanager", objeto);
 	}
 	
 	@Override
