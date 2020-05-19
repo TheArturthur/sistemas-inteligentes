@@ -1,5 +1,6 @@
 package inteligentes.chat.agentes;
 
+import inteligentes.chat.aux.Utils;
 import jade.core.AID;
 import jade.core.Agent;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
@@ -7,29 +8,32 @@ import jade.wrapper.ControllerException;
 import jade.wrapper.PlatformController;
 import jade.wrapper.PlatformEvent;
 
-import inteligentes.chat.aux.*;
 
-
-public class CoordinatorAgent extends Agent implements PlatformController.Listener
-{
+public class CoordinatorAgent extends Agent implements PlatformController.Listener {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	private static jade.wrapper.AgentContainer cc;
 
 	@Override
 	public void setup() {
+		
         try {
+			cc.createNewAgent(ManagerAgent.NAME, ManagerAgent.class.getName(), null).start();
+			//TODO
+			//cc.createNewAgent(ClasificatorAgent.NAME, ClasificatorAgent.class.getName(), null).start();
+			//cc.createNewAgent(ReportManagerAgent.NAME, ManagerAgent.class.getName(), null).start();
+
 			this.getContainerController().addPlatformListener(this);
 		} catch (ControllerException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	@Override
 	public void bornAgent(PlatformEvent arg0) {
-		// TODO Auto-generated method stub
 		DFAgentDescription dFAgentDescription=new DFAgentDescription();
 		dFAgentDescription.setName(new AID(arg0.getAgentGUID(), true));
 		System.out.println("Agente nuevo: "+arg0.getAgentGUID());
@@ -39,7 +43,6 @@ public class CoordinatorAgent extends Agent implements PlatformController.Listen
 
 	@Override
 	public void deadAgent(PlatformEvent arg0) {
-		// TODO Auto-generated method stub
 		DFAgentDescription dFAgentDescription=new DFAgentDescription();
 		dFAgentDescription.setName(new AID(arg0.getAgentGUID(), true));
 		

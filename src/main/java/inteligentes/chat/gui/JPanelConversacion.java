@@ -12,6 +12,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 
+import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.interfaces.*;
 
 
@@ -29,11 +30,14 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	protected SendMessageListener sendMessageListener;
 	protected String nombre;
 	protected String amigo;
+	private String coord;
 	
 	public JPanelConversacion(String nombre, String amigo, SendMessageListener sendMessageListener) {
 		this.sendMessageListener=sendMessageListener;
 		this.nombre=nombre;
 		this.amigo=amigo;
+		//TODO
+		this.coord = "manager";
 		
 		jEditorPaneHistorico=new JEditorPane();
 		jEditorPaneHistorico.setContentType("text/html");
@@ -65,18 +69,27 @@ public class JPanelConversacion extends JPanel implements KeyListener
 		mensajes=mensajes+"<b>"+persona+"</b>"+": "+mensaje+"<br/>";
 		jEditorPaneHistorico.setText("<html><body>"+mensajes+"</body></html>");
 	}
-
-	@Override
-	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub		
+	
+	public void offensiveMessagePopUp() {
+		//TODO
 	}
 
 	@Override
+	public void keyPressed(KeyEvent e) {
+	}
+
+	@Override
+	//Cada vez que se envia un mensaje, se envia al coordinador para que lo desvie y se procese.
 	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
 		if(e.getKeyChar()==KeyEvent.VK_ENTER) {
 			addMensaje(nombre, jTextAreaMensaje.getText());
-			sendMessageListener.enviarMensaje(amigo, jTextAreaMensaje.getText());
+			EncodedMessage em = new EncodedMessage();
+			em.setFrom(nombre);
+			em.setSendTo(amigo);
+			em.setMessage(jTextAreaMensaje.getText());
+			em.setMessageListener(sendMessageListener);
+			em.setConver(this);
+			sendMessageListener.enviarEncodedMensaje(coord, em);
 			jTextAreaMensaje.setText("");
 		}
 		
@@ -84,7 +97,6 @@ public class JPanelConversacion extends JPanel implements KeyListener
 
 	@Override
 	public void keyTyped(KeyEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 }
