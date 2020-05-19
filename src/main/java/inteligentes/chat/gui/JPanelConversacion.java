@@ -7,6 +7,7 @@ import java.awt.event.KeyListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JEditorPane;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
@@ -70,8 +71,17 @@ public class JPanelConversacion extends JPanel implements KeyListener
 		jEditorPaneHistorico.setText("<html><body>"+mensajes+"</body></html>");
 	}
 	
-	public void offensiveMessagePopUp() {
-		//TODO
+	public boolean offensiveMessagePopUp() {
+	      Object[] options = {"Yes, im sure.",
+          "Not send the message"};
+    int n = JOptionPane.showOptionDialog( this, JOptionPane.YES_NO_OPTION,
+                                          amigo, JOptionPane.QUESTION_MESSAGE,
+                                          n, null,     //do not use a custom Icon
+                                          options,  //the titles of buttons
+                                          options[0]); //default button title
+    
+    return true;
+
 	}
 
 	@Override
