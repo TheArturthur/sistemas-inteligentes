@@ -1,6 +1,6 @@
 package inteligentes.chat.agentes;
 
-import inteligentes.chat.aux.Utils;
+import inteligentes.chat.auxiliar.Utils;
 import jade.core.AID;
 import jade.core.Agent;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;

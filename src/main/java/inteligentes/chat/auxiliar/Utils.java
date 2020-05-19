@@ -1,4 +1,4 @@
-package inteligentes.chat.aux;
+package inteligentes.chat.auxiliar;
 
 import jade.content.lang.sl.SLCodec;
 import jade.core.AID;

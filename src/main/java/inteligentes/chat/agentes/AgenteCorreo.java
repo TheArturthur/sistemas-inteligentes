@@ -21,7 +21,7 @@ import jade.lang.acl.MessageTemplate;
 import jade.lang.acl.UnreadableException;
 
 import inteligentes.chat.gui.MainGuiMessenger;
-import inteligentes.chat.aux.*;
+import inteligentes.chat.auxiliar.*;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.behaviours.AgenteCorreoBehaviour;
 import inteligentes.chat.interfaces.*;
