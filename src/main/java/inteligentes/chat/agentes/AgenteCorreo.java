@@ -6,25 +6,19 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-
-
+import inteligentes.chat.auxiliar.Utils;
+import inteligentes.chat.behaviours.AgenteCorreoBehaviour;
+import inteligentes.chat.gui.MainGuiMessenger;
+import inteligentes.chat.interfaces.MostrarMensajesListener;
+import inteligentes.chat.interfaces.SendMessageListener;
 import jade.content.lang.sl.SLCodec;
 import jade.core.Agent;
-import jade.core.behaviours.CyclicBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.Envelope;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.lang.acl.ACLMessage;
-import jade.lang.acl.MessageTemplate;
-import jade.lang.acl.UnreadableException;
-
-import inteligentes.chat.gui.MainGuiMessenger;
-import inteligentes.chat.auxiliar.*;
-import inteligentes.chat.basics.EncodedMessage;
-import inteligentes.chat.behaviours.AgenteCorreoBehaviour;
-import inteligentes.chat.interfaces.*;
 
 
 

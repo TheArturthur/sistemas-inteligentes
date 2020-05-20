@@ -1,7 +1,6 @@
 package inteligentes.chat.behaviours;
 
 import inteligentes.chat.auxiliar.ChatsStorage;
-import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.*;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;

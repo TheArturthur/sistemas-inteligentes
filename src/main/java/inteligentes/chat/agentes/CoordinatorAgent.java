@@ -1,14 +1,9 @@
 package inteligentes.chat.agentes;
 
 import inteligentes.chat.auxiliar.Utils;
-import inteligentes.chat.behaviours.ManagerAgentBehaviour;
-import jade.content.lang.sl.SLCodec;
 import jade.core.AID;
 import jade.core.Agent;
-import jade.domain.DFService;
-import jade.domain.FIPAException;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
-import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.wrapper.ControllerException;
 import jade.wrapper.PlatformController;
 import jade.wrapper.PlatformEvent;
