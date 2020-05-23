@@ -7,13 +7,11 @@ import java.awt.event.KeyListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JEditorPane;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 
-import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.interfaces.*;
 
@@ -32,13 +30,11 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	protected SendMessageListener sendMessageListener;
 	protected String nombre;
 	protected String amigo;
-	private int avisos;
 	
 	public JPanelConversacion(String nombre, String amigo, SendMessageListener sendMessageListener) {
 		this.sendMessageListener=sendMessageListener;
 		this.nombre=nombre;
 		this.amigo=amigo;
-		this.avisos = 0;
 
 		jEditorPaneHistorico=new JEditorPane();
 		jEditorPaneHistorico.setContentType("text/html");
@@ -70,40 +66,7 @@ public class JPanelConversacion extends JPanel implements KeyListener
 		mensajes=mensajes+"<b>"+persona+"</b>"+": "+mensaje+"<br/>";
 		jEditorPaneHistorico.setText("<html><body>"+mensajes+"</body></html>");
 	}
-	
-	public boolean offensiveMessagePopUp() {
-	      Object[] options = {"Yes, im sure.",
-	        "Not send the message"};
-	      int seleccion = JOptionPane.showOptionDialog(
-	           this,
-	           "Seleccione opcion", 
-	           "Mensaje de alerta",
-	           JOptionPane.YES_NO_OPTION,
-	           JOptionPane.WARNING_MESSAGE,
-	           null,    // null para icono por defecto.
-	           options,   // null para YES, NO y CANCEL
-	           "opcion 1");
-	      
-	      if (seleccion == JOptionPane.YES_OPTION) { return true; }
-	      else {return false;}
 
-	}
-	
-	public void reportAdvice() {
-		this.avisos++;
-		switch (this.avisos) {
-		case 1:
-			JOptionPane.showMessageDialog(this, "Has sido reportado por un usuario\n por actitud ofensiva.\n\n"
-					+ "A la siguiente se te expulsa del chat.", "AVISO",
-			        JOptionPane.WARNING_MESSAGE);
-			break;	
-		default:
-			JOptionPane.showMessageDialog(this, "Has sido reportado por segunda vez. Quedas expulsado\n", "AVISO",
-			        JOptionPane.WARNING_MESSAGE);
-			sendMessageListener.finalizar();
-			break;
-		}
-	}
 
 	@Override
 	public void keyPressed(KeyEvent e) {
@@ -118,9 +81,7 @@ public class JPanelConversacion extends JPanel implements KeyListener
 			em.setFrom(nombre);
 			em.setSendTo(amigo);
 			em.setMessage(jTextAreaMensaje.getText());
-			em.setMessageListener(sendMessageListener);
-			em.setConver(this);
-			sendMessageListener.sendMsgToManager(em);
+			sendMessageListener.sendMsgToManager((Object)em);
 			jTextAreaMensaje.setText("");
 		}
 	}

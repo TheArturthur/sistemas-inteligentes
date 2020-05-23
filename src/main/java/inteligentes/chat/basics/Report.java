@@ -1,7 +1,8 @@
 package inteligentes.chat.basics;
 
+import java.io.Serializable;
 
-public class Report {
+public class Report implements Serializable {
 
 	
 	private String emisor;

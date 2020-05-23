@@ -3,10 +3,13 @@ package inteligentes.chat.agentes;
 import inteligentes.chat.auxiliar.Utils;
 import jade.core.AID;
 import jade.core.Agent;
+import jade.core.Profile;
+import jade.core.ProfileImpl;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.wrapper.ControllerException;
 import jade.wrapper.PlatformController;
 import jade.wrapper.PlatformEvent;
+import jade.wrapper.StaleProxyException;
 
 
 public class CoordinatorAgent extends Agent implements PlatformController.Listener {
@@ -15,27 +18,18 @@ public class CoordinatorAgent extends Agent implements PlatformController.Listen
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	public static final String NAME = "coordinator";
 	
-	private static jade.wrapper.AgentContainer cc;
 
 	@Override
 	public void setup() {
 		
         try {
-        	this.setEnvironment();
 			this.getContainerController().addPlatformListener(this);
 		} catch (ControllerException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public void setEnvironment() throws ControllerException {
-		cc.createNewAgent(ManagerAgent.NAME, ManagerAgent.class.getName(), new Object[] { }).start();
-		//TODO
-		//cc.createNewAgent(ClasificatorAgent.NAME, ClasificatorAgent.class.getName() , new Object[] { }).start();
-		cc.createNewAgent(ReportManagerAgent.NAME, ReportManagerAgent.class.getName(), new Object[] { }).start();
-	}
-
 	
 	@Override
 	public void bornAgent(PlatformEvent arg0) {

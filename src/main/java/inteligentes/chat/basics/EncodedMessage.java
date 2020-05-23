@@ -1,24 +1,15 @@
 package inteligentes.chat.basics;
 
-import inteligentes.chat.gui.JPanelConversacion;
-import inteligentes.chat.interfaces.SendMessageListener;
+import java.io.Serializable;
 
-public class EncodedMessage {
+public class EncodedMessage implements Serializable {
 	
 	private String sendTo;
 	private String from;
 	private String message;
-	private SendMessageListener msgl;
 	private boolean isOffensive = false; //Asumimos que el mensaje no es ofensivo
-	private JPanelConversacion conver;
 	
-	public JPanelConversacion getConver() {
-		return conver;
-	}
-
-	public void setConver(JPanelConversacion conver) {
-		this.conver = conver;
-	}
+	
 
 	public boolean isOffensive() {
 		return isOffensive;
@@ -26,14 +17,6 @@ public class EncodedMessage {
 
 	public void setOffensive(boolean isOffensive) {
 		this.isOffensive = isOffensive;
-	}
-	
-	public SendMessageListener getMessageListener() {
-		return msgl;
-	}
-
-	public void setMessageListener(SendMessageListener msgl) {
-		this.msgl = msgl;
 	}
 
 	public String getSendTo() {

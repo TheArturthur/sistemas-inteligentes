@@ -1,6 +1,7 @@
 package inteligentes.chat.behaviours;
 
 import inteligentes.chat.auxiliar.ChatsStorage;
+import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.*;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
@@ -34,7 +35,7 @@ public class ReportManagerAgentBehaviour extends CyclicBehaviour {
 					 * Notese que se reporta al usuario que ha enviado el mensaje, 
 					 * nunca el que ha reportado el mensaje.
 					 */
-					em.getConver().reportAdvice();
+					Utils.enviarMensaje(myAgent, "correoreports", rep, "reports");
 				}
 			}
 			
