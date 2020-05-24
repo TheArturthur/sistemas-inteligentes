@@ -1,5 +1,6 @@
 package inteligentes.chat.behaviours;
 
+import inteligentes.chat.agentes.EmojiBuilderAgent;
 import inteligentes.chat.auxiliar.TokensEmoji;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
@@ -14,9 +15,13 @@ public class EmojiBuilderAgentBehaviour extends OneShotBehaviour{
 	private static final long serialVersionUID = 1L;
 	private static final MessageTemplate mt1 = MessageTemplate.and(MessageTemplate.
 			MatchPerformative(ACLMessage.REQUEST), MessageTemplate.MatchOntology("builder"));
+	private EmojiBuilderAgent emb;
+	
+	public EmojiBuilderAgentBehaviour(EmojiBuilderAgent emba) {
+		this.emb = emba;
+	}
 		
 	@Override
-	
 	public void action() {
 		System.out.println("Aqui Edison esperando un mensaje...");
 		ACLMessage msg=this.myAgent.blockingReceive(mt1);
@@ -26,7 +31,7 @@ public class EmojiBuilderAgentBehaviour extends OneShotBehaviour{
 			EncodedMessage em1 = (EncodedMessage)msg.getContentObject();           
 
 			System.out.println(em1.getMessage());
-			String resultado = esComando(em1.getMessage());
+			String resultado = emb.esComando(em1.getMessage());
 			System.out.println("Resultado es " + resultado);
 			if(resultado.equals(em1.getMessage())) {
 				System.out.println("Resulta que no era un comando. Vaya...");
@@ -54,57 +59,6 @@ public class EmojiBuilderAgentBehaviour extends OneShotBehaviour{
 
 	}
 	
-	private String esComando(String str) {		
-		
-		String vuelta = new String();
-		
-		
-		switch (str) {
-		case TokensEmoji.comando1:
-			vuelta = TokensEmoji.comando1value;
-			break;
-			
-		case TokensEmoji.comando2:
-			vuelta = TokensEmoji.comando2value;
-			break;	
 
-		case TokensEmoji.comando3:
-			vuelta = TokensEmoji.comando3value;
-			break;
-			
-		case TokensEmoji.comando4:
-			vuelta = TokensEmoji.comando4value;
-			break;	
-			
-		case TokensEmoji.comando5:
-			vuelta = TokensEmoji.comando5value;
-			break;
-			
-		case TokensEmoji.comando6:
-			vuelta = TokensEmoji.comando6value;
-			break;
-			
-		case TokensEmoji.comando7:
-			vuelta = TokensEmoji.comando7value;
-			break;
-			
-		case TokensEmoji.comando8:
-			vuelta = TokensEmoji.comando8value;
-			break;
-			
-		case TokensEmoji.comando9:
-			vuelta = TokensEmoji.comando9value;
-			break;
-			
-		case TokensEmoji.comando10:
-			vuelta = TokensEmoji.comando10value;
-			break;
-			
-		default:
-			vuelta = str;
-			break;
-		}
-		return vuelta;
-	}
 		
 }

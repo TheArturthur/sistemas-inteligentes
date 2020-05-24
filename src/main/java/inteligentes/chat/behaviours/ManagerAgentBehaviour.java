@@ -1,6 +1,6 @@
 package inteligentes.chat.behaviours;
 
-import inteligentes.chat.auxiliar.SetEnvironment;
+import inteligentes.chat.agentes.EmojiBuilderAgent;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.demo.DemoEdison;
@@ -42,7 +42,8 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
             	//TODO Utils.enviarMensaje(myAgent, "emojibuilder", msg);
     			System.out.println("Envio mensaje a Edison");	
     			System.out.println("El mensaje que envio es: " + em1.getMessage());
-            	Utils.enviarMensaje(myAgent, "demoedison", em1, "builder");
+            	Utils.enviarMensaje(myAgent, "emojibuilder", em1, "builder");
+            	// Utils.enviarMensaje(myAgent, "demoedison", em1, "builder");
             	
         	} else 
         		
