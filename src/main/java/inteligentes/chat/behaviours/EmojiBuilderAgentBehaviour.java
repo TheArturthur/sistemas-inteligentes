@@ -50,13 +50,13 @@ public class EmojiBuilderAgentBehaviour extends OneShotBehaviour{
 				Utils.enviarMensajeInform(myAgent, "manager", nuevo, "edison");
 			}
 			
-			myAgent.doDelete();
+			
 			
 		} catch (UnreadableException e) {
 			e.printStackTrace();
 		}
 
-
+		myAgent.doDelete();
 	}
 	
 

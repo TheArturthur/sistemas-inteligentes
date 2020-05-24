@@ -3,6 +3,7 @@ package inteligentes.chat.behaviours;
 import inteligentes.chat.agentes.EmojiBuilderAgent;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
+import inteligentes.chat.demo.DemoArthur;
 import inteligentes.chat.demo.DemoEdison;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
@@ -53,17 +54,19 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
                 	Utils.enviarMensaje(myAgent, correosender, em1, forwarding);
                 	Utils.enviarMensaje(myAgent, reportmanager, em1);
         		} else { //Si no ha cambiado, se lo enviamos a arthur a ver que dice
-        	    	//AgentContainer c = myAgent.getContainerController();
-        			//AgentController ac;
-        			//TODO cc.createNewAgent(EmojiBuilderAgent.NAME, EmojiBuilderAgent.class.getName(), new Object[] { });
-        	    	//ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
-        	    	//ac.start();
-                    Utils.enviarMensaje(myAgent, "analyzer", em1);
+        	    	AgentContainer c = myAgent.getContainerController();
+        			AgentController ac;
+        			ac = c.createNewAgent(DemoArthur.NAME, DemoArthur.class.getName(), new Object[] { });
+        	    	// TODO ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
+        	    	ac.start();
+                    // TODO Utils.enviarMensaje(myAgent, "analyzer", em1, analyzer);
+        			Utils.enviarMensaje(myAgent, "demoarthur", em1, "analyzer");
         		}
         		
         	} else 
         		
         		if(msg.getPerformative() == ACLMessage.INFORM && msg.getOntology().equals("arthur")) {
+        		System.out.println("Me toca mandarselo a arthur");
         		EncodedMessage em1 = (EncodedMessage)msg.getContentObject();
         		if(em1.isOffensive()) { //Si es ofensivo, le mandamos al agente de correo una notificacion para ver si lo quiere mandar
         			Utils.enviarMensaje(myAgent, "correoreport", em1, "reports");
