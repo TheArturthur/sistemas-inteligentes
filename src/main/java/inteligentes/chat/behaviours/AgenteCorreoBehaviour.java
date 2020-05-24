@@ -24,7 +24,7 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
 
 	@Override
 	public void action() {
-		System.out.println("Puede que me haya llegado un mensaje...");
+//		System.out.println("Puede que me haya llegado un mensaje...");
         ACLMessage msg=this.myAgent.blockingReceive(mt1);
         
         try {
@@ -33,15 +33,15 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
                	//Si recibimos un mensaje en el que el contenido es null, querr� decir que hay nuevos agentes en el chat o agentes que han abandonado el chat
             	//Tendremos que actualizar la lista de agentes que hay en chat y mostrarla en el interfaz
             	if(msg.getContentObject()==null) {
-            		System.out.println("Resulta que era un mensaje de tipo actualizacion de usuario");
+//            		System.out.println("Resulta que era un mensaje de tipo actualizacion de usuario");
             		ac.actualizarLista();
             	}
             	//Si recibimos un mensaje con un contenido distinto de null, mostraremos el mensaje en el chat
             	//Tendremos que recorrer todos aquellos chats que est�n activos para ir mostrando el mensaje
             	//A�adiremos el contenido del mensaje a continuaci�n del contenido publicado previamente en el chat.
             	else {
-            		System.out.println(msg.getSender().getName()+":"+ (String)msg.getContentObject());
-            		System.out.println("Resulta que era un mensaje para mi. ¡Que bien!");
+//            		System.out.println(msg.getSender().getName()+":"+ (String)msg.getContentObject());
+//            		System.out.println("Resulta que era un mensaje para mi. ¡Que bien!");
             		Iterator<MostrarMensajesListener> iter=ac.setMostrarMensajesListener.iterator();
             		while(iter.hasNext()) {
             			iter.next().nuevoMensaje(msg.getSender().getLocalName(), (String)msg.getContentObject());
@@ -54,12 +54,12 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
     			
     			//Fui yo quien mando el mensaje
     			if(em.getFrom().equals(myAgent.getLocalName())) {
-    				System.out.println("El nombre local de mi agente es " + myAgent.getLocalName());
-    				System.out.println("El mensaje va para " + em.getSendTo());
-    				System.out.println("El mensaje lo ha enviado " + em.getFrom());
-    				System.out.println("Soy " + em.getFrom() + "\ny lo envio a "  +em.getSendTo() + "\ny el mensaje es: " + em.getMessage());
+//    				System.out.println("El nombre local de mi agente es " + myAgent.getLocalName());
+//    				System.out.println("El mensaje va para " + em.getSendTo());
+//    				System.out.println("El mensaje lo ha enviado " + em.getFrom());
+//    				System.out.println("Soy " + em.getFrom() + "\ny lo envio a "  +em.getSendTo() + "\ny el mensaje es: " + em.getMessage());
     				ac.enviarMensaje(em.getSendTo(), em.getMessage());
-    				System.out.println("Ya le he mandado el mensaje a mi amigo");
+//    				System.out.println("Ya le he mandado el mensaje a mi amigo");
     			}
         	} else 
         		
@@ -76,13 +76,15 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
     			}
     			
     			if(tipo instanceof EncodedMessage) {
-    				
+    				if(msg.getOntology().equals("confirmation")) {
     				EncodedMessage em = (EncodedMessage)tipo;
     				//Ver si el mensaje es para mi
     				if(em.getFrom().equals(myAgent.getName())) {
     					boolean send = ac.offensiveMessagePopUp();
-    					Utils.enviarMensajeInform(myAgent, "manager", send, "confirmation");
+    					em.setEnviar(send);
+    					Utils.enviarMensajeInform(myAgent, "manager", em, "confirmation");
     				}
+    			  }	
     			}
         	}
         	
