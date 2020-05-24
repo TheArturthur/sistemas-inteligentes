@@ -7,7 +7,6 @@ import java.awt.event.KeyListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JEditorPane;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
@@ -31,15 +30,12 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	protected SendMessageListener sendMessageListener;
 	protected String nombre;
 	protected String amigo;
-	private String coord;
 	
 	public JPanelConversacion(String nombre, String amigo, SendMessageListener sendMessageListener) {
 		this.sendMessageListener=sendMessageListener;
 		this.nombre=nombre;
 		this.amigo=amigo;
-		//TODO
-		this.coord = "manager";
-		
+
 		jEditorPaneHistorico=new JEditorPane();
 		jEditorPaneHistorico.setContentType("text/html");
 		jEditorPaneHistorico.setBackground(Color.gray);
@@ -70,43 +66,25 @@ public class JPanelConversacion extends JPanel implements KeyListener
 		mensajes=mensajes+"<b>"+persona+"</b>"+": "+mensaje+"<br/>";
 		jEditorPaneHistorico.setText("<html><body>"+mensajes+"</body></html>");
 	}
-	
-	public boolean offensiveMessagePopUp() {
-	      Object[] options = {"Yes, im sure.",
-          "Not send the message"};
-	      int seleccion = JOptionPane.showOptionDialog(
-	    		   this,
-	    		   "Seleccione opcion", 
-	    		   "Mensaje de alerta",
-	    		   JOptionPane.YES_NO_CANCEL_OPTION,
-	    		   JOptionPane.QUESTION_MESSAGE,
-	    		   null,    // null para icono por defecto.
-	    		   options,   // null para YES, NO y CANCEL
-	    		   "opcion 1");
-    
-    return true;
 
-	}
 
 	@Override
 	public void keyPressed(KeyEvent e) {
 	}
 
 	@Override
-	//Cada vez que se envia un mensaje, se envia al coordinador para que lo desvie y se procese.
+	//Cada vez que se envia un mensaje, se envia al manager para que lo procese.
 	public void keyReleased(KeyEvent e) {
 		if(e.getKeyChar()==KeyEvent.VK_ENTER) {
+			//Hacer un filtro rapido de emoji cogiendo la funcion de Edison
 			addMensaje(nombre, jTextAreaMensaje.getText());
 			EncodedMessage em = new EncodedMessage();
 			em.setFrom(nombre);
 			em.setSendTo(amigo);
 			em.setMessage(jTextAreaMensaje.getText());
-			em.setMessageListener(sendMessageListener);
-			em.setConver(this);
-			sendMessageListener.enviarEncodedMensaje(coord, em);
+			sendMessageListener.sendMsgToManager(em);
 			jTextAreaMensaje.setText("");
 		}
-		
 	}
 
 	@Override
