@@ -9,15 +9,14 @@ import java.util.Set;
 import javax.swing.JOptionPane;
 
 import inteligentes.chat.auxiliar.Utils;
+import inteligentes.chat.basics.EncodedMessage;
+import inteligentes.chat.basics.Report;
 import inteligentes.chat.behaviours.AgenteCorreoBehaviour;
-import inteligentes.chat.behaviours.CorreoReportsBehaviour;
-import inteligentes.chat.behaviours.CorreoSenderBehaviour;
 import inteligentes.chat.gui.MainGuiMessenger;
 import inteligentes.chat.interfaces.MostrarMensajesListener;
 import inteligentes.chat.interfaces.SendMessageListener;
 import jade.content.lang.sl.SLCodec;
 import jade.core.Agent;
-import jade.core.behaviours.ParallelBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
@@ -93,17 +92,7 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		setMostrarMensajesListener=new HashSet<MostrarMensajesListener>();
 		
         //Aniadimos un comportamiento ciclico para capturar y procesar los mensajes que recibe el agente
-//		ParallelBehaviour parallelBehaviour = new ParallelBehaviour(this,ParallelBehaviour.WHEN_ALL);
-//		
-//		parallelBehaviour.addSubBehaviour(new AgenteCorreoBehaviour(this));
-//		parallelBehaviour.addSubBehaviour(new CorreoSenderBehaviour(this));
-//		parallelBehaviour.addSubBehaviour(new CorreoReportsBehaviour(this));
-//		
-//        addBehaviour(parallelBehaviour);
-        
         addBehaviour(new AgenteCorreoBehaviour(this));
-        addBehaviour(new CorreoSenderBehaviour(this));
-        addBehaviour(new CorreoReportsBehaviour(this));
 		
 		//Inicializamos el interfaz del agente. No es necesario lanzarlo como un hilo independiente.
 		MainGuiMessenger gui=new MainGuiMessenger(this.getLocalName(), this);
@@ -128,12 +117,12 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		}
 	}
 
-	public void sendMsgToManager(Object objeto) {
-		Utils.enviarMensaje(this, "manager", objeto);
+	public void sendMsgToManager(EncodedMessage mensaje) {
+		Utils.enviarMensaje(this, "manager", mensaje);
 	}
 	
-	public void sendReport(Object objeto) {
-		Utils.enviarMensaje(this, "reportmanager", objeto);
+	public void sendReport(Report report) {
+		Utils.enviarMensaje(this, "reportmanager", report);
 	}
 	
 	@Override

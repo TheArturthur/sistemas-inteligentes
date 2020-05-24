@@ -81,7 +81,7 @@ public class JPanelConversacion extends JPanel implements KeyListener
 			em.setFrom(nombre);
 			em.setSendTo(amigo);
 			em.setMessage(jTextAreaMensaje.getText());
-			sendMessageListener.sendMsgToManager((Object)em);
+			sendMessageListener.sendMsgToManager(em);
 			jTextAreaMensaje.setText("");
 		}
 	}

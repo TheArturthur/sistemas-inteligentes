@@ -63,19 +63,4 @@ public class SetEnvironment {
 		
     }
     
-    public static void createEdisonAgent(Agent agent) throws StaleProxyException {
-    	AgentContainer c = agent.getContainerController();
-		AgentController ac;
-		//TODO cc.createNewAgent(EmojiBuilderAgent.NAME, EmojiBuilderAgent.class.getName(), new Object[] { });
-    	ac =c.createNewAgent(DemoEdison.NAME, DemoEdison.class.getName(), new Object[] { });
-    	ac.start();
-    }
-    
-    public static void createArthurAgent(Agent agent) throws StaleProxyException {
-    	//AgentContainer c = agent.getContainerController();
-		//AgentController ac;
-		//TODO cc.createNewAgent(EmojiBuilderAgent.NAME, EmojiBuilderAgent.class.getName(), new Object[] { });
-    	//ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
-    	//ac.start();
-    }
 }

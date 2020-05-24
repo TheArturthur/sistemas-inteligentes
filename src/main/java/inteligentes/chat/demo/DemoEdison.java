@@ -17,12 +17,14 @@ public class DemoEdison extends Agent {
 		
         DFAgentDescription dfd = new DFAgentDescription();
         dfd.setName(getAID());
+        
         ServiceDescription sd = new ServiceDescription();
-        sd.setName("demoedison");
+        sd.setName(NAME);
         //establezco el tipo del servicio "coordinador" para poder localizarlo cuando haga una busqueda
-        sd.setType("demoedison");
+        sd.setType(NAME);
         sd.addOntologies("builder");
         sd.addLanguages(new SLCodec().getName());
+        
         dfd.addServices(sd);
         
 		addBehaviour(new DemoEdisonBehaviour(this));

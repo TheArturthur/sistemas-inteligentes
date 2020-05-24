@@ -4,12 +4,24 @@ import java.io.Serializable;
 
 public class EncodedMessage implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String sendTo;
 	private String from;
 	private String message;
 	private boolean isOffensive = false; //Asumimos que el mensaje no es ofensivo
+	private boolean cambio = false; //Asumimos que el mensaje no es un comando
 	
-	
+
+	public boolean isCambio() {
+		return cambio;
+	}
+
+	public void setCambio(boolean cambio) {
+		this.cambio = cambio;
+	}
 
 	public boolean isOffensive() {
 		return isOffensive;
