@@ -33,8 +33,8 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
         	if(msg.getPerformative() == ACLMessage.REQUEST && msg.getOntology().equals("ontologia")) {
             	AgentContainer c = myAgent.getContainerController();
         		AgentController ac;
-        		//TODO ac =c.createNewAgent(EmojiBuilderAgent.NAME, EmojiBuilderAgent.class.getName(), new Object[] { });
-            	ac =c.createNewAgent(DemoEdison.NAME, DemoEdison.class.getName(), new Object[] { });
+        		ac =c.createNewAgent(EmojiBuilderAgent.NAME, EmojiBuilderAgent.class.getName(), new Object[] { });
+            	//ac =c.createNewAgent(DemoEdison.NAME, DemoEdison.class.getName(), new Object[] { });
             	ac.start();
             	
             	

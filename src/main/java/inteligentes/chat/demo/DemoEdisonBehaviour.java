@@ -34,7 +34,7 @@ public class DemoEdisonBehaviour extends OneShotBehaviour {
 			System.out.println("Resultado es " + resultado);
 			if(resultado.equals(em1.getMessage())) {
 				System.out.println("Resulta que no era un comando. Vaya...");
-				Utils.enviarMensaje(myAgent, "manager", em1);
+				Utils.enviarMensajeInform(myAgent, "manager", em1, "edison");
 			} else {
 				System.out.println("Era un comando, bien!");
 				EncodedMessage nuevo = new EncodedMessage();
