@@ -22,8 +22,6 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
 	private static final String forwarding = "forwarding";
 	private static final String reportmanager = "reportmanager";
 	
-	
-
 
 	@Override
 	public void action() {
@@ -32,6 +30,7 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
         try {	
         	if(msg.getPerformative() == ACLMessage.REQUEST && msg.getOntology().equals("ontologia")) {
         		crearEdison();
+        		Thread.sleep(100);
         		EncodedMessage em1 = (EncodedMessage)msg.getContentObject();
             	Utils.enviarMensaje(myAgent, "emojibuilder", em1, "builder");
             	// Utils.enviarMensaje(myAgent, "demoedison", em1, "builder");
@@ -44,7 +43,8 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
                 	enviarMensajeADestino(em1);
         		} else { //Si no ha cambiado, se lo enviamos a arthur a ver que dice
         			crearArthur();
-                    // TODO Utils.enviarMensaje(myAgent, "analyzer", em1, "analyzer");
+        			Thread.sleep(100);
+                    //Utils.enviarMensaje(myAgent, "analyzer", em1, "analyzer");
         			Utils.enviarMensaje(myAgent, "demoarthur", em1, "analyzer");
         		}
         		
@@ -69,9 +69,9 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
         	        	
 		} catch (UnreadableException e) {
 			e.printStackTrace();
-		} 
-        catch (StaleProxyException e) {
-			// TODO Auto-generated catch block
+		} catch (StaleProxyException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -87,7 +87,7 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
 	private void crearArthur() throws StaleProxyException {
     	AgentContainer c = myAgent.getContainerController();
 		AgentController ac;
-    	// TODO ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
+    	//ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
 		ac = c.createNewAgent(DemoArthur.NAME, DemoArthur.class.getName(), new Object[] { });
     	ac.start();
 	}
