@@ -7,6 +7,7 @@ import inteligentes.chat.agentes.AnalyzerAgent;
 import inteligentes.chat.agentes.CoordinatorAgent;
 import inteligentes.chat.agentes.ManagerAgent;
 import inteligentes.chat.agentes.ReportManagerAgent;
+import inteligentes.chat.demo.DemoArthur;
 import inteligentes.chat.demo.DemoEdison;
 import jade.core.Agent;
 import jade.core.Profile;

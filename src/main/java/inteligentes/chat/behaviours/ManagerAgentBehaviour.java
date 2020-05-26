@@ -22,27 +22,16 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
 	private static final String forwarding = "forwarding";
 	private static final String reportmanager = "reportmanager";
 	
-	
-
 
 	@Override
 	public void action() {
 		//Se espera a recibir cualquier tipo de mensaje
         ACLMessage msg=this.myAgent.blockingReceive(mt1);
         try {	
-        	
         	if(msg.getPerformative() == ACLMessage.REQUEST && msg.getOntology().equals("ontologia")) {
-            	AgentContainer c = myAgent.getContainerController();
-        		AgentController ac;
-        		ac =c.createNewAgent(EmojiBuilderAgent.NAME, EmojiBuilderAgent.class.getName(), new Object[] { });
-            	//ac =c.createNewAgent(DemoEdison.NAME, DemoEdison.class.getName(), new Object[] { });
-            	ac.start();
-            	
-            	
+        		crearEdison();
+        		Thread.sleep(100);
         		EncodedMessage em1 = (EncodedMessage)msg.getContentObject();
-            	//TODO Utils.enviarMensaje(myAgent, "emojibuilder", msg);
-    			System.out.println("Envio mensaje a Edison");	
-    			System.out.println("El mensaje que envio es: " + em1.getMessage());
             	Utils.enviarMensaje(myAgent, "emojibuilder", em1, "builder");
             	// Utils.enviarMensaje(myAgent, "demoedison", em1, "builder");
             	
@@ -51,47 +40,64 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
         		if(msg.getPerformative() == ACLMessage.INFORM && msg.getOntology().equals("edison")) {
         		EncodedMessage em1 = (EncodedMessage)msg.getContentObject();
         		if(em1.isCambio()) { //Si ha cambiado, lo mandamos a su destino
-                	Utils.enviarMensaje(myAgent, correosender, em1, forwarding);
-                	Utils.enviarMensaje(myAgent, reportmanager, em1);
+                	enviarMensajeADestino(em1);
         		} else { //Si no ha cambiado, se lo enviamos a arthur a ver que dice
-        	    	AgentContainer c = myAgent.getContainerController();
-        			AgentController ac;
-        			ac = c.createNewAgent(DemoArthur.NAME, DemoArthur.class.getName(), new Object[] { });
-        	    	// TODO ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
-        	    	ac.start();
-                    // TODO Utils.enviarMensaje(myAgent, "analyzer", em1, analyzer);
+        			crearArthur();
+        			Thread.sleep(100);
+                    //Utils.enviarMensaje(myAgent, "analyzer", em1, "analyzer");
         			Utils.enviarMensaje(myAgent, "demoarthur", em1, "analyzer");
         		}
         		
         	} else 
         		
         		if(msg.getPerformative() == ACLMessage.INFORM && msg.getOntology().equals("arthur")) {
-        		System.out.println("Me toca mandarselo a arthur");
+        		System.out.println("Anda!, Arthur me ha contestado");
         		EncodedMessage em1 = (EncodedMessage)msg.getContentObject();
         		if(em1.isOffensive()) { //Si es ofensivo, le mandamos al agente de correo una notificacion para ver si lo quiere mandar
         			Utils.enviarMensaje(myAgent, "correoreport", em1, "reports");
         		} else {
-                   	Utils.enviarMensaje(myAgent, correosender, em1, forwarding);
-                	Utils.enviarMensaje(myAgent, reportmanager, em1);
+        			enviarMensajeADestino(em1);
         		}
         	} else 
         		
         		if(msg.getPerformative() == ACLMessage.INFORM && msg.getOntology().equals("confirmation")) {
-        		boolean enviar = (boolean)msg.getContentObject();
-        		if(enviar) {
-        			Utils.enviarMensaje(myAgent, correosender, msg, forwarding);
-        			Utils.enviarMensaje(myAgent, reportmanager, msg);
+        		EncodedMessage em1 = (EncodedMessage)msg.getContentObject();
+        		if(em1.isEnviar()) {
+        			enviarMensajeADestino(em1);
         		}
         	}
         	        	
 		} catch (UnreadableException e) {
 			e.printStackTrace();
-		} 
-        catch (StaleProxyException e) {
-			// TODO Auto-generated catch block
+		} catch (StaleProxyException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
+	
+	private void crearEdison() throws StaleProxyException {
+    	AgentContainer c = myAgent.getContainerController();
+		AgentController ac;
+		ac =c.createNewAgent(EmojiBuilderAgent.NAME, EmojiBuilderAgent.class.getName(), new Object[] { });
+    	//ac =c.createNewAgent(DemoEdison.NAME, DemoEdison.class.getName(), new Object[] { });
+    	ac.start();
+	}
+	
+	private void crearArthur() throws StaleProxyException {
+    	AgentContainer c = myAgent.getContainerController();
+		AgentController ac;
+    	//ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
+		ac = c.createNewAgent(DemoArthur.NAME, DemoArthur.class.getName(), new Object[] { });
+    	ac.start();
+	}
+	
+	private void enviarMensajeADestino(EncodedMessage em) {
+		Utils.enviarMensaje(myAgent, correosender, em, forwarding);
+    	Utils.enviarMensaje(myAgent, reportmanager, em);
+	}
+	
+	
 	
 	
 

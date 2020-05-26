@@ -77,7 +77,8 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	public void keyReleased(KeyEvent e) {
 		if(e.getKeyChar()==KeyEvent.VK_ENTER) {
 			//Hacer un filtro rapido de emoji cogiendo la funcion de Edison
-			addMensaje(nombre, jTextAreaMensaje.getText());
+			String mensaje = sendMessageListener.esComando(jTextAreaMensaje.getText());
+			addMensaje(nombre, mensaje);
 			EncodedMessage em = new EncodedMessage();
 			em.setFrom(nombre);
 			em.setSendTo(amigo);

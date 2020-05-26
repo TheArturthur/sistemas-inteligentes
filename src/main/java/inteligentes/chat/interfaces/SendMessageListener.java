@@ -10,5 +10,6 @@ public interface SendMessageListener
 	public void enviarMensaje(String remitente, String mensaje);
 	public void avisarEventos(MostrarMensajesListener mostrarMensajesListener);
 	public void finalizar();
+	public String esComando(String texto);
 }
 
