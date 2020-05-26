@@ -97,8 +97,5 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
     	Utils.enviarMensaje(myAgent, reportmanager, em);
 	}
 	
-	
-	
-	
 
 }
