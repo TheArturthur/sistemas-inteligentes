@@ -1,4 +1,4 @@
-package inteligentes.chat.aux;
+package inteligentes.chat.auxiliar;
 
 import jade.content.lang.sl.SLCodec;
 import jade.core.AID;
@@ -14,6 +14,8 @@ import jade.lang.acl.ACLMessage;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Iterator;
+
+import inteligentes.chat.basics.EncodedMessage;
 
 public class Utils 
 {
@@ -80,6 +82,113 @@ public class Utils
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Env�a un objeto desde el agent eindicado a un agent eque proporciona un servicio del tipo dado
+	 * @param agent Agente desde el que se va a enviar el servicio
+	 * @param tipo Tipo del servicio buscado
+	 * @param objeto Mensaje a Enviar
+	 */
+	public static void enviarMensaje(Agent agent, String tipo, Object objeto, String ontologia) {
+		DFAgentDescription[] dfd;
+		dfd=buscarAgentes(agent, tipo);
+
+		try {
+			if(dfd!=null) {
+				ACLMessage aclMessage = new ACLMessage(ACLMessage.REQUEST);
+
+				for(int i=0;i<dfd.length;i++)
+					aclMessage.addReceiver(dfd[i].getName());
+
+				aclMessage.setOntology(ontologia);
+				//el lenguaje que se define para el servicio
+				aclMessage.setLanguage(new SLCodec().getName());
+				//el mensaje se transmita en XML
+				aclMessage.setEnvelope(new Envelope());
+				//cambio la codificacion de la carta
+				aclMessage.getEnvelope().setPayloadEncoding("ISO8859_1");
+				//aclMessage.getEnvelope().setAclRepresentation(FIPANames.ACLCodec.XML); 
+				aclMessage.setContentObject((Serializable)objeto);
+				agent.send(aclMessage);       		
+			}
+		}
+		catch(IOException e) {
+			//JOptionPane.showMessageDialog(null, "Agente "+getLocalName()+": "+e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Env�a un objeto desde el agent eindicado a un agent eque proporciona un servicio del tipo dado
+	 * @param agent Agente desde el que se va a enviar el servicio
+	 * @param tipo Tipo del servicio buscado
+	 * @param objeto Mensaje a Enviar
+	 */
+	public static void enviarMensajeInform(Agent agent, String tipo, Object objeto) {
+		DFAgentDescription[] dfd;
+		dfd=buscarAgentes(agent, tipo);
+
+		try {
+			if(dfd!=null) {
+				ACLMessage aclMessage = new ACLMessage(ACLMessage.INFORM);
+
+				for(int i=0;i<dfd.length;i++)
+					aclMessage.addReceiver(dfd[i].getName());
+
+				aclMessage.setOntology("ontologia");
+				//el lenguaje que se define para el servicio
+				aclMessage.setLanguage(new SLCodec().getName());
+				//el mensaje se transmita en XML
+				aclMessage.setEnvelope(new Envelope());
+				//cambio la codificacion de la carta
+				aclMessage.getEnvelope().setPayloadEncoding("ISO8859_1");
+				//aclMessage.getEnvelope().setAclRepresentation(FIPANames.ACLCodec.XML); 
+				aclMessage.setContentObject((Serializable)objeto);
+				agent.send(aclMessage);       		
+			}
+		}
+		catch(IOException e) {
+			//JOptionPane.showMessageDialog(null, "Agente "+getLocalName()+": "+e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Env�a un objeto desde el agent eindicado a un agent eque proporciona un servicio del tipo dado
+	 * @param agent Agente desde el que se va a enviar el servicio
+	 * @param tipo Tipo del servicio buscado
+	 * @param objeto Mensaje a Enviar
+	 */
+	public static void enviarMensajeInform(Agent agent, String tipo, Object objeto, String ontologia) {
+		DFAgentDescription[] dfd;
+		dfd=buscarAgentes(agent, tipo);
+
+		try {
+			if(dfd!=null) {
+				ACLMessage aclMessage = new ACLMessage(ACLMessage.INFORM);
+
+				for(int i=0;i<dfd.length;i++)
+					aclMessage.addReceiver(dfd[i].getName());
+
+				aclMessage.setOntology(ontologia);
+				//el lenguaje que se define para el servicio
+				aclMessage.setLanguage(new SLCodec().getName());
+				//el mensaje se transmita en XML
+				aclMessage.setEnvelope(new Envelope());
+				//cambio la codificacion de la carta
+				aclMessage.getEnvelope().setPayloadEncoding("ISO8859_1");
+				//aclMessage.getEnvelope().setAclRepresentation(FIPANames.ACLCodec.XML); 
+				aclMessage.setContentObject((Serializable)objeto);
+				agent.send(aclMessage);       		
+			}
+		}
+		catch(IOException e) {
+			//JOptionPane.showMessageDialog(null, "Agente "+getLocalName()+": "+e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace();
+		}
+	}
+	
+
 
 	/**
 	 * Permite buscar los agents que dan un servicio de un determinado tipo. Devuelve el primero de ellos.

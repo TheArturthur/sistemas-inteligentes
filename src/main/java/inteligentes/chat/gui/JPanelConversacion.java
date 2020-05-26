@@ -12,6 +12,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 
+import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.interfaces.*;
 
 
@@ -34,7 +35,7 @@ public class JPanelConversacion extends JPanel implements KeyListener
 		this.sendMessageListener=sendMessageListener;
 		this.nombre=nombre;
 		this.amigo=amigo;
-		
+
 		jEditorPaneHistorico=new JEditorPane();
 		jEditorPaneHistorico.setContentType("text/html");
 		jEditorPaneHistorico.setBackground(Color.gray);
@@ -66,25 +67,28 @@ public class JPanelConversacion extends JPanel implements KeyListener
 		jEditorPaneHistorico.setText("<html><body>"+mensajes+"</body></html>");
 	}
 
+
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub		
 	}
 
 	@Override
+	//Cada vez que se envia un mensaje, se envia al manager para que lo procese.
 	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
 		if(e.getKeyChar()==KeyEvent.VK_ENTER) {
+			//Hacer un filtro rapido de emoji cogiendo la funcion de Edison
 			addMensaje(nombre, jTextAreaMensaje.getText());
-			sendMessageListener.enviarMensaje(amigo, jTextAreaMensaje.getText());
+			EncodedMessage em = new EncodedMessage();
+			em.setFrom(nombre);
+			em.setSendTo(amigo);
+			em.setMessage(jTextAreaMensaje.getText());
+			sendMessageListener.sendMsgToManager(em);
 			jTextAreaMensaje.setText("");
 		}
-		
 	}
 
 	@Override
 	public void keyTyped(KeyEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 }

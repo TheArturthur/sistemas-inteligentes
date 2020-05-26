@@ -1,6 +1,5 @@
-package inteligentes.chat.agentes;
+package inteligentes.chat.demo;
 
-import inteligentes.chat.behaviours.ReportManagerAgentBehaviour;
 import jade.content.lang.sl.SLCodec;
 import jade.core.Agent;
 import jade.domain.DFService;
@@ -8,24 +7,27 @@ import jade.domain.FIPAException;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 
-@SuppressWarnings("serial")
-public class ReportManagerAgent extends Agent {
+public class DemoArthur extends Agent {
+	
+	private static final long serialVersionUID = 1L;
+	public static final String NAME = "demoarthur";
 
-	public static final String NAME = "reportmanager";
 	
 	@Override
 	public void setup() {
 		
         DFAgentDescription dfd = new DFAgentDescription();
         dfd.setName(getAID());
+        
         ServiceDescription sd = new ServiceDescription();
         sd.setName(NAME);
         sd.setType(NAME);
-        sd.addOntologies("ontologia");
+        sd.addOntologies("analyzer");
         sd.addLanguages(new SLCodec().getName());
+        
         dfd.addServices(sd);
         
-        addBehaviour(new ReportManagerAgentBehaviour());
+		addBehaviour(new DemoArthurBehaviour());
         
         try {
             DFService.register(this, dfd);
@@ -33,5 +35,4 @@ public class ReportManagerAgent extends Agent {
 			e.printStackTrace();
 		}
 	}
-
 }
