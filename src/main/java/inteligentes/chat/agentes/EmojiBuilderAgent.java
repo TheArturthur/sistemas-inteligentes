@@ -1,17 +1,13 @@
 package inteligentes.chat.agentes;
 
-import java.util.Set;
-import jade.lang.acl.ACLMessage;
 import inteligentes.chat.auxiliar.TokensEmoji;
 import inteligentes.chat.behaviours.EmojiBuilderAgentBehaviour;
-import inteligentes.chat.behaviours.ManagerAgentBehaviour;
-import inteligentes.chat.interfaces.MostrarMensajesListener;
 import jade.content.lang.sl.SLCodec;
 import jade.core.Agent;
-import jade.domain.FIPAAgentManagement.DFAgentDescription;
-import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
 
 
 

@@ -45,8 +45,9 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
         		} else { //Si no ha cambiado, se lo enviamos a arthur a ver que dice
         			crearArthur();
         			Thread.sleep(100);
-                    Utils.enviarMensaje(myAgent, "analyzer", em1, "analyzer");
+              Utils.enviarMensaje(myAgent, "analyzer", em1, "analyzer");
         			//Utils.enviarMensaje(myAgent, "demoarthur", em1, "analyzer");
+
         		}
         		
         	} else 
@@ -88,8 +89,10 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
 	private void crearArthur() throws StaleProxyException {
     	AgentContainer c = myAgent.getContainerController();
 		AgentController ac;
-    	ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
+
+   	ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
 		//ac = c.createNewAgent(DemoArthur.NAME, DemoArthur.class.getName(), new Object[] { });
+
     	ac.start();
 	}
 	

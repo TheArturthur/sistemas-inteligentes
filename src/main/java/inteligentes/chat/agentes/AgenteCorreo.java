@@ -8,6 +8,7 @@ import java.util.Set;
 
 import javax.swing.JOptionPane;
 
+import inteligentes.chat.auxiliar.TokensEmoji;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.basics.Report;
@@ -132,8 +133,8 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
     	
     	for(int i=0;i<dfd.length;i++)
     	{
-    		System.out.println("Destino: " + dfd[i].getName().getLocalName());
-    		System.out.println("A donde lo quiero mandar: " + destinatario);
+//    		System.out.println("Destino: " + dfd[i].getName().getLocalName());
+//    		System.out.println("A donde lo quiero mandar: " + destinatario);
     		if(dfd[i].getName().getLocalName().equals(destinatario))
     			aclMessage.addReceiver(dfd[i].getName());
     	}
@@ -194,6 +195,63 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 			this.finalizar();
 			break;
 		}
+	}
+	
+	public String esComando(String str) {		
+
+		String vuelta = "";
+
+
+		switch (str) {
+		case TokensEmoji.comando1:
+			vuelta = TokensEmoji.comando1value;
+			break;
+
+		case TokensEmoji.comando2:
+			vuelta = TokensEmoji.comando2value;
+			break;	
+
+		case TokensEmoji.comando3:
+			vuelta = TokensEmoji.comando3value;
+			break;
+
+		case TokensEmoji.comando4:
+			vuelta = TokensEmoji.comando4value;
+			break;	
+
+		case TokensEmoji.comando5:
+			vuelta = TokensEmoji.comando5value;
+			break;
+
+		case TokensEmoji.comando6:
+			vuelta = TokensEmoji.comando6value;
+			break;
+
+		case TokensEmoji.comando7:
+			vuelta = TokensEmoji.comando7value;
+			break;
+
+		case TokensEmoji.comando8:
+			vuelta = TokensEmoji.comando8value;
+			break;
+
+		case TokensEmoji.comando9:
+			vuelta = TokensEmoji.comando9value;
+			break;
+
+		case TokensEmoji.comando10:
+			vuelta = TokensEmoji.comando10value;
+			break;
+
+		case TokensEmoji.comando11:
+			vuelta = TokensEmoji.comando11value;
+			break;
+
+		default:
+			vuelta = str;
+			break;
+		}
+		return vuelta;
 	}
 
 	public void finalizar() {

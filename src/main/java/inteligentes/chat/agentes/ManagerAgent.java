@@ -26,21 +26,18 @@ public class ManagerAgent extends Agent {
         
         ServiceDescription sd = new ServiceDescription();
         sd.setName(NAME);
-        //establezco el tipo del servicio "coordinador" para poder localizarlo cuando haga una busqueda
         sd.setType(NAME);
         sd.addOntologies("ontologia");
         sd.addLanguages(new SLCodec().getName());
         
         ServiceDescription sd1 = new ServiceDescription();
         sd1.setName(NAME);
-        //establezco el tipo del servicio "coordinador" para poder localizarlo cuando haga una busqueda
         sd1.setType(NAME);
         sd1.addOntologies("edison");
         sd1.addLanguages(new SLCodec().getName());
         
         ServiceDescription sd2 = new ServiceDescription();
         sd2.setName(NAME);
-        //establezco el tipo del servicio "coordinador" para poder localizarlo cuando haga una busqueda
         sd2.setType(NAME);
         sd2.addOntologies("arthur");
         sd2.addLanguages(new SLCodec().getName());

@@ -43,7 +43,7 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-
+      
 		    <plugin>
 		        <groupId>org.openjfx</groupId>
 		        <artifactId>javafx-maven-plugin</artifactId>
@@ -52,7 +52,6 @@
 		            <mainClass>HelloFX</mainClass>
 		        </configuration>
 		    </plugin>
-
 		</plugins>
 	</build>
 
@@ -94,6 +93,6 @@
 		  <artifactId>json</artifactId> 
 		  <version>20090211</version> 
 		</dependency>
-		
+
 	</dependencies>
 </project>
