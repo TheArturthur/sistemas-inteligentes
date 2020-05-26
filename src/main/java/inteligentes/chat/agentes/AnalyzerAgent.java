@@ -2,15 +2,13 @@
  * 
  */
 package inteligentes.chat.agentes;
-import opennlp.tools.sentdetect.SentenceDetectorME;
-import opennlp.tools.sentdetect.SentenceModel;
-import opennlp.tools.tokenize.SimpleTokenizer;
-
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
 import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -23,6 +21,7 @@ import java.util.regex.Pattern;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.behaviours.AnalyzerAgentBehaviour;
 import inteligentes.chat.interfaces.MostrarMensajesListener;
+
 import jade.content.lang.sl.SLCodec;
 import jade.core.Agent;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
@@ -31,10 +30,16 @@ import jade.domain.DFService;
 import jade.domain.FIPAException;
 import jade.core.behaviours.Behaviour;
 
-@SuppressWarnings("serial")
+
 public class AnalyzerAgent extends Agent {
 
+	private static final long serialVersionUID = 1L;
+	
 	public static final String NAME = "analyzer";
+	
+	private ArrayList<String> insults = new ArrayList<>(Arrays.asList(
+			"puta", "zorra", "cabron", "capullo", "guarra", "gilipollas",
+			"imbecil", "inutil", "gordo", "obeso"));
 	
 	@Override
 	protected void setup() {
@@ -56,6 +61,22 @@ public class AnalyzerAgent extends Agent {
 		} catch(FIPAException e) {
 			e.printStackTrace();
 		}
+		
+	}
+	
+	/**
+	 * @param encodedMessage
+	 */
+	public ArrayList<String> checkIfOffensive(EncodedMessage encodedMessage) {
+		String[] msg = encodedMessage.getMessage().split("\n");
+		ArrayList<String> res = new ArrayList<>();
+		for (String pal : msg) {
+			if (this.insults.contains(pal)) {
+				res.add(pal);
+				encodedMessage.setOffensive(true);
+			}
+		}
+		return res;
 	}
 	
 }

@@ -13,7 +13,16 @@ public class EncodedMessage implements Serializable {
 	private String message;
 	private boolean isOffensive = false; //Asumimos que el mensaje no es ofensivo
 	private boolean cambio = false; //Asumimos que el mensaje no es un comando
+	private boolean enviar = true; //Asumimos que lo quiere enviar
 	
+
+	public boolean isEnviar() {
+		return enviar;
+	}
+
+	public void setEnviar(boolean enviar) {
+		this.enviar = enviar;
+	}
 
 	public boolean isCambio() {
 		return cambio;
