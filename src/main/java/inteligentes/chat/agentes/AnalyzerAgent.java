@@ -30,16 +30,19 @@ import jade.domain.DFService;
 import jade.domain.FIPAException;
 import jade.core.behaviours.Behaviour;
 
+import org.apache.commons.text.similarity.*;
 
 public class AnalyzerAgent extends Agent {
 
 	private static final long serialVersionUID = 1L;
 	
+	private LevenshteinDistance levenshteinDistance = new LevenshteinDistance();
+	
 	public static final String NAME = "analyzer";
 	
 	private ArrayList<String> insults = new ArrayList<>(Arrays.asList(
 			"puta", "zorra", "cabron", "capullo", "guarra", "gilipollas",
-			"imbecil", "inutil", "gordo", "obeso"));
+			"imbecil", "inutil", "gordo", "obeso", "feo"));
 	
 	@Override
 	protected void setup() {
@@ -68,14 +71,21 @@ public class AnalyzerAgent extends Agent {
 	 * @param encodedMessage
 	 */
 	public ArrayList<String> checkIfOffensive(EncodedMessage encodedMessage) {
-		String[] msg = encodedMessage.getMessage().split("\n");
+		String[] msg = encodedMessage.getMessage().replace('\n',' ').split(" ");
 		ArrayList<String> res = new ArrayList<>();
+		
 		for (String pal : msg) {
-			if (this.insults.contains(pal)) {
-				res.add(pal);
-				encodedMessage.setOffensive(true);
+			for (int i = 0; i < this.insults.size(); i++) {
+				if (this.levenshteinDistance.apply(this.insults.get(i),pal) < 2) {
+					res.add(pal);
+				}
 			}
 		}
+		
+		if (res.size() > 0) {			
+			encodedMessage.setOffensive(true);					
+		}
+		
 		return res;
 	}
 	
