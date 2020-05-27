@@ -19,6 +19,8 @@ public class CoordinatorAgent extends Agent implements PlatformController.Listen
 	 */
 	private static final long serialVersionUID = 1L;
 	public static final String NAME = "coordinator";
+	public static final String MENSAJERIA = "mensajeria";
+
 	
 
 	@Override
@@ -37,7 +39,7 @@ public class CoordinatorAgent extends Agent implements PlatformController.Listen
 		dFAgentDescription.setName(new AID(arg0.getAgentGUID(), true));
 		System.out.println("Agente nuevo: "+arg0.getAgentGUID());
 		
-		Utils.enviarMensaje(this, "mensajer�a", null);
+		Utils.enviarMensaje(this, MENSAJERIA, null);
 	}
 
 	@Override
@@ -47,7 +49,7 @@ public class CoordinatorAgent extends Agent implements PlatformController.Listen
 		
 		System.out.println("Agente muerto: "+arg0.getAgentGUID());
 		
-		Utils.enviarMensaje(this, "mensajer�a", null);
+		Utils.enviarMensaje(this, MENSAJERIA, null);
 	}
 
 	@Override
