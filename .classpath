@@ -29,7 +29,5 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/avidal/git/sistemas-inteligentes/lib/gtranslateapi-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/avidal/git/sistemas-inteligentes/lib/google-api-translate-java-0.97.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
