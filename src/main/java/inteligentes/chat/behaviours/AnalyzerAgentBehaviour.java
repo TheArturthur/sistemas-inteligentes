@@ -6,6 +6,7 @@ import java.util.HashMap;
 import inteligentes.chat.agentes.AnalyzerAgent;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
+
 import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
@@ -23,7 +24,7 @@ public class AnalyzerAgentBehaviour extends OneShotBehaviour {
 			MessageTemplate.MatchOntology("analyzer"));
 	
 	private AnalyzerAgent analyzerAgent;
-	private ArrayList<String> esAcoso = new ArrayList<>();
+	private HashMap<String, ArrayList<int[]>> esAcoso = new HashMap<>();
 	
 	public AnalyzerAgentBehaviour(AnalyzerAgent analyzerAgent) {
 		this.analyzerAgent = analyzerAgent;
@@ -42,8 +43,23 @@ public class AnalyzerAgentBehaviour extends OneShotBehaviour {
 				System.out.println("No parece haber indicios de haber acoso en el mensaje...");
 			} else {
 				System.out.println("Vaya, vaya, aquí hay algo...");
-				System.out.println("Estos son los indicios:");
-				System.out.println(esAcoso.toString());
+				System.out.println("Estos son los insultos encontrados, con todas sus ocurrencias:");
+				
+				System.out.println("{");
+				for (String insult : this.esAcoso.keySet()) {
+					System.out.println("\t" + insult + ":{");
+					for (int i = 0; i < this.esAcoso.get(insult).size(); i++) {
+						System.out.print("\t\t[" + this.esAcoso.get(insult).get(i)[0] + "..");
+						if (i < this.esAcoso.get(insult).size() - 1) {
+							System.out.println(this.esAcoso.get(insult).get(i)[1] + "],");							
+						} else {
+							System.out.println(this.esAcoso.get(insult).get(i)[1] + "]");
+						}
+					}
+					System.out.println("\t}");
+				}
+				System.out.println("}");
+				
 			}
 			Utils.enviarMensajeInform(analyzerAgent, "manager", encodedMessage, "arthur");
 		} catch (UnreadableException e) {
