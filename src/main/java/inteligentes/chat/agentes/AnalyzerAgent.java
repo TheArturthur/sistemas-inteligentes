@@ -3,6 +3,10 @@
  */
 package inteligentes.chat.agentes;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,6 +32,9 @@ public class AnalyzerAgent extends Agent {
 	
 	public static final String NAME = "analyzer";
 	
+	private final String FILEDIR = "./dict";
+	private HashMap<Character, File> dictionary = new HashMap<>();
+
 	/**
 	 * List containing the insults to be analyzed in the message.
 	 */
@@ -37,6 +44,8 @@ public class AnalyzerAgent extends Agent {
 	
 	@Override
 	protected void setup() {
+		initDictionary();
+
 		//Crear servicios proporcionados por el agente y registrarlos en la plataforma
 		DFAgentDescription agentDescription = new DFAgentDescription();
 		agentDescription.setName(getAID());
@@ -55,12 +64,12 @@ public class AnalyzerAgent extends Agent {
 		} catch(FIPAException e) {
 			e.printStackTrace();
 		}
-		
 	}
 	
 	/**
 	 * Checks if the message contains an insult from the list.
-	 * @param encodedMessage
+	 * @param encodedMessage the message sent.
+	 * @return a map with all insults (if any) present in the message, along with their positions inside it.
 	 */
 	public HashMap<String, ArrayList<int[]>> checkIfOffensive(EncodedMessage encodedMessage) {
 		String[] msg = encodedMessage.getMessage().toLowerCase().replace('\n',' ').split(" ");
@@ -73,14 +82,20 @@ public class AnalyzerAgent extends Agent {
 		for (String pal : msg) {
 			for (int i = 0; i < this.insults.size(); i++) {
 				if (this.levenshteinDistance.apply(this.insults.get(i),pal) < 3 &&
-						!res.containsKey(this.insults.get(i))) {
+						/*!res.containsKey(this.insults.get(i)) &&*/ !isWord(pal, this.insults.get(i))) {
 					String message = encodedMessage.getMessage();
 					ArrayList<int[]> positions = new ArrayList<int[]>();
 					
 					List<Integer> indexes = getIndexes(message, pal);
 					
 					for (int index : indexes) {
-						positions.add(new int[] {index, index + pal.length() - 1});
+						if (!res.containsKey(this.insults.get(i))) {
+							positions.add(new int[] {index, index + pal.length() - 1});							
+						} else {
+							ArrayList<int[]> prevAddedIndexes = res.get(this.insults.get(i));
+							prevAddedIndexes.add(new int[] {index, index + pal.length() -1});
+							positions = prevAddedIndexes;
+						}
 					}
 					
 					res.put(this.insults.get(i), positions);
@@ -95,13 +110,19 @@ public class AnalyzerAgent extends Agent {
 		return res;
 	}
 	
-	private List<Integer> getIndexes(String str, String findStr) {
+	/**
+	 * Gets all the initial and final positions of subStr in str.
+	 * @param str the string containing subStr.
+	 * @param subStr the substring inside str.
+	 * @return a List of arrays with all the indexes of subStr inside str.
+	 */
+	private List<Integer> getIndexes(String str, String subStr) {
 		int lastIndex = 0;
 		List<Integer> result = new ArrayList<Integer>();
 
 		while(lastIndex != -1) {
 
-		    lastIndex = str.indexOf(findStr,lastIndex);
+		    lastIndex = str.indexOf(subStr,lastIndex);
 
 		    if(lastIndex != -1){
 		        result.add(lastIndex);
@@ -109,6 +130,48 @@ public class AnalyzerAgent extends Agent {
 		    }
 		}
 		return result;
+	}
+	
+	/**
+	 * Checks if pal is a word similar to insult in the dictionary files.
+	 * @param pal the string to check with the dictionary.
+	 * @param insult the insult pal is similar to.
+	 * @return true if pal is a word, false otherwise.
+	 */
+	private boolean isWord (String pal, String insult) {
+		char startLetter = pal.toCharArray()[0];
+		try {
+			RandomAccessFile file = new RandomAccessFile(this.dictionary.get(startLetter), "r");
+			String line;
+			while ((line = file.readLine()) != null) {
+				line = line.replaceAll(", \\w*", "");
+				if (!insult.equals(line) && pal.equals(line)) {
+					return true; // It's a word similar to the insult
+				}
+			}
+			file.close();
+			return false;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return false;
+		}		
+	}
+	
+	/**
+	 * Initialize the dictionary map with the files containing the words.
+	 */
+	private void initDictionary() {
+		File fileDir = new File(FILEDIR);
+		if (!fileDir.exists()) {
+			fileDir.mkdir();
+		}
+		
+		File[] files = fileDir.listFiles();
+		for (File file : files) {
+			if (!file.isDirectory() && file.canRead()) {
+				this.dictionary.put(file.getName().toCharArray()[0], file);
+			}
+		}
 	}
 	
 }
