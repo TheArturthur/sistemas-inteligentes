@@ -38,6 +38,7 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 	public Set<MostrarMensajesListener> setMostrarMensajesListener;
 	private int avisos;
 	public static final String NAME = "correo";
+	public static final String MENSAJERIA = "mensajeria";
 
 
 	
@@ -54,33 +55,40 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
          
         
         ServiceDescription sd1 = new ServiceDescription();
-        sd1.setName("Correo");
+        sd1.setName(NAME);
         //establezco el tipo del servicio "mensajeria" para poder localizarlo cuando haga una busqueda
-        sd1.setType("mensajer�a");
+        sd1.setType(MENSAJERIA);
         sd1.addOntologies("ontologia");
         sd1.addLanguages(new SLCodec().getName());
                
         ServiceDescription sd2 = new ServiceDescription();
-        sd2.setName("Correo");
+        sd2.setName(NAME);
         //establezco el tipo del servicio "mensajeria" para poder localizarlo cuando haga una busqueda
-        sd2.setType("correosender");
+        sd2.setType(MENSAJERIA);
         sd2.addOntologies("forwarding");
         sd2.addLanguages(new SLCodec().getName());
         
         
         ServiceDescription sd3 = new ServiceDescription();
-        sd3.setName("Correo");
+        sd3.setName(NAME);
         //establezco el tipo del servicio "mensajeria" para poder localizarlo cuando haga una busqueda
-        sd3.setType("correoreport");
+        sd3.setType(MENSAJERIA);
         sd3.addOntologies("reports");
         sd3.addLanguages(new SLCodec().getName());
+        
+        ServiceDescription sd4 = new ServiceDescription();
+        sd4.setName(NAME);
+        //establezco el tipo del servicio "mensajeria" para poder localizarlo cuando haga una busqueda
+        sd4.setType(MENSAJERIA);
+        sd4.addOntologies("confirmation");
+        sd4.addLanguages(new SLCodec().getName());
         
         
         dfd1.addServices(sd1);
         dfd1.addServices(sd2);
         dfd1.addServices(sd3);
-        
-             
+        dfd1.addServices(sd4);
+     
         
         try {
         	//registro los servicios en el agente DF
@@ -100,12 +108,12 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		gui.run();
 
 		//Doy servicio de mensajeria
-		Utils.enviarMensaje(this, "mensajer�a", null);
+		Utils.enviarMensaje(this, MENSAJERIA, null);
 	}
 
 
 	public void actualizarLista() {
-		dfd=Utils.buscarAgentes(this, "mensajer�a");
+		dfd=Utils.buscarAgentes(this, MENSAJERIA);
 		String usuarios[]=new String[dfd.length];
 		for(int i=0;i<dfd.length;i++) {
 			System.out.println(dfd[i].getName().getLocalName());
@@ -163,12 +171,12 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		
 	}
 	
-	public boolean offensiveMessagePopUp() {
-	      Object[] options = {"Yes, im sure.",
-	        "Not send the message"};
+	public boolean offensiveMessagePopUp(EncodedMessage em) {
+	      Object[] options = {"¡Por supuesto que si!",
+	        "No, mejor no lo envio..."};
 	      int seleccion = JOptionPane.showOptionDialog(
 	    	   new JOptionPane(),
-	           "Seleccione opcion", 
+	           "Has mandado un mensaje ofensivo a una persona.\n ¿De verdad quieres enviarlo?", 
 	           "Mensaje de alerta",
 	           JOptionPane.YES_NO_OPTION,
 	           JOptionPane.WARNING_MESSAGE,
@@ -176,9 +184,13 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 	           options,   // null para YES, NO y CANCEL
 	           "opcion 1");
 	      
-	      if (seleccion == JOptionPane.YES_OPTION) { return true; }
-	      else {return false;}
-
+	      if (seleccion == JOptionPane.YES_OPTION) { 
+	    	  em.setEnviar(true); 
+	    }
+	      else {
+	    	  em.setEnviar(false); 
+	    }    
+	      return true;
 	}
 	
 	public void reportAdvice() {
