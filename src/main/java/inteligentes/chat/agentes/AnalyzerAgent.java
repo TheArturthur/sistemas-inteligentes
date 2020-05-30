@@ -3,24 +3,13 @@
  */
 package inteligentes.chat.agentes;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
-import java.lang.reflect.Array;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.behaviours.AnalyzerAgentBehaviour;
-import inteligentes.chat.interfaces.MostrarMensajesListener;
 
 import jade.content.lang.sl.SLCodec;
 import jade.core.Agent;
@@ -28,7 +17,6 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
-import jade.core.behaviours.Behaviour;
 
 import org.apache.commons.text.similarity.*;
 
@@ -40,9 +28,12 @@ public class AnalyzerAgent extends Agent {
 	
 	public static final String NAME = "analyzer";
 	
+	/**
+	 * List containing the insults to be analyzed in the message.
+	 */
 	private ArrayList<String> insults = new ArrayList<>(Arrays.asList(
 			"puta", "zorra", "cabron", "capullo", "guarra", "gilipollas",
-			"imbecil", "inutil", "gordo", "obeso", "feo"));
+			"imbecil", "inutil", "gordo", "obeso", "feo", "subnormal"));
 	
 	@Override
 	protected void setup() {
@@ -68,25 +59,56 @@ public class AnalyzerAgent extends Agent {
 	}
 	
 	/**
+	 * Checks if the message contains an insult from the list.
 	 * @param encodedMessage
 	 */
-	public ArrayList<String> checkIfOffensive(EncodedMessage encodedMessage) {
-		String[] msg = encodedMessage.getMessage().replace('\n',' ').split(" ");
-		ArrayList<String> res = new ArrayList<>();
+	public HashMap<String, ArrayList<int[]>> checkIfOffensive(EncodedMessage encodedMessage) {
+		String[] msg = encodedMessage.getMessage().toLowerCase().replace('\n',' ').split(" ");
+		for (int i = 0; i < msg.length; i++) {
+			msg[i] = msg[i].replaceAll("[^\\w]", "");
+		}
+		
+		HashMap<String, ArrayList<int[]>> res = new HashMap<>();
 		
 		for (String pal : msg) {
 			for (int i = 0; i < this.insults.size(); i++) {
-				if (this.levenshteinDistance.apply(this.insults.get(i),pal) < 2) {
-					res.add(pal);
+				if (this.levenshteinDistance.apply(this.insults.get(i),pal) < 3 &&
+						!res.containsKey(this.insults.get(i))) {
+					String message = encodedMessage.getMessage();
+					ArrayList<int[]> positions = new ArrayList<int[]>();
+					
+					List<Integer> indexes = getIndexes(message, pal);
+					
+					for (int index : indexes) {
+						positions.add(new int[] {index, index + pal.length() - 1});
+					}
+					
+					res.put(this.insults.get(i), positions);
 				}
 			}
 		}
 		
-		if (res.size() > 0) {			
+		if (res.size() > 0) {
 			encodedMessage.setOffensive(true);					
 		}
 		
 		return res;
+	}
+	
+	private List<Integer> getIndexes(String str, String findStr) {
+		int lastIndex = 0;
+		List<Integer> result = new ArrayList<Integer>();
+
+		while(lastIndex != -1) {
+
+		    lastIndex = str.indexOf(findStr,lastIndex);
+
+		    if(lastIndex != -1){
+		        result.add(lastIndex);
+		        lastIndex += 1;
+		    }
+		}
+		return result;
 	}
 	
 }
