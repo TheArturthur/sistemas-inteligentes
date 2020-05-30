@@ -89,7 +89,31 @@ public class EmojiBuilderAgent extends Agent {
 		case TokensEmoji.comando11:
 			vuelta = TokensEmoji.comando11value;
 			break;
-
+			
+		case TokensEmoji.comando12:
+			vuelta = TokensEmoji.comando12value;
+			break;	
+			
+		case TokensEmoji.comando13:
+			vuelta = TokensEmoji.comando13value;
+			break;
+			
+		case TokensEmoji.comando14:
+			vuelta = TokensEmoji.comando14value;
+			break;	
+			
+		case TokensEmoji.comando15:
+			vuelta = TokensEmoji.comando15value;
+			break;
+			
+		case TokensEmoji.comando16:
+			vuelta = TokensEmoji.comando16value;
+			break;
+			
+		case TokensEmoji.comando17:
+			vuelta = TokensEmoji.comando17value;
+			break;
+			
 		default:
 			vuelta = str;
 			break;
