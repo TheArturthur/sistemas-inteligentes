@@ -11,5 +11,7 @@ public interface SendMessageListener
 	public void avisarEventos(MostrarMensajesListener mostrarMensajesListener);
 	public void finalizar();
 	public String esComando(String texto);
+	public String esComandoEspecial(String texto);
+
 }
 

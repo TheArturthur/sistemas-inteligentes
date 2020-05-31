@@ -21,8 +21,12 @@ public class ReportManagerAgentBehaviour extends CyclicBehaviour {
 	@Override
 	public void action() {
         ACLMessage msg=this.myAgent.blockingReceive(mt1);
+		System.out.println("Uy.. un mensajito nuevo ;)");
         
         try {
+        	if (msg.getContentObject() == null) {
+        		cs.listAllChats();
+        	}
         	
 			if(msg.getContentObject() instanceof Report) {
 				Report rep = (Report)msg.getContentObject();
@@ -40,6 +44,7 @@ public class ReportManagerAgentBehaviour extends CyclicBehaviour {
 			}
 			
 			if(msg.getContentObject() instanceof EncodedMessage) {
+				System.out.println("Aqui el reportir guardando un mensajito");
 				cs.addChatMessage((EncodedMessage)msg.getContentObject());
 			}
 			

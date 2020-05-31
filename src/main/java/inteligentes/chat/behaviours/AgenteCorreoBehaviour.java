@@ -99,9 +99,11 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
 							else {
 								//            		System.out.println(msg.getSender().getName()+":"+ (String)msg.getContentObject());
 								System.out.println("Resulta que era un mensaje para mi. ¡Que bien!");
-								Iterator<MostrarMensajesListener> iter=ac.setMostrarMensajesListener.iterator();
-								while(iter.hasNext()) {
-									iter.next().nuevoMensaje(msg.getSender().getLocalName(), (String)msg.getContentObject());
+								if (!ac.isBlocked(msg.getSender().getName())) {
+									Iterator<MostrarMensajesListener> iter=ac.setMostrarMensajesListener.iterator();
+									while(iter.hasNext()) {
+										iter.next().nuevoMensaje(msg.getSender().getLocalName(), (String)msg.getContentObject());
+									}
 								}
 							}
 						}

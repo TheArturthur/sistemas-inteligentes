@@ -43,9 +43,9 @@ public class EmojiBuilderAgent extends Agent {
 	public String esComando(String str) {		
 
 		String vuelta = "";
+		String toUse = str.toLowerCase();
 
-
-		switch (str) {
+		switch (toUse) {
 		case TokensEmoji.comando1:
 			vuelta = TokensEmoji.comando1value;
 			break;
