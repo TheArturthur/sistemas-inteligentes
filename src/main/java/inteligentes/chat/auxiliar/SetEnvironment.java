@@ -59,8 +59,8 @@ public class SetEnvironment {
 		//cc.createNewAgent(ClasificatorAgent.NAME, ClasificatorAgent.class.getName() , new Object[] { }).start();
 		cc.createNewAgent(ReportManagerAgent.NAME, ReportManagerAgent.class.getName(), new Object[] { }).start();
 		
-		cc.createNewAgent(AgenteCorreo.NAME + "1", AgenteCorreo.class.getName(), new Object[] { }).start();
-		cc.createNewAgent(AgenteCorreo.NAME + "2", AgenteCorreo.class.getName(), new Object[] { }).start();
+		cc.createNewAgent("MariadelaO", AgenteCorreo.class.getName(), new Object[] { }).start();
+		cc.createNewAgent("Juanchinatro", AgenteCorreo.class.getName(), new Object[] { }).start();
 		
     }
     

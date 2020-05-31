@@ -103,7 +103,7 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
     	AgentContainer c = myAgent.getContainerController();
 		AgentController ac;
 
-   	ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
+		ac = c.createNewAgent(AnalyzerAgent.NAME, AnalyzerAgent.class.getName(), new Object[] { });
 		//ac = c.createNewAgent(DemoArthur.NAME, DemoArthur.class.getName(), new Object[] { });
 
     	ac.start();
