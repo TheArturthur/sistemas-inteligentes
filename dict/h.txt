@@ -8,8 +8,6 @@ habar
 habeas corpus
 habedero, ra
 háber
-haber1
-haber2
 haberado, da
 haberío
 haberoso, sa
@@ -83,18 +81,12 @@ hacendístico, ca
 hacendoso, sa
 hacer
 hacera
-hacha1
-hacha2
 hachazo
 hache
 hachear
 hachemí
 hachemita
-hachero1
-hachero2
 hachís
-hacho1
-hacho2
 hachón
 hachote
 hachuela
@@ -245,8 +237,6 @@ harbar
 harbullar
 harbullista
 harca
-harda1
-harda2
 hardido, da
 hardware
 harén
@@ -278,8 +268,6 @@ haronear
 haronía
 harón, na
 harpa
-harpado1, da
-harpado2, da
 harpía
 harqueño, ña
 harrado
@@ -322,8 +310,6 @@ havar
 havara
 havo
 hawaiano, na
-haya1
-haya2
 hayaca
 hayal
 hayedo
@@ -331,8 +317,6 @@ hayeno, na
 hayo
 hayuco
 haz
-haz2
-haz3
 haza
 hazaleja
 hazana
@@ -343,8 +327,6 @@ hazañero, ra
 hazañosamente
 hazañoso, sa
 hazmerreír
-he1
-he2
 heavy
 heavy metal
 hebdómada
@@ -367,8 +349,6 @@ hebraísta
 hebraizante
 hebraizar
 hebreo, a
-hebrero1
-hebrero2
 hebroso, sa
 hebrudo, da
 hecatombe
@@ -734,8 +714,6 @@ heroicamente
 heroicidad
 heroico, ca
 heroida
-heroína1
-heroína2
 heroinómano, na
 heroísmo
 herperio, ria
@@ -751,8 +729,6 @@ herrado
 herrador, ra
 herradura
 herraj
-herraje1
-herraje2
 herramental
 herramienta
 herrar
@@ -769,8 +745,6 @@ herreriano, na
 herrerillo
 herrerón
 herrero, ra
-herreruelo1
-herreruelo2
 herrete
 herretear
 herrezuelo
@@ -1009,8 +983,6 @@ hielo
 hieltro
 hiemal
 hiena
-hienda1
-hienda2
 hienizar
 hiera
 hierarquñia
@@ -1060,8 +1032,6 @@ higroscópico, ca
 higroscopio
 higuela
 higüela
-higuera1
-Higuera2
 higueral
 higuereta
 higuerilla
@@ -1085,8 +1055,6 @@ hijuela
 hijuelar
 hijuelero
 hijuelo
-hila1
-hila2
 hilacha
 hilacho
 hilachoso, sa
@@ -1154,8 +1122,6 @@ hiniestra
 hinnible
 hinojal
 hinojar
-hinojo1
-hinojo2
 Hinojosa
 hinque
 hintero
@@ -1290,8 +1256,6 @@ hipofunción
 hipogástrico, ca
 hipogastrio
 hipogénico, ca
-hipogeo1
-hipogeo2, a
 hipogloso, sa
 hipoglucemia
 hipoglucémico, ca
@@ -1360,8 +1324,6 @@ hisopar
 hisopazo
 hisopear
 hisopillo
-hisopo1
-hisopo2
 hispalense
 hispalio, lia
 hispánico, ca
@@ -1451,8 +1413,6 @@ hocico
 hociconear
 hocicón, na
 hocicudo, da
-hocino1
-hocino2
 hociquear
 hockey
 hodierno, na
@@ -1539,8 +1499,6 @@ hombracho
 hombrada
 hombradía
 hombre
-hombrear1
-hombrear2
 hombrecillo
 hombredad
 hombrera
@@ -1622,8 +1580,6 @@ hondada
 hondamente
 hondarras
 hondazo
-hondear1
-hondear2
 hondero
 hondijo
 hondillos
@@ -1722,8 +1678,6 @@ horizontalmente
 horizonte
 horma
 hormaza
-hormazo1
-hormazo2
 hormento
 hormero
 hormiga
@@ -1731,8 +1685,6 @@ hormigante
 hormigillo
 hormignoar
 hormigo
-hormigón1
-hormigón2
 hormigonado
 hormigonera
 hormigoso, sa
@@ -1848,8 +1800,6 @@ hosquedad
 hostaje
 hostal
 hostalero, ra
-hoste1
-hoste2
 hostelaje
 hostelería
 hostelería
@@ -1886,8 +1836,6 @@ hoyo
 hoyoso, sa
 hoyuela
 hoyuelo
-hoz1
-hoz2
 hozada
 hozadero
 hozador, ra
@@ -1906,8 +1854,6 @@ huachalomo
 huachano, na
 huachar
 huachinango
-huacho1
-huacho2
 huaco
 huaico
 huailino, na
@@ -1968,8 +1914,6 @@ huehueteco, ca
 hueledenoche
 huelepega
 huélfago
-huelga1
-huelga2
 huelgista
 huelgo
 huelguístico, ca
@@ -1986,8 +1930,6 @@ huérfago
 huerfanidad
 huerfanito
 huérfano, na
-huero1, ra
-huero2, ra
 huerta
 huertano, na
 huertavil
@@ -2001,8 +1943,6 @@ huesoso, sa
 huésped, da
 huesque
 huestar
-hueste1
-hueste2
 huesteadora
 huesudo, da
 huetar
@@ -2040,8 +1980,6 @@ huingán
 huipil
 huir
 huira
-huiro1
-huiro2
 huisache
 huisachear
 huisachero, ra
@@ -2174,8 +2112,6 @@ hurguetear
 hurguillas
 hurí
 hurmiento
-hurón12, na
-hurón1, na
 huronear
 huroneo
 huronero, ra
@@ -2196,8 +2132,6 @@ húsar
 husera
 husero
 husillero
-husillo1
-husillo2
 husita
 husma
 husmar
@@ -2211,5 +2145,3 @@ hutía
 hutraque
 hutu
 huy
-huyuyo1
-huyuyo2, ya

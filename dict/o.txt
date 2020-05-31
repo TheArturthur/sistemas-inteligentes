@@ -1,6 +1,3 @@
-o1
-o2
-o3
 oa
 oasis
 oaxaqueño, ña
@@ -49,8 +46,6 @@ objetivo, va
 objeto
 objetor, ra
 oblación
-oblada1
-oblada2
 oblativo, va
 oblato, ta
 oblea
@@ -67,8 +62,6 @@ obligamiento
 obligar
 obligativo, va
 obligatoriedad
-obligatorio1, ria
-obligatorio2, ria
 obliteración
 obliterador, ra
 obliterante
@@ -179,8 +172,6 @@ obviedad
 obvio, via
 obyecto, ta
 oc
-oca1
-oca2
 ocal
 ocalear
 ocapi
@@ -249,8 +240,6 @@ ocoeño, ña
 ocotal
 ocotaleño, ña
 ocotaloso, sa
-ocote1
-ocote2
 ocotepecano, na
 ocotero, ra
 ocotillo
@@ -456,8 +445,6 @@ ojaranzo
 ojeada
 ojeado, da
 ojeador
-ojear1
-ojear2
 ojén
 ojeo
 ojera
@@ -494,8 +481,6 @@ ojuelos
 okapi
 okupa
 okupar
--ol1
--ol2
 ola
 olambre
 olambrilla
@@ -507,8 +492,6 @@ oleado, da
 oleaginosidad
 oleaginoso, sa
 oleaje
-olear1
-olear2
 oleario, ria
 oleastro
 oleaza
@@ -577,8 +560,6 @@ olisquear
 olisqueo
 oliva
 oliváceo, a
-olivar1
-olivar2
 olivarda
 olivarero, ra
 olivastro
@@ -665,8 +646,6 @@ omniscio, cia
 omnívoro, ra
 omóplato
 omoto
--ón1, na
--ón2
 ona
 onagra
 onagrarieo, a
@@ -743,17 +722,12 @@ ontologismo
 ontólogo, ga
 onubense
 onusto, ta
-onza1
-onza2
 onzavo, va
 oocito
 oogénesis
 oolítico, ca
 oolito
 oosfera
-opa1
-opa2
-opa3
 opacamente
 opacar
 opacidad
@@ -873,8 +847,6 @@ oque
 oquedad
 oquedal
 oqueruela
--or1
--or2, ra
 ora
 oración
 oracional
@@ -898,8 +870,6 @@ orático, ca
 oratoria
 oratoriamente
 oratoriano, na
-oratorio1
-oratorio2, ria
 orballar
 orballo
 orbe
@@ -914,8 +884,6 @@ orca
 orcaneta
 orchilla
 orcina
-orco1
-orco2
 órdago
 ordalía
 orden
@@ -948,8 +916,6 @@ ordovícico, ca
 orea
 oréada
 oréade
-orear1
-orear2
 orebce
 orégano
 oreja
@@ -1055,13 +1021,9 @@ originalmente
 originar
 originariamente
 originario, ria
-orilla1
-orilla2
 orillar
 orillero, ra
 orillo
-orín1
-orín2
 orina
 orinada
 orinadera
@@ -1083,8 +1045,6 @@ orlador, ra
 orladura
 orlar
 orleanista
-orlo1
-orlo2
 orlón
 ormesí
 ormino
@@ -1184,24 +1144,16 @@ orureño, ña
 orvallar
 orvalle
 orvallo
-orza1
-orza2
 orzaga
 orzar
 orzaya
 orzoyo
-orzuelo1
-orzuelo2
-os1
-os2
 -osa
 osadamente
 osadía
 osado, da
 osambre
 osamenta
-osar1
-osar2
 osario
 óscar
 oscense
@@ -1221,8 +1173,6 @@ oscuramente
 oscurana
 oscurantismo
 oscurantista
-oscurecer1
-oscurecer2
 oscurecimiento
 oscuridad
 oscuro, ra
@@ -1247,8 +1197,6 @@ osmio
 osmómetro
 ósmosis
 osmótico, ca
--oso1
--oso2, sa
 osobuco
 osornino
 oso, sa
@@ -1311,9 +1259,6 @@ ostrícola
 ostricultor, ra
 ostricultura
 ostrífero, ra
-ostro1
-ostro2
-ostro3
 ostrogodo, da
 ostrón
 ostugo
@@ -1381,8 +1326,6 @@ ova
 ovación
 ovacionar
 ovado, da
-oval1
-oval2
 ovalado, da
 ovalar
 ovallino, na
@@ -1426,8 +1369,6 @@ ovoideo, a
 ovoso, sa
 ovovivíparo, ra
 ovulación
-ovular1
-ovular2
 óvulo
 ox
 oxalato

@@ -4,13 +4,13 @@
 package inteligentes.chat.agentes;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.lang.NullPointerException;
 
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.behaviours.AnalyzerAgentBehaviour;
@@ -44,8 +44,11 @@ public class AnalyzerAgent extends Agent {
 	
 	@Override
 	protected void setup() {
+		try {
 		initDictionary();
-
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage() + "\n!!!MIRA A VER SI LOS ARCHIVOS DE DICCIONARIO EXISTEN¡¡¡");
+		}
 		//Crear servicios proporcionados por el agente y registrarlos en la plataforma
 		DFAgentDescription agentDescription = new DFAgentDescription();
 		agentDescription.setName(getAID());
@@ -72,25 +75,37 @@ public class AnalyzerAgent extends Agent {
 	 * @return a map with all insults (if any) present in the message, along with their positions inside it.
 	 */
 	public HashMap<String, ArrayList<int[]>> checkIfOffensive(EncodedMessage encodedMessage) {
-		String[] msg = encodedMessage.getMessage().toLowerCase().replace('\n',' ').split(" ");
+		String[] msg = encodedMessage.getMessage().replace('\n',' ').split(" ");
+		String[] origMsg = msg.clone();
+		
 		for (int i = 0; i < msg.length; i++) {
 			msg[i] = msg[i].replaceAll("[^\\w]", "");
 		}
 		
 		HashMap<String, ArrayList<int[]>> res = new HashMap<>();
 		
-		for (String pal : msg) {
+		for (int j = 0; j < msg.length; j++) {
+			String pal = msg[j];
+			
 			for (int i = 0; i < this.insults.size(); i++) {
-				if (this.levenshteinDistance.apply(this.insults.get(i),pal) < 3 &&
-						/*!res.containsKey(this.insults.get(i)) &&*/ !isWord(pal, this.insults.get(i))) {
+				
+				if (this.levenshteinDistance.apply(this.insults.get(i),pal.toLowerCase()) < 3 &&
+						!isWord(pal.toLowerCase(), this.insults.get(i))) {
 					String message = encodedMessage.getMessage();
 					ArrayList<int[]> positions = new ArrayList<int[]>();
+					List<Integer> indexes;
 					
-					List<Integer> indexes = getIndexes(message, pal);
+					System.out.println("Indexes: " + pal + " =>" + getIndexes(message,pal));
+					System.out.println("Indexes: " + origMsg[j] + " =>" + getIndexes(message, origMsg[j]));
+					
+					if ((indexes = getIndexes(message, pal)) != null) {
+						indexes = getIndexes(message, origMsg[j]);
+						pal = origMsg[j];
+					}
 					
 					for (int index : indexes) {
 						if (!res.containsKey(this.insults.get(i))) {
-							positions.add(new int[] {index, index + pal.length() - 1});							
+							positions.add(new int[] {index, index + pal.length() - 1});
 						} else {
 							ArrayList<int[]> prevAddedIndexes = res.get(this.insults.get(i));
 							prevAddedIndexes.add(new int[] {index, index + pal.length() -1});
@@ -145,7 +160,7 @@ public class AnalyzerAgent extends Agent {
 			String line;
 			while ((line = file.readLine()) != null) {
 				line = line.replaceAll(", \\w*", "");
-				if (!insult.equals(line) && pal.equals(line)) {
+				if (!insult.equals(line) && this.levenshteinDistance.apply(pal, line) < 2 && (this.levenshteinDistance.apply(pal, line) < this.levenshteinDistance.apply(pal, insult))) {
 					return true; // It's a word similar to the insult
 				}
 			}

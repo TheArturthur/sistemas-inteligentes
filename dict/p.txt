@@ -6,9 +6,6 @@ pabiloso, sa
 pablar
 Pablo
 pábulo
-paca1
-paca2
-paca3
 pacado, da
 pacae
 pacana
@@ -16,14 +13,10 @@ pacatería
 pacato, ta
 pacay
 pacaya
-pacayal1
-pacayal2
 pacayar
 paccionar
 pacedero, ra
 pacedura
-pacense1
-pacense2
 paceño, ña
 pacer
 pacha
@@ -39,8 +32,6 @@ pacheco
 pachiche
 pachichi
 pachilla
-pacho1, cha
-pacho2, cha
 pachocha
 pachola
 pacholi
@@ -69,8 +60,6 @@ pacífico, ca
 pacifismo
 pacifista
 pación
-paco1
-paco3
 paco4
 paco5, ca
 pacón
@@ -100,8 +89,6 @@ padrinaje
 padrinazgo
 padrino
 padrísimo, ma
-padrón1
-padrón2
 padronal
 padronero
 padronés, sa
@@ -127,9 +114,6 @@ paganini
 paganismo
 paganización
 paganizar
-pagano1, na
-pagano2, na
-pagano3
 pagante
 pagar
 pagaré
@@ -139,9 +123,6 @@ pagel
 página
 paginante
 paginar
-pago1
-pago2
-pago3, ga
 pago4
 pagoda
 pagote
@@ -190,8 +171,6 @@ pajarero, ra
 pajarete
 pajaril
 pajarilla
-pajarita1
-pajarita2
 pajarito
 pájaro, ra
 pajarota
@@ -206,8 +185,6 @@ pajecillo
 pajel
 pajera
 pajería
-pajero1, ra
-pajero2, ra
 pajil
 pajilla
 pajillero, ra
@@ -260,8 +237,6 @@ paladeo
 paladial
 paladín
 paladinamente
-paladino1, na
-paladino2
 paladio
 paladión
 palado, da
@@ -293,8 +268,6 @@ palanquero, ra
 palanqueta
 palanquetazo
 palanquilla
-palanquín1
-palanquín2
 palasan
 palastro
 palatabilidad
@@ -303,8 +276,6 @@ palatalización
 palatalizar
 palatina
 palatinado
-palatino1, na
-palatino2, na
 palauano, na
 palay
 palazo
@@ -348,21 +319,13 @@ paleozoico
 palera
 palería
 palermitano, na
-palero1, ra
-palero2
 palestra
 paléstrico, ca
 palestrita
 paleta
-paletada1
-paletada2
 paletazo
 paletear
 paleteo
-paletería1
-paletería2
-paletero1
-paletero2, ra
 paletilla
 paletó
 paletón
@@ -408,8 +371,6 @@ palizas
 palizón
 palla
 pallaquear
-pallar1
-pallar2
 pallas
 pallasquino, na
 pallaza
@@ -424,10 +385,6 @@ palmáceo, a
 palmacristi
 palmada
 palmadilla
-palmado1, da
-palmado2, da
-palmar1
-palmar2
 palmarés
 palmariamente
 palmario, ria
@@ -444,8 +401,6 @@ palmeo
 palmera
 palmeral
 palmerita
-palmero1, ra
-palmero2, ra
 palmesano, na
 palmeta
 palmetazo
@@ -456,8 +411,6 @@ palmípedo, da
 palmiste
 palmita
 palmitieso, sa
-palmito1
-palmito2
 palmo
 palmotada
 palmotazo
@@ -468,15 +421,11 @@ paloapique
 paloduz
 paloma
 palomadura
-palomar1
-palomar2
 palomariego, ga
 palomear
 palomera
 palomería
 palomero, ra
-palometa1
-palometa2
 palomilla
 palomillear
 palomina
@@ -524,8 +473,6 @@ paludismo
 paludo, da
 palumbario
 palurdo, da
-palustre1
-palustre2
 pamandabuán
 pamba
 pambaceada
@@ -564,8 +511,6 @@ pampsiquismo
 pamue
 pan
 pan-
-pana1
-pana2
 pánace
 panacea
 panache
@@ -599,8 +544,6 @@ panatela
 panateneas
 panática
 panatier
-panca1
-panca2
 pancada
 pancarpia
 pancarta
@@ -608,8 +551,6 @@ pancera
 panceta
 panchero, ra
 panchito
-pancho1, cha
-pancho2
 panchón
 pancilla
 pancismo
@@ -628,8 +569,6 @@ pancreático, ca
 pancreatitis
 pancromático, ca
 pancutra
-panda1
-panda2
 pandanáceo, a
 pandáneo, a
 pandar
@@ -648,7 +587,6 @@ panderazo
 pandereta
 panderetas
 panderetazo
-panderete2
 panderetear
 pandereteo
 panderetero, ra
@@ -670,8 +608,6 @@ panecillo
 panegírico, ca
 panegirista
 panegirizar
-panel1
-panel2
 panela
 panelable
 panelar
@@ -682,8 +618,6 @@ panem et circenses
 panenteísmo
 paneo
 panera
-panero1
-panero2, ra
 paneslavismo
 paneslavista
 panetela
@@ -821,8 +755,6 @@ pañolada
 pañolenci
 pañolera
 pañolería
-pañolero1, ra
-pañolero2
 pañoleta
 pañolito
 pañolón
@@ -832,9 +764,6 @@ pañuelo
 pañuso, sa
 pao
 papá
-papa1
-papa2
-papa3
 papable
 papacara
 papada
@@ -846,10 +775,6 @@ papagayo, ya
 papahígo
 papahuevos
 papaína
-papal1
-papal2
-papalina1
-papalina2
 papalino, na
 papalisa
 papalmente
@@ -900,9 +825,6 @@ papeletear
 papeleteo
 papeletizar
 papelillo
-papelina1
-papelina2
-papelina3
 papelista
 papelógrafo
 papelonado
@@ -915,8 +837,6 @@ papelucho
 papelujo
 papeo
 papera
-papero1
-papero2, ra
 paperudo, da
 papi
 papialbillo
@@ -948,11 +868,6 @@ papisa
 papismo
 papista
 papita
-papo1
-papo2
-papo3, pa
-papón1
-papón2, na
 paporrear
 paporreta
 paporretear
@@ -964,19 +879,11 @@ papudo, da
 papujo, ja
 pápula
 papuloso, sa
-paquear1
-paquear2
 paquebot
 paquebote
 paqueo
 paquero,r a
 paquetazo
-paquete1
-paquete2, ta
-paquetear1
-paquetear2
-paquetería1
-paquetería2
 paquetero, ra
 paquetudo, da
 paquidermia
@@ -984,11 +891,8 @@ paquidérmico, ca
 paquidermo
 paquín
 paquistaní
-par1
-par2
 para-
 pará
-pará (2)
 parabeno
 parabién
 parábola
@@ -1008,8 +912,6 @@ parachoques
 Paracleto
 Paráclito
 paracronismo
-parada1
-parada2
 paradera
 paradero
 paradetas
@@ -1142,8 +1044,6 @@ parapolicial
 parapsicología
 parapsicológico, ca
 parapsicólogo, ga
-parar1
-parar2
 pararrayo
 parasanga
 parasceve
@@ -1202,8 +1102,6 @@ parcialmente
 parcidad
 parcionero, ra
 parcir
-parco1
-parco2, ca
 pardal
 pardear
 pardela
@@ -1220,8 +1118,6 @@ pare
 pareado
 parear
 parecencia
-parecer1
-parecer2
 parecido, da
 pared
 paredaño, ña
@@ -1253,8 +1149,6 @@ parenteral
 parentesco
 paréntesis
 parentético, ca
-pareo1
-pareo2
 parergon
 paresa
 paresia
@@ -1268,8 +1162,6 @@ parhilera
 paria
 pariambo
 parián
-parias1
-parias2
 parición
 parida
 paridaz
@@ -1328,9 +1220,6 @@ parmesano, na
 parnasianismo
 parnasiano, na
 parné
-paro1
-paro2
-paro3, ra
 parodia
 parodiador, ra
 parodiar
@@ -1372,16 +1261,12 @@ parquedad
 parqueo
 parqui
 parquímetro
-parra1
-parra2
 parrado, da
 parrafada
 parrafear
 parrafeo
 párrafo
 parragón
-parral1
-parral2
 parramente
 parrancas
 parranda
@@ -1393,8 +1278,6 @@ parrar
 parresia
 parricida
 parricidio
-parrilla1
-parrilla2
 parrillada
 parrillero, ra
 parrilludo, da
@@ -1462,8 +1345,6 @@ partisano, na
 partita
 partitivo, va
 partitura
-parto1
-parto2, ta
 parturienta
 parturiente
 partusa
@@ -1484,8 +1365,6 @@ parvulario
 parvulez
 parvulista
 párvulo, la
-pasa1
-pasa2
 pasable
 pasabola
 pasabolante
@@ -1544,7 +1423,6 @@ pascal
 pascana
 pascasio
 pasco
-pasco2
 pascón
 pascua
 pascual
@@ -1553,8 +1431,6 @@ pascuecero, ra
 pascuense
 pascuero
 pascuilla
-pase1
-pase2
 paseada
 paseadero
 paseador, ra
@@ -1564,10 +1440,7 @@ pasear
 paseata
 paseillo
 paseo
-pasera2
 paseriforme
-pasero1, ra
-pasero2
 pasibilidad
 pasible
 pasicorto, ta
@@ -1605,12 +1478,8 @@ pasmo
 pasmón, na
 pasmosamente
 pasmoso, sa
-paso1
-paso2, sa
 pasodoble
 pasoso, sa
-pasota1
-pasota2
 pasote
 pasotismo
 pasparse
@@ -1630,8 +1499,6 @@ pastafrola
 pastar
 paste
 pasteada
-pastear1
-pastear2
 pasteca
 pastel
 pastelear
@@ -1660,12 +1527,8 @@ pastís
 pastizal
 pastizara
 pastle
-pasto1
-pasto2
-pasto3
 pastoforio
 pastón
-pastón2
 pastorada
 pastoral
 pastoralista
@@ -1680,7 +1543,6 @@ pastoril
 pastorilmente
 pastor, ra
 pastosidad
-pastoso2, sa
 pastoso, sa
 pastral
 pastrami
@@ -1695,17 +1557,11 @@ pasturar
 pastuso, sa
 pasudo, da
 pásula
-pata1
-pata2
 patabán
-pataca1
-pataca2
 patacamayeño, ña
 patache
 pataco, ca
 patacón
-patada1
-patada2
 patadión
 patadura
 patagónico, ca
@@ -1750,8 +1606,6 @@ patavino, na
 patax
 patay
 pate
-paté1
-paté2
 pateada
 pateador, ra
 pateadura
@@ -1770,8 +1624,6 @@ patentizar
 pateo
 páter
 pátera
-patera1
-patera2
 paterfamilias
 patería
 paternal
@@ -1805,15 +1657,11 @@ patilargo, ga
 patilla
 patilludo, da
 patimuleño, ña
-patín1
-patín2
 pátina
 patinada
 patinadero
 patinador, ra
 patinaje
-patinar1
-patinar2
 patinata
 patinazo
 patineta
@@ -1831,8 +1679,6 @@ patituerto, ta
 patiza
 patizambo, ba
 pato-
-pato1, ta
-pato2
 patochada
 patogénesis
 patogenético, ca
@@ -1908,10 +1754,6 @@ paturro, rra
 paucartambino, na
 paují
 paujil
-paúl1
-paúl2
-paular1
-paular2
 paulatinamente
 paulatino, na
 pauliana
@@ -1935,13 +1777,9 @@ pautado
 pautador
 pautar
 pauto
-pava1
-pava2
 pavada
 pavana
 pavero, ra
-pavés1
-pavés2
 pavesa
 pavesada
 pavesina
@@ -2035,33 +1873,22 @@ pecarí
 pecatriz
 pecblenda
 peccata minuta
-pece1
-pece2
 peceño, ña
 pecera
 pecero, ra
 peceto
 pech
 pecha
-pechada1
-pechada2
 pechador, ra
 pechal
 pechamen
-pechar1
-pechar2
-pechar3
 pechardino
 pechazo
 pechblenda
 peche
 pechear
 pechelingue
-pechera1
-pechera2
 pechería
-pechero1
-pechero2
 pechiblanco, ca
 pechiche
 pechicolorado
@@ -2071,9 +1898,6 @@ pechín
 pechina
 pechirrojo
 pechisacado, da
-pecho1
-pecho2
-pecho3
 pechoño, ña
 pechuga
 pechugazo
@@ -2082,8 +1906,6 @@ pechuguera
 peciento, ta
 pecilgo
 peciluengo, la
-pecina1
-pecina2
 pecinal
 pecinoso, sa
 pecio
@@ -2152,8 +1974,6 @@ pediche
 pedicoj
 pediculado, da
 pedicular
-pedículo1
-pedículo2
 pediculosis
 pedicura
 pedicuro, ra
@@ -2193,8 +2013,6 @@ pedredería
 pedregal
 pedregón
 pedregoso, sa
-pedregullo1
-pedregullo2
 pedreñal
 pedrera
 pedreral
@@ -2221,8 +2039,6 @@ pedunculado, da
 pedúnculo
 pedurría
 peer
-pega1
-pega2
 pegada
 pegadillo
 pegadizo, za
@@ -2296,8 +2112,6 @@ pejiguera
 pejín
 pejino, na
 pekinés, sa
-pela1
-pela2
 pelada
 peladaje
 peladera
@@ -2305,8 +2119,6 @@ peladero
 peladez
 peladilla
 peladillo
-pelado1, da
-pelado2
 pelador, ra
 peladura
 pelafustán, na
@@ -2370,8 +2182,6 @@ peliagudo, da
 peliblanco, ca
 peliblando, da
 pelícano
-pelicano1, na
-pelicano2
 pelicorto, ta
 película
 pelicular
@@ -2434,19 +2244,12 @@ peloponesiaco, ca
 peloponesio, sia
 pelosilla
 peloso, sa
-pelota1
-pelota2
 pelotari
 pelotazo
 pelote
 pelotear
 peloteo
 pelotera
-pelotería1
-pelotería2
-pelotero1
-pelotero2, ra
-pelotero3, ra
 pelotilla
 pelotillero, ra
 peloto
@@ -2481,8 +2284,6 @@ pelviano, na
 pelvímetro
 pelvis
 pemón, na
-pena1
-pena2
 penable
 penachera
 penacho
@@ -2526,14 +2327,10 @@ pendiente
 pendil
 pendingue
 pendol
-péndola1
-péndola2
 pendolaje
 pendolario
 pendolista
 pendolón
-pendón1
-pendón2, na
 pendonear
 pendoneo
 pendoneta
@@ -2589,12 +2386,8 @@ penquear
 penquista
 pensable
 pensado, da
-pensador1, ra
-pensador2
 pensamiento
 pensante
-pensar1
-pensar2
 pensativo, va
 pensel
 penseque
@@ -2656,23 +2449,17 @@ peñol
 péñola
 peñolada
 peñón
-peón1, na
-peón2
 peonada
 peonaje
 peonería
 peonero
 peoneta
-peonía1
-peonía2
 peonio, nia
 peonza
 peopensión
 peor
 peorar
 peoría
-pepa1
-Pepa2
 pepazo
 pepe
 pepena
@@ -2688,13 +2475,9 @@ pepinazo
 pepinillo
 pepino
 pepión
-pepita1
-pepita2
 pepitazo
 pepitero
 pepito
-pepitoria1
-pepitoria2
 pepitoso, sa
 pepla
 peplo
@@ -2752,8 +2535,6 @@ perceptivo, va
 percepto
 perceptor, ra
 perceptual
-percha1
-percha2
 perchado, da
 perchar
 perchel
@@ -2799,9 +2580,6 @@ perdidoso, sa
 pérdiga
 perdigana
 perdigar
-perdigón1
-perdigón2
-perdigón (3)
 perdigonada
 perdigonazo
 perdigonera
@@ -2934,13 +2712,9 @@ pericia
 pericial
 pericialmente
 periclitar
-perico1
-perico2, ca
 pericón, na
 perícopa
 pericóspico, ca
-pericote1
-pericote2
 pericráneo
 peridoto
 perieco, ca
@@ -3004,8 +2778,6 @@ peripuesto, ta
 periquera
 periquete
 periquillo
-periquito1
-periquito2, ta
 periscio, cia
 periscopio
 perisodáctilo
@@ -3037,8 +2809,6 @@ perjurar
 perjurio
 perjuro, ra
 perla
-perlado1, da
-perlado2
 perlar
 perlático, ca
 perlé
@@ -3108,9 +2878,6 @@ pernocta
 pernoctación
 pernoctar
 pernotar
-pero1
-pero2
-pero3
 perogrullada
 perogrullesco, ca
 Perogrullo
@@ -3270,8 +3037,6 @@ peruanidad
 peruanismo
 peruano, na
 peruétano
-perulero1
-perulero2, ra
 perusino, na
 peruviano, na
 perversamente
@@ -3290,8 +3055,6 @@ pervulgar
 pesa
 pesabebés
 pesacartas
-pesada1
-pesada2
 pesadamente
 pesadez
 pesadilla
@@ -3305,8 +3068,6 @@ pésame
 pesamedello
 pesante
 pesantez
-pesar1
-pesar2
 pesario
 pesaroso, sa
 pesca
@@ -3409,8 +3170,6 @@ petanque
 petaquería
 petaquero, ra
 petaquita
-petar1
-petar2
 petardazo
 petardear
 petardeo
@@ -3487,8 +3246,6 @@ peyorar
 peyorativo, va
 peyote
 peyotero, ra
-pez1
-pez2
 pezolada
 pezón
 pezonera
@@ -3519,8 +3276,6 @@ pianísimo, ma
 pianismo
 pianista
 pianístico, ca
-piano1
-piano2
 pianoforte
 pianofortista
 pianola
@@ -3536,8 +3291,6 @@ piastra
 pibe, ba
 piberío
 pibil
-pica1
-pica2
 picacaballo
 picacaballos
 picacero, a
@@ -3563,8 +3316,6 @@ picanear
 picante
 picantería
 picanterío
-picaño1
-picaño2, ña
 picapedrero, ra
 picapica
 picapinos
@@ -3583,8 +3334,6 @@ picardo, da
 picaresco, ca
 picaril
 picarizar
-picarón1, na
-picarón2
 picaronazo
 pícaro, ra
 picarote
@@ -3594,19 +3343,12 @@ picarúa
 picassiano, na
 picatoste
 picayos
-picaza1
-picaza2
-picazo1
-picazo2
-picazo3
 picazo4, za
 picazón
 picazuroba
 piccolo
 pícea
 píceo, a
-picha1
-picha2
 pichacha
 pichagua
 pichagüero
@@ -3616,8 +3358,6 @@ pichanga
 pichanguear
 pichaque
 pichar
-piche1
-piche2
 pichear
 pichel
 pichelería
@@ -3627,8 +3367,6 @@ picheo
 pícher
 pichete
 pichí
-pichi1
-pichi2
 pichica
 pichicatear
 pichicatería
@@ -3668,8 +3406,6 @@ pícnic
 pícnico, ca
 picnómetro
 pico-
-pico1
-pico2
 picodecera
 picofeo
 picola
@@ -3734,8 +3470,6 @@ pielga
 pielgo
 pielonefritis
 piensador
-pienso1
-pienso2
 pierde
 piérides
 pierio, ria
@@ -3796,17 +3530,10 @@ pijudo, da
 pijul
 pijuy
 pijuyo
-pila1
-pila2
-pilada1
-pilada2
 piladora
 pilaf
 pilagá
 pilapila
-pilar1
-pilar2
-pilar3
 pilarense
 pilastra
 pilastrón
@@ -3836,18 +3563,11 @@ pillar
 pillastre
 pillear
 pillería
-pillo1
-pillo2, lla
 pillopillo
 pillullo
 pilmama
 pilme
-pilo1
-pilo2
 pilocarpina
-pilón1
-pilón2
-pilón3
 piloncillo
 pilonero, ra
 pilongo, ga
@@ -3855,16 +3575,10 @@ pilono
 pilórico, ca
 píloro
 piloso, sa
-pilotaje1
-pilotaje2
 pilotar
 pilote
-pilotear1
-pilotear2
 pilotín
 piloto
-pilpil1
-pilpil2
 pilpilén
 piltra
 piltraca
@@ -3897,8 +3611,6 @@ pimpollo
 pimpolludo, da
 pimpón
 pimporrada
-pin1
-pin2
 pina
 pinabete
 pinacete
@@ -3908,8 +3620,6 @@ pináculo
 pinada
 pinado, da
 pinal
-pinar1
-Pinar2
 pinareño, ña
 pinariego, ga
 pinastro
@@ -3933,8 +3643,6 @@ pinchadura
 pinchar
 pinchaúvas
 pinchazo
-pinche1, cha
-pinche2
 pincho, cha
 pinchón
 pinchonazo
@@ -3948,10 +3656,6 @@ pindonga
 pindonguear
 pindongueo
 pineal
-pineda1
-pineda2
-pinero1
-pinero2, ra
 pinga
 pingajo
 pingajoso, sa
@@ -3982,10 +3686,6 @@ pinjar
 pinna
 pinnado, da
 pinnípedo, da
-pino1
-pino2, na
-pinocha1
-pinocha2
 pinochera
 pinocho
 pinocitosis
@@ -3998,13 +3698,8 @@ pinoso, sa
 pinrel
 pinsapar
 pinsapo
-pinta1
-pinta2
-pinta3
 pintable
 pintacilgo
-pintada1
-pintada2
 pintadera
 pintadillo
 pintado, da
@@ -4022,8 +3717,6 @@ pintear
 pinteño, ña
 pintiparado, da
 pintiparar
-Pinto1
-pinto2, ta
 pintojo, ja
 pintonear
 pintón, na
@@ -4050,9 +3743,6 @@ piñata
 piñatero, ra
 piñén
 piño
-piñón1
-piñón2
-piñón3
 piñonata
 piñonate
 piñoncillo
@@ -4062,12 +3752,6 @@ piñonero
 piñuela
 piñuelo
 piñufla
-pío1
-pío2, a
-pío3, a
-piocha1
-piocha2
-piocha3
 piogenia
 piojento, ta
 piojera
@@ -4077,13 +3761,9 @@ piojillo
 piojo
 piojoso, sa
 piojuelo
-piola1
-piola2
 piolar
 piolet
 piolín
-pion1, na
-pion2
 pionero, ra
 pionía
 pionono
@@ -4092,10 +3772,6 @@ piornal
 piorneda
 piorno
 piorrea
-pipa1
-pipa2
-pipar1
-pipar2
 pipe
 pipencia
 pipeño
@@ -4107,8 +3783,6 @@ pipero, ra
 pipeta
 pipetear
 pipi
-pipí2
-pipí2
 pipián
 pipiar
 pipil
@@ -4128,16 +3802,10 @@ pipiripao
 pipirrana
 pipita
 pipitaña
-pipo1
-pipo2
-pipo3
 pipón, na
 piporro
 pipote
 piqué
-pique1
-pique2
-pique3
 piquear
 piquera
 piquería
@@ -4152,9 +3820,6 @@ piquilín
 piquillo
 piquiña
 piquituerto
-pira1
-pira2
-pira3
 pirado, da
 piragón
 piragua
@@ -4253,7 +3918,6 @@ pirquinear
 pirracha
 pirrar
 pirriar
-pírrico1, ca
 pírrico, ca
 pirriquio
 pirrol
@@ -4270,8 +3934,6 @@ pirul
 piruleta
 pirulí
 pirulo
-pis1
-pis2
 pisa
 pisable
 pisada
@@ -4288,8 +3950,6 @@ pisasfalto
 pisatario, ria
 pisaúvas
 pisaverde
-pisca1
-pisca2
 piscator
 piscatorio, ria
 pisciano, na
@@ -4302,8 +3962,6 @@ piscina
 piscinazo
 piscis
 piscívoro, ra
-pisco1
-pisco2, ca
 piscolabis
 pishishe
 pisiforme
@@ -4350,9 +4008,6 @@ pistoresa
 pistraje
 pistraque
 pistura
-pita1
-pita2
-pita3
 pita4
 pitaco
 pitada
@@ -4370,8 +4025,6 @@ pitanza
 pitaña
 pitañoso, sa
 pitao
-pitar1
-pitar2
 pitarra
 pitarro
 pitarroso, sa
@@ -4403,14 +4056,9 @@ pitipié
 pitiriasis
 pitirre
 pitiyanqui
-pito1
-pito2
-pito3, ta
 pitoche
 pitoflero, ra
 pitoitoy
-pitón1
-pitón2
 pitonazo
 pitongo, ga
 pitonisa
@@ -4482,9 +4130,6 @@ placabilidad
 placable
 placación
 placaje
-placar1
-placar2
-placar3
 placarte
 placativo, va
 placear
@@ -4500,9 +4145,6 @@ placentería
 placentero, ra
 placentín, na
 placentino, na
-placer1
-placer2
-placer3
 placero, ra
 plácet
 placibilidad
@@ -4516,8 +4158,6 @@ plácito
 pladur
 plaf
 plafón
-plaga1
-plaga2
 plagado, da
 plagal
 plagar
@@ -4533,8 +4173,6 @@ plaguear
 plagueo
 plaguero
 plan
-plana1
-plana2
 planada
 planador
 planadora
@@ -4585,15 +4223,9 @@ plantado, da
 plantador, ra
 plantagináceo, a
 plantaina
-plantaje1
-plantaje2
-plantar1
-plantar2
 plantario
 plante
 planteamiento
-plantear1
-plantear2
 plantel
 planteo
 plantificación
@@ -4625,7 +4257,6 @@ plas
 plasenciano, na
 plasentino, na
 plasma
-plasma2
 plasmación
 plasmador, ra
 plasmar
@@ -4653,8 +4284,6 @@ plataforma
 platal
 platalea
 platanáceo, a
-platanal1
-platanal2
 platanar
 platanazo
 platáneo, a
@@ -4683,8 +4312,6 @@ platija
 platilla
 platillero, ra
 platillo
-platina1
-platina2
 platinado
 platinar
 platinífero, ra
@@ -4717,8 +4344,6 @@ playazo
 playback
 play boy
 playero, ra
-playo1, ya
-playo2
 playón
 plaza
 plazo
@@ -4920,8 +4545,6 @@ poblada
 poblado
 poblador, ra
 poblamiento
-poblano1, na
-poblano2, na
 poblar
 poblazñon
 poblazo
@@ -4977,8 +4600,6 @@ podatorio, ria
 podazón
 podenco, ca
 podenquero
-poder1
-poder2
 poderdante
 poderhabiente
 poderío
@@ -5063,8 +4684,6 @@ polera
 poleví
 pólex
 poli
-poli-1
-poli-2
 poliadelfo
 polialcohol
 poliamida
@@ -5123,8 +4742,6 @@ polígamo, ma
 poligenismo
 poligenista
 poliginia
-políglota1
-políglota2
 poliglotía
 poliglotismo
 polígloto, ta
@@ -5158,8 +4775,6 @@ polinizar
 polinomial
 polinomio
 polinosis
-polio1
-polio2
 poliomielítico, ca
 poliomielitis
 poliorcética
@@ -5239,12 +4854,7 @@ pollito
 pollo
 pollón, na
 polluelo
-polo1
-polo2
-polo3
 pololear
-pololo1
-pololo2, la
 polonés, sa
 Polonia
 polonio
@@ -5295,12 +4905,8 @@ pomo
 pomología
 pomológico, ca
 pomólogo, ga
-pompa1
-pompa2
 pompático, ca
 pompear
-pompeyano1, na
-pompeyano2, na
 pompis
 pompón
 pomponear
@@ -5315,14 +4921,10 @@ pon
 ponasí
 poncella
 ponceño, ña
-ponchada1
-ponchada2
 ponchar
 ponchazo
 ponche
 ponchera
-poncho1
-poncho2, cha
 poncí
 poncidre
 poncil
@@ -5348,8 +4950,6 @@ ponentisco, ca
 poner
 póney
 ponferradino, na
-pongo1
-pongo2, ga
 poni
 ponible
 ponientada
@@ -5476,13 +5076,8 @@ porno
 pornografía
 pornográfico, ca
 pornógrafo, fa
-poro1
-poro2
-poro3
 poronga
 porongo
-poronguero1
-poronguero2, ra
 pororó
 porosidad
 poroso, sa
@@ -5512,11 +5107,6 @@ porrilla
 porrillo
 porrina
 porrista
-porro1
-porro2
-porro3
-porrón1
-porrón2, na
 porrudo, da
 porrusalda
 porsiacaso
@@ -5604,8 +5194,6 @@ portazguero
 portazo
 porte
 porteador, ra
-portear1
-portear2
 portegado
 portento
 portentosamente
@@ -5613,7 +5201,6 @@ portentoso, sa
 porteño, ña
 porteo
 portería
-portería2
 porteril
 portero, ra
 portezuela
@@ -5656,8 +5243,6 @@ posado, da
 posador, ra
 posante
 posapié
-posar1
-posar2
 posavasos
 posaverga
 posbalance
@@ -5785,8 +5370,6 @@ postilación
 postilador, ra
 postilar
 postilla
-postilla1
-postilla2
 postillón
 postilloso, sa
 postimpresionismo
@@ -5859,8 +5442,6 @@ potajería
 potajier
 potala
 potámide
-potar1
-potar2
 potasa
 potásico, ca
 potasio
@@ -5890,8 +5471,6 @@ potetería
 potingue
 potista
 potito
-poto1
-poto2
 potoco, ca
 potorillo
 potorro
@@ -5902,8 +5481,6 @@ potrada
 potranco, ca
 potrear
 potreraje
-potrero1
-potrero2
 potril
 potrillada
 potrillo, lla
@@ -6237,8 +5814,6 @@ premia
 premiable
 premiación
 premiador, ra
-premiar1
-premiar2
 premidera
 premio
 premiosamente
@@ -6296,8 +5871,6 @@ prensor, ra
 prenunciar
 prenuncio
 prenupcial
-preñado1
-preñado2, da
 preñar
 preñez
 preocupación
@@ -6462,15 +6035,11 @@ prestiditación
 préstido
 prestigiador, ra
 prestigiante
-prestigiar1
-prestigiar2
 prestigio
 prestigioso, sa
 prestímano, na
 prestimonio
 prestiño
-presto1, ta
-presto2
 presumible
 presumido, da
 presumir
@@ -6528,8 +6097,6 @@ pretinazo
 pretinero
 pretinilla
 pretónico, ca
-pretor1
-pretor2
 pretoría
 pretorial
 pretorianismo
@@ -6670,8 +6237,6 @@ prion
 prionodonte
 prioradgo
 prioral
-priorato1
-priorato2
 priorazgo
 prioresa
 prioridad
@@ -6698,8 +6263,6 @@ privación
 privada
 privadamente
 privadero
-privado1, da
-privado2
 privanza
 privar
 privatismo
@@ -6760,8 +6323,6 @@ procariótico, ca
 procaz
 procedencia
 procedente
-proceder1
-proceder2
 procedido
 procedimental
 procedimiento
@@ -7221,8 +6782,6 @@ protectriz
 proteger
 protegible
 protegido, da
-proteico1, ca
-proteico2, ca
 proteiforme
 proteína
 proteínico, ca
@@ -7252,8 +6811,6 @@ protista
 proto-
 protoalbéitar
 protoalbeiterato
-protocolar1
-protocolar2
 protocolario, ria
 protocolización
 protocolizar
@@ -7478,8 +7035,6 @@ ptolemaico, ca
 ptolomeico, ca
 ptosis
 pu
-púa1
-púa2
 puado
 puar
 pub
@@ -7544,8 +7099,6 @@ pudin
 pudinga
 pudio
 pudir
-pudor1
-pudor2
 pudoroso, sa
 pudrición
 pudridero
@@ -7566,8 +7119,6 @@ puentear
 puentecilla
 puenteo
 puenting
-puerca1
-puerca2
 puercada
 puercamente
 puerco, ca
@@ -7598,8 +7149,6 @@ pues
 puesta
 puestero, ra
 puesto, ta
-puf1
-puf2
 pufo
 puga
 púgil
@@ -7613,8 +7162,6 @@ pugnacidad
 pugnante
 pugnar
 pugnaz
-puja1
-puja2
 pujado, da
 pujador, ra
 pujagua
@@ -7624,8 +7171,6 @@ pujamiento
 pujante
 pujantemente
 pujanza
-pujar1
-pujar2
 pujavante
 pujés
 pujido
@@ -7641,8 +7186,6 @@ pulgar
 pulgarada
 pulgón
 pulgoso, sa
-pulguera1
-pulguera2
 pulgueral
 pulguerío
 pulguero, ra
@@ -7660,8 +7203,6 @@ pulimentar
 pulimento
 pulique
 pulir
-pulla1
-pulla2
 pullar
 pullazo
 pullés, sa
@@ -7676,10 +7217,6 @@ pulóver
 pulpa
 pulpear
 pulpejo
-pulpería1
-pulpería2
-pulpero1, ra
-pulpero2, ra
 pulpeta
 púlpito
 pulpo
@@ -7693,8 +7230,6 @@ pulsada
 pulsador, ra
 pulsamiento
 pulsante
-pulsar1
-pulsar2
 pulsátil
 pulsatila
 pulsativo, va
@@ -7724,8 +7259,6 @@ pumente
 pumita
 pumpunear
 pun
-puna1
-puna2
 punateño, ña
 puncetear
 puncha
@@ -7761,8 +7294,6 @@ puntal
 puntano, na
 puntapié
 puntar
-puntarenense1
-puntarenense2
 puntazo
 punteada
 punteado
@@ -7792,8 +7323,6 @@ puntisecar
 puntiseco, ca
 puntizón
 punto
-puntoso1, sa
-puntoso2, sa
 puntuable
 puntuación
 puntual
@@ -7816,8 +7345,6 @@ punzón
 punzonería
 puñada
 puñado
-puñal1
-puñal2
 puñalada
 puñalero
 puñales
@@ -7830,8 +7357,6 @@ puñetear
 puñetería
 puñetero, ra
 puñimiento
-puñir1
-puñir2
 puño
 pupa
 pupar
@@ -7936,8 +7461,6 @@ putrílago
 putumayense
 pututo
 pututu
-puya1
-puya2
 puyado, da
 puyar
 puyazo
