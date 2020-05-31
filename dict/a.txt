@@ -1,7 +1,3 @@
-a1
-a2
-a-1
-a-2
 aba
 abaá
 ababol
@@ -15,7 +11,7 @@ abacial
 abacora
 abacorar
 abada
-abad, desa
+abad
 abadejo
 abadengo, ga
 abadernar
@@ -38,13 +34,7 @@ abalanzar
 abalaustrado, da
 abalconado, da
 abaldonar
-abalear1
-abalear2
-abaleo1
-abaleo2
 abalizar
-aballar1
-aballar2
 aballestar
 abalorio
 abaluartar
@@ -222,8 +212,6 @@ ablandativo, va
 ablande
 ablandecer
 ablano
-ablativo2, va
-ablativo3, va
 ablatorio, ria
 -able
 ablegado
@@ -255,8 +243,6 @@ abochornante
 abochornar
 abocinado, da
 abocinamiento
-abocinar1
-abocinar2
 abofado, da
 abofarse
 abofeteador, ra
@@ -275,33 +261,19 @@ abolición
 abolicionismo
 abolicionista
 abolir
-abollado1, da
-abollado2, da
 abolladura
-abollar1
-abollar2
 abollón
 abollonar
 abolorio
 abolsado, da
 abolsarse
 abomaso
-abombado1, da
-abombado1, da
-abombamiento1
-abombamiento2
-abombar1
-abombar2
 abominable
 abominablemente
 abominación
 abominar
 abonable
-abonado1, da
-abonado2, da
 abonanzar
-abonar1
-abonar2
 abonaré
 abondado, da
 abondamiento
@@ -309,8 +281,6 @@ abondar
 abondo
 abondoso, sa
 abonero, ra
-abono1
-abono2
 aboquillado, da
 aboquillar
 aboral
@@ -350,8 +320,6 @@ abotonadura
 abotonar
 abovedar
 ab ovo
-aboyar1
-aboyar2
 abozalar
 abra
 abracadabra
@@ -608,8 +576,6 @@ academización
 academizar
 acadio, dia
 acaecedero, ra
-acaecer2
-acaecer2
 acaecimiento
 acafresna
 acaguasarse
@@ -812,7 +778,6 @@ acederaque
 acederilla
 acederón
 acedía
-acedía1
 acedo, da
 acedo, da
 acedura
@@ -891,8 +856,6 @@ acequiero
 acera
 aceráceo, a
 aceración
-acerar1
-acerar2
 acerbadamente
 acerbidad
 acerbo, ba
@@ -935,8 +898,6 @@ acetilcolina
 acetileno
 acetilo
 acetilsalicílico
-aceto1
-aceto2, ta
 acetona
 acetosa
 acetosilla
@@ -1007,10 +968,7 @@ achichintle
 achicopalarse
 achicoria
 achiguarse
-achinado2, da
 achinado, da
-achinar1
-achinar2
 achinelado, da
 achinería
 achinero, ra
@@ -1083,8 +1041,6 @@ acicalamiento
 acicalar
 acicate
 acicatear
-aciche1
-aciche2
 acicular
 acid
 acida
@@ -1156,8 +1112,6 @@ acmé
 acmpanado, da
 acmulatuvo, va
 acné
--aco1, ca
--aco2, ca
 acobambino, na
 acobardado, da
 acobardamiento
@@ -1196,8 +1150,6 @@ acogida
 acogido, da
 acogimiento
 acogollado, da
-acogollar1
-acogollar2
 acogotamiento
 acogotar
 acogullado, da
@@ -1211,8 +1163,6 @@ acolada
 acolar
 acolchado
 acolchamiento
-acolchar 1
-acolchar2
 acolchonar
 acolgar
 acolhua
@@ -1291,8 +1241,6 @@ aconsejar
 aconsonantar
 acontar
 acontecedero, ra
-acontecer 1
-acontecer2
 acontecido, da
 acontecimiento
 acontiado, da
@@ -1363,23 +1311,12 @@ acosijar
 acosmismo
 acoso
 acostada
-acostado1, da
-acostado2, da
 acostadote, ta
-acostamiento1
-acostamiento2
 acostar
 acostumbrado, da
 acostumbrar
-acotación2
-acotación2
 acotada
-acotado1
-acotado2
 acotamiento
-acotar1
-acotar2
-acotar3
 acotejar
 acotejo
 acotiledón
@@ -1392,8 +1329,6 @@ acracia
 ácrata
 acrático, ca
 acratismo
-acre1
-acre2
 acrecencia
 acrecentador
 acrecentamiento
@@ -1452,8 +1387,6 @@ acromegálico, ca
 acromial
 acromiano, na
 acromion
-acrónico1, ca
-acrónico2, ca
 acronimia
 acrónimo
 ácrono
@@ -1489,9 +1422,6 @@ activismo
 activista
 activo, va
 acto
-actor1, triz
-actor2, ra
-actor3
 actriz
 actuación
 actuado, da
@@ -1516,8 +1446,6 @@ acuarela
 acuarelado, da
 acuarelista
 acuarelístico, ca
-acuario1
-acuario2
 acuárium
 acuartar
 acuartelado
@@ -1588,8 +1516,6 @@ acunulable
 acunulador, ra
 acuñación
 acuñador, ra
-acuñar1
-acuñar2
 acuosidad
 acuoso, sa
 acupuntor, ra
@@ -1622,8 +1548,6 @@ ad-
 -ada
 adafina
 adagial
-adagio1
-adagio2
 adaguar
 adahala
 adalid
@@ -1656,8 +1580,6 @@ adarga
 adárgama
 adargar
 adarme
-adarvar1
-adarvar2
 adarve
 ad calendas grecas
 ad cautelam
@@ -1732,8 +1654,6 @@ aderezo
 adestrado, da
 adestrador, ra
 adestrar
-adeudar1
-adeudar2
 adeudo
 adherecer
 adherencia
@@ -1754,8 +1674,6 @@ adiamantado, da
 adiamiento
 adiano, na
 adiar
-adición1
-adición2
 adicionador, ra
 adicional
 adicionar
@@ -2153,8 +2071,6 @@ afaccionado, da
 afacer
 afacimiento
 afalagar
-afamado1, da
-afamado2, da
 afamar
 afán
 afanado, da
@@ -2188,8 +2104,6 @@ afectador, ra
 afectar
 afectividad
 afectivo, va
-afecto1, ta
-afecto2
 afectuosamente
 afectuosidad
 afectuoso, sa
@@ -2268,8 +2182,6 @@ afinado
 afinador, ra
 afinadura
 afinamiento
-afinar1
-afinar2
 afincadamente
 afincado, da
 afincamiento
@@ -2335,10 +2247,6 @@ afónico, ca
 afontamiento
 aforado, da
 aforador
-aforamiento1
-aforamiento2
-aforar1
-aforar2
 aforcar
 afore
 aforisma
@@ -2347,8 +2255,6 @@ aforístico, ca
 aforo
 aforrado, da
 aforradura
-aforramiento1
-aforramiento2
 aforrar
 aforrecho
 aforro
@@ -2390,8 +2296,6 @@ afrikáans
 afrikáner
 afrisonado, da
 afro-
-afro1, fra
-afro2
 afroamericano, na
 afroantillano, na
 afroasiático, ca
@@ -2671,8 +2575,6 @@ agramontino, na
 agrandado, da
 agrandamiento
 agrandar
-agranujado1, da
-agranujado2, da
 agranulocito
 agranulocitosis
 agrario, ria
@@ -2750,8 +2652,6 @@ agrisado, da
 agrisar
 agrisetado, da
 agro-
-agro1
-agro2, gra
 agroalimentación
 agroalimentario, ria
 agroecología
@@ -2786,8 +2686,6 @@ aguacerazo
 aguacero
 aguacha
 aguachacha
-aguachar1
-aguachar2
 aguachas
 aguachento, ta
 aguachile
@@ -2890,8 +2788,6 @@ aguavientos
 aguavilla
 aguaviva
 aguay
-aguayo1
-aguayo2, ya
 aguayón
 aguaza
 aguazal
@@ -2954,8 +2850,6 @@ agüizote
 aguja
 agujadera
 agujal
-agujar1
-agujar2
 agujazo
 agujerar
 agujereado, da
@@ -3033,8 +2927,6 @@ ahistoricidad
 ahistoricismo
 ahistórico, ca
 ahitamiento
-ahitar1
-ahitar2
 ahitera
 ahíto, ta
 ahó
@@ -3044,13 +2936,9 @@ ahocinarse
 ahogadero, ra
 ahogadilla
 ahogadizo, za
-ahogado1, da
-ahogado2
 ahogador, ra
 ahogamiento
 ahogante
-ahogar1
-ahogar2
 ahogo
 ahoguío
 ahombrado, da
@@ -3094,8 +2982,6 @@ ahuatarse
 ahuate
 ahuautle
 ahuchador, ra
-ahuchar1
-ahuchar2
 ahuciar
 ahuecado, da
 ahuecador, ra
@@ -3146,14 +3032,11 @@ airamiento
 airampo
 airar
 airbag
-aire1
-aire2
 aireación
 aireamiento
 airear
 aireo
 Airón
-airón1
 aironazo
 airosamente
 airosidad
@@ -3176,8 +3059,6 @@ aja
 -aja
 ajá
 ajabeba
-ajada1
-ajada2
 ajadura
 ajajá
 ajajay
@@ -3188,8 +3069,6 @@ ajamonarse
 ajaqueca
 ajaquecarse
 ajaquefa
-ajar1
-ajar2
 ajaraca
 ajaracado
 ajarafe
@@ -3197,12 +3076,7 @@ ajardinado
 ajardinar
 ajaspajas
 -aje
-aje1
-aje2
-aje3
 ajea
-ajear1
-ajear2
 ajebe
 ajedrea
 ajedrecista
@@ -3246,9 +3120,6 @@ ajipa
 ajironar
 ajizal
 ajizar
-ajo1
-ajo2
-ajo3
 ajoaceite
 ajoarriero
 ajobar
@@ -3311,9 +3182,6 @@ akalché
 al
 -al
 ál
-ala1
-ala2
-ala3
 alabable
 alabado
 alabador, ra
@@ -3380,15 +3248,11 @@ alaizar
 alajor
 alajú
 alajuelense
-alalá1
-alalá2
 alaláu
 alalay
 alalia
 alalimón
 álalo, la
-alama1
-alama2
 alamán, na
 alamar
 alámbar
@@ -3397,14 +3261,10 @@ alambicamiento
 alambicar
 alambique
 alambiquero, ra
-alambor1
-alambor2
 alamborado, da
 alambrada
 alambrado
 alambrador
-alambrar1
-alambrar2
 alambre
 alambrear
 alambrera
@@ -3489,18 +3349,12 @@ alazo
 alazor
 alba
 albaca
-albacara1
-albacara2
 albacea
 albaceato
 albaceazgo
 albacetense
 albaceteño, ña
-albacora1
-albacora2
 albacorón
-albada1
-albada2
 albadena
 albahaca
 albahaquero
@@ -3514,8 +3368,6 @@ albanar
 albanecar
 albanega
 albanés, sa
-albano1, na
-albano2, na
 albañal
 albañalero, ra
 albañear
@@ -3559,16 +3411,12 @@ albarillo
 albarino
 albariño
 albarizo, za
-albarrada1
-albarrada2
 albarrán
 albarrana
 albarráneo, a
 albarranía
 albarraniego, ga
 albarranilla
-albarraz1
-albarraz2
 albarrazado, da
 albarsa
 albatoza
@@ -3708,8 +3556,6 @@ alcacer
 alcachofa
 alcachofado, da
 alcachofal
-alcachofar1
-alcachofar2
 alcachofero, ra
 alcací
 alcacil
@@ -3742,7 +3588,7 @@ alcalaíno, na
 alcalareño, ña
 alcaldable
 alcaldada
-alcalde, desa
+alcalde
 alcaldía
 alcalemia
 álcali
@@ -3778,8 +3624,6 @@ alcanfor
 alcanforado, da
 alcanforar
 alcanforero
-alcántara1
-Alcántara2
 alcantarilla
 alcantarillado
 alcantarillar
@@ -3820,8 +3664,6 @@ alcartaz
 alcatara
 alcatenes
 alcatifa
-alcatraz1
-alcatraz2
 alcaucí
 alcaucil
 alcaudón
@@ -3834,7 +3676,6 @@ alcazaba
 alcázar
 alcazareño, ña
 alcazuz
-alce1
 alcea
 alcedo
 alcedón
@@ -3881,8 +3722,6 @@ alcornoqueño, ña
 alcorque
 alcorza
 alcorzado, da
-alcorzar1
-alcorzar2
 alcotán
 alcotana
 alcoyano, na
@@ -3928,8 +3767,6 @@ ale
 alea
 aleación
 alea iacta est
-alear1
-alear2
 aleas
 aleatoriamente
 aleatoriedad
@@ -3980,8 +3817,6 @@ alegra
 alegrador, ra
 alegradura
 alegranza
-alegrar1
-alegrar2
 alegre
 alegremente
 alegrón
@@ -3991,8 +3826,6 @@ alejado, da
 alejamiento
 Alejandría
 alejandrinismo
-alejandrino1, na
-alejandrino2, na
 alejandrita
 alejar
 alejija
@@ -4036,8 +3869,6 @@ alergizante
 alergología
 alergológico, ca
 alergólogo, ga
-alero1
-alero2
 alerón
 alerta
 alertado, da
@@ -4092,8 +3923,6 @@ alfabetizado, da
 alfabetizador, ra
 alfabetizando, da
 alfabetizar
-alfabeto1
-alfabeto2, ta
 alfadía
 alfaguara
 alfahar
@@ -4106,8 +3935,6 @@ alfajía
 alfajor
 alfalfa
 alfalfal
-alfalfar1
-alfalfar2
 alfalfe
 alfalfez
 alfama
@@ -4115,8 +3942,6 @@ alfamar
 alfamarada
 alfana
 alfandoque
-alfaneque1
-alfaneque2
 alfanjado, da
 alfanjazo
 alfanje
@@ -4124,17 +3949,8 @@ alfaque
 alfaqueque
 alfaquí
 alfaquín
-alfar1
-alfar2
-alfar3
 alfar4
 alfaraz
-alfarda1
-alfarda2
-alfardilla1
-alfardilla2
-alfardón1
-alfardón2
 alfareme
 alfareño,ña
 alfarería
@@ -4159,13 +3975,10 @@ alfeñicarse
 alfeñique
 alferazgo
 alferecía
-alferecía1
 alférez
 alferraz
 alficoz
 alfifete
-alfil1
-alfil2
 alfilel
 alfiler
 alfilerazo
@@ -4179,13 +3992,9 @@ alfócigo
 alfolí
 alfoliero
 alfolinero
-alfombra1
-alfombra2
 alfombrado
 alfombrar
 alfombrero, ra
-alfombrilla1
-alfombrilla2
 alfombrista
 alfóncigo
 alfóndiga
@@ -4213,26 +4022,16 @@ algadara
 algaida
 algaido, da
 algalia
-algalia1
 algaliar
 algaliero, ra
-algar1
-algar2
-algara1
-algara2
 algarabía
-algarabía2
 algarabiado, da
 algaracear
-algarada1
-algarada2
 algarazo
 algareador, ra
 algarear
 algarero, ra
 algarivo, va
-algarrada1
-algarrada2
 algarroba
 algarrobal
 algarrobera
@@ -4328,8 +4127,6 @@ alhondiguero
 alhorí
 alhorín
 alhorra
-alhorre1
-alhorre2
 alhorría
 alhorro
 alhorza
@@ -4362,8 +4159,6 @@ alibriestarse
 álica
 alicaído, da
 alicántara
-alicante1
-Alicante2
 alicantino, na
 alicanto
 alicatado
@@ -4395,8 +4190,6 @@ alienista
 aliento
 alier
 alifa
-alifafe1
-alifafe2
 alifara
 alifático, ca
 alifato
@@ -4415,9 +4208,6 @@ aligote
 aligui
 aligustre
 alijador, ra
-alijar1
-alijar2
-alijar3
 alijarar
 alijarero
 alijariego, ga
@@ -4448,8 +4238,6 @@ alimpiamiento
 alimpiar
 alindado, da
 alindamiento
-alindar1
-alindar2
 alinde
 alinderar
 alineación
@@ -4473,8 +4261,6 @@ alipori
 alipús
 aliquebrado, da
 aliquebrar
-alirón1
-alirón2
 alirrojo, ja
 aliruzar
 alisado
@@ -4482,22 +4268,14 @@ alisador, ra
 alisadura
 alisal
 alisamiento
-alisar1
-alisar2
 aliseda
 alisios
 alisma
 alismáceo, a
 alismatáceo, a
-aliso1
-aliso2
 alistado, da
-alistador1
-alistador2, ra
 alistamiento
 alistano, na
-alistar1
-alistar2
 alitán
 aliteración
 aliterado, da
@@ -4517,8 +4295,6 @@ alizarina
 aljaba
 aljabile
 aljáfana
-aljama1
-aljama2
 aljamel
 aljamía
 aljamiado, da
@@ -4575,8 +4351,6 @@ alloza
 allozar
 allozo
 alludel
-alma1
-alma2
 almacabra
 almacén
 almacena
@@ -4585,14 +4359,9 @@ almacenamiento
 almacenar
 almacenero, ra
 almacenista
-almacería1
-almacería2
-almáciga1
-almáciga2
 almacigado, da
 almacigar
 almácigo
-almácigo1
 almaciguero, ra
 almádana
 almadearse
@@ -4622,8 +4391,6 @@ almaizo
 almaja
 almajal
 almajaneque
-almajar1
-almajar2
 almajara
 almaje
 almajo
@@ -4641,17 +4408,11 @@ almarada
 almarbatar
 almarbate
 almarcha
-almario1
-almario2
-almarjal1
-almarjal2
 almarjo
 almaro
 almarrá
 almarraja
 almarraza
-almártaga1
-almártaga2
 almartigón
 almástiga
 almastigado, da
@@ -4662,8 +4423,6 @@ almatroste
 almazara
 almazarero, ra
 almazarrón
-almea1
-almea2
 almecina
 almecino
 almeja
@@ -4673,10 +4432,6 @@ almejía
 almena
 almenado, da
 almenaje
-almenar1
-almenar2
-almenara1
-almenara2
 almendón
 almendra
 almendrado, da
@@ -4798,8 +4553,6 @@ almorrefa
 almorriña
 almorrón
 almorta
-almorzada1
-almorzada2
 almorzado, da
 almorzar
 almosna
@@ -4843,8 +4596,6 @@ alnedo
 alno
 alo-
 aloaria
-alobadado1, da
-alobadado2, da
 alobado, da
 alobar
 alobreguecer
@@ -4867,8 +4618,6 @@ alogamiento
 alógeno, na
 alógico, ca
 aloguer
-aloja1
-aloja2
 alojado, da
 alojamiento
 alojar
@@ -4880,8 +4629,6 @@ alomar
 alombar
 alombra
 alomorfo
-alón1, na
-alón2
 alondra
 alongado, da
 alongamiento
@@ -4905,8 +4652,6 @@ alotar
 alotropía
 alotrópico, ca
 aloya
-alpaca1
-alpaca2
 alpacear
 alpamato
 alpañata
@@ -4938,8 +4683,6 @@ alpujarreño, ña
 alquequenje
 alquería
 alquermes
-alquerque1
-alquerque2
 alquez
 alquezar
 alquibla
@@ -4974,8 +4717,6 @@ alrevesado, da
 alrota
 alsaciano, na
 álsine
-alta1
-alta2
 altaa
 altabaca
 altabaque
@@ -4998,8 +4739,6 @@ altaricón, na
 altarreina
 altavoz
 altea
-altear1
-altear2
 alteño, ña
 alterabilidad
 alterable
@@ -5057,8 +4796,6 @@ altivez
 altiveza
 altividad
 altivo, va
-alto1, ta
-alto2
 altoaragonés, sa
 altocúmulo
 altomedieval
@@ -5105,8 +4842,6 @@ alumbrado, da
 alumbrador, ra
 alumbramiento
 alumbrante
-alumbrar2
-alumbrar2
 alumbre
 alumbrera
 alumbroso, sa
@@ -5236,7 +4971,6 @@ amancebarse
 amancillar
 amanear
 amanecer
-amanecer2
 amanecida
 amanecido, da
 amanerado, da
@@ -5256,8 +4990,6 @@ amansador, ra
 amansamiento 
 amansar
 amantar
-amante1
-amante2
 amantero
 amantillar
 amantillo
@@ -5321,11 +5053,7 @@ amarinar
 amariposado, da
 amaritud
 amarizaje
-amarizar1
-amarizar2
 amarizarse
-amaro1
-amaro2, ra
 amaromar
 amarra
 amarraco
@@ -5473,8 +5201,6 @@ amelocotonado, da
 amelonado, da
 amembrillado, da
 -amen
-amén1
-amén2
 amenaza
 amenazador, ra
 amenazante
@@ -5672,8 +5398,6 @@ amoniaco
 amónico, ca
 amonio
 amoniotélico, ca
-amonita1
-amonita2
 amonites
 amononar
 amontadgar
@@ -5732,8 +5456,6 @@ amortizable
 amortización
 amortizar
 amoscador
-amoscar1
-amoscar2
 amos, mas
 amosquilarse
 amostachado, da
@@ -5789,8 +5511,6 @@ amplitud
 amplo, pla
 ampo
 ampolla
-ampollar1
-ampollar2
 ampolleta
 ampón, na
 amprar
@@ -5841,9 +5561,6 @@ amustiar
 amuzgo, ga
 an-
 ana-
-ana1
-ana2
-ana3
 anabaptismo
 anabaptista
 anabatista
@@ -5909,8 +5626,6 @@ anagramista
 anahuaca
 anahuacense
 anaiboa
-anal1
-anal2
 analacohólico
 analco
 analectas
@@ -5921,8 +5636,6 @@ analfabeto, ta
 analgesia
 analgésico, ca
 análisis
-analista1
-analista2
 analístico, ca
 analítica
 analíticamente
@@ -6074,17 +5787,12 @@ andamiada
 andamiaje
 andamiento
 andamio
-andana1
-andana2
 andanada
 andancia
 andancio
-andante1
-andante2
 andantesco, ca
 andantino
 andanza
-andar1
 andaraje
 andarica
 andariego, ga
@@ -6104,7 +5812,6 @@ andesita
 andestre
 andinismo
 andinista
-andino1, na
 andino, na
 ándito
 andoba
@@ -6151,8 +5858,6 @@ andulencia
 andullo
 andurrial
 anea
-anear1
-anear2
 aneblar
 anécdota
 anecdotario
@@ -6245,8 +5950,6 @@ angaripola
 angazo
 ángel
 Ángela
-angélica1
-angélica2
 angelical
 angelico
 angélico, ca
@@ -6317,8 +6020,6 @@ angostamente
 angostamiento
 angostar
 angosto, ta
-angostura1
-angostura2
 angra
 angrelado, da
 ángstrom
@@ -6334,8 +6035,6 @@ anguilo
 anguina
 angula
 angulado, da
-angular1
-angular2
 angularmente
 angulema
 ángulo
@@ -6386,8 +6085,6 @@ animación
 animado, da
 animador, ra
 animadversión
-animal1
-animal2
 animalada
 animalaje
 animalario
@@ -6430,8 +6127,6 @@ anisado, da
 anisakiasis
 anisakis
 anisal
-anisar1
-anisar2
 anisete
 aniso-
 anisodonte
@@ -6450,14 +6145,10 @@ anlicalmente
 annamita
 annobonés, sa
 ano
--ano1, na
--ano2
 anoa
 anobio
 anoche
 anochecedor, ra
-anochecer1
-anochecer2
 anochecida
 anochecido
 anódico, ca
@@ -6471,13 +6162,9 @@ anomalía
 anomalidad
 anomalístico, ca
 anómalo, la
-anomia1
-anomia2
 anómico, ca
 anomuro
 anón
-anona1
-anona2
 anonáceo, a
 anonadación
 anonadador, ra
@@ -6545,8 +6232,6 @@ ansión
 ansiosidaad
 ansioso, sa
 ansotano, na
-anta1
-anta2
 antagalla
 antagallar
 antagónico, ca
@@ -6560,12 +6245,8 @@ antaño
 antañón, na
 antarca
 antarquear
-antártico2, ca
-antártico2, ca
 -ante
 ante-
-ante1
-ante2
 anteado, da
 antealtar
 anteanoche
@@ -7107,8 +6788,6 @@ anulabilidad
 anulable
 anulación
 anulador, ra
-anular1
-anular2
 anulativo, va
 anulatorio, ria
 anulete
@@ -7172,7 +6851,6 @@ añinero
 añino, na
 añir
 año
-año2
 añojada
 añojal
 añojo, ja
@@ -7192,8 +6870,6 @@ aocar
 aojador, ra
 aojadura
 aojamiento
-aojar1
-aojar2
 aojo
 aonio
 aoristo
@@ -7205,8 +6881,6 @@ aovadolanceolada
 aovar
 aovillarse
 apá
-apa1
-apa2
 apaado, da
 apabilado
 apabilar
@@ -7256,8 +6930,6 @@ apalancar
 ápale
 apaleador, ra
 apaleamiento
-apalear1
-apalear2
 apaleo
 apaletado, da
 apalmada
@@ -7266,8 +6938,6 @@ apanalado, da
 apanar
 apancle
 apancora
-apandar1
-apandar2
 apandillar
 apangado, da
 apaniaguado, da
@@ -7280,8 +6950,6 @@ apante
 apantle
 apantuflado, da
 apanucar
-apañado1, da
-apañado 2, da
 apañador, ra
 apañadura
 apañamiento
@@ -7416,12 +7084,8 @@ apego
 apegualar
 apelable
 apelación
-apelado1, da
-apelado2, da
 apelambrar
 apelante
-apelar1
-apelar2
 apelativo, va
 apeldar
 apelde
@@ -7611,8 +7275,6 @@ aplayar
 aplazable
 aplazado, da
 aplazamiento
-aplazar1
-aplazar2
 aplazo
 aplebeyar
 aplegar
@@ -7627,8 +7289,6 @@ aplicativo, va
 aplique
 aplomado, da
 aplomar
-aplomo1
-aplomo2
 apnea
 apoastro
 apocadamente
@@ -7733,8 +7393,6 @@ aportación
 aportadera
 aportadero
 aportador, ra
-aportar1
-aportar2
 aporte
 aportellado, da
 aporteñarse
@@ -7757,8 +7415,6 @@ aposta
 apostadero
 apostador, ra
 apostante
-apostar1
-apostar2
 apostasía
 apóstata
 apostatar
@@ -7771,8 +7427,6 @@ apostilla
 apostillar
 apostillarse
 apóstol
-apostolado1
-apostolado2, da
 apostolazgo
 apostolical
 apostólicamnete
@@ -7800,11 +7454,7 @@ apoyacabeza
 apoyadero
 apoyadura
 apoyanuca
-apoyar1
-apoyar2
 apoyatura
-apoyo1
-apoyo2
 apozarse
 apozolarse
 apraxia
@@ -8028,8 +7678,6 @@ aquivo, va
 a quo
 ar
 -ar
-ara1
-ara2
 árabe
 arabesco, ca
 arabí
@@ -8082,8 +7730,6 @@ arancel
 arancelario, ria
 arandanedo
 arándano
-arandela1
-arandela2
 arandillo
 arandino, na
 araneño, ña
@@ -8105,15 +7751,11 @@ araño
 arañón
 arañuela
 arañuelo
-arar1
-arar2
 araricida
 arasá
 arate cavate
 aratorio, ria
 araucanista
-araucano1, na
-araucano2, na
 araucaria
 arauja
 aravico
@@ -8166,8 +7808,6 @@ arborizar
 arbotante
 arbustivo, va
 arbusto
-arca1
-arca2
 arcabucear
 arcabucería
 arcabucero
@@ -8178,8 +7818,6 @@ arcabuz
 arcabuzal
 arcabuzazo
 arcacil
-arcada1
-arcada2
 árcade
 arcádico, ca
 arcadio, dia
@@ -8199,8 +7837,6 @@ arcano, na
 arcar
 arcatura
 arcazón
-arce1
-arce2
 arcea
 arcedianato
 arcedianazgo
@@ -8247,8 +7883,6 @@ arcillar
 arcilloso, sa
 arcina
 arcinar
-arción1
-arción2
 arcionar
 arciprestado
 arciprestal
@@ -8266,8 +7900,6 @@ arcuación
 arcuado, da
 arcual
 -arda
-arda1
-arda2
 árdea
 ardedor, ra
 ardedura
@@ -8283,23 +7915,15 @@ ardicia
 ardid
 ardidamente
 ardideza
-ardido1, da
-ardido2, da
-ardidoso1, da
-ardidoso2, da
 ardiente
 ardientemente
 ardil
 ardilla
 ardiloso, sa
-ardimiento1
-ardimiento2
 ardínculo
 ardiondo, da
 ardite
 -ardo, da
-ardor1
-ardor2
 ardora
 ardorada
 ardorosamente
@@ -8386,8 +8010,6 @@ argaña
 argavieso
 argaya
 argayar
-argayo1
-argayo2
 argel
 argelino, na
 argemone
@@ -8406,8 +8028,6 @@ argentífero, ra
 argentina
 argentinidad
 argentinismo
-argentino1, na
-argentino2, na
 argentita
 argento
 argentoso, sa
@@ -8471,8 +8091,6 @@ arietino, na
 arije
 arijo, ja
 arillo
-arilo1
-arilo2
 arimaspe
 arimaspo
 arimez
@@ -8522,8 +8140,6 @@ arma
 armable
 armada
 armadera
-armadía1
-armadía2
 armadija
 armadijo
 armadilla
@@ -8570,8 +8186,6 @@ armonía
 armoniaco
 armónica
 armónicamente
-armonicista1
-armonicista2
 armónico,ca
 armonio
 armoniosamente
@@ -8596,9 +8210,6 @@ arnequín
 arnés
 árnica
 arnillo
-aro1
-aro2
-aro3
 aroideo, a
 aroma
 aromado, da
@@ -8614,8 +8225,6 @@ aromo
 aromoso, sa
 aron
 arpa
-arpado1, da
-arpado2, da
 arpadura
 arpar
 arpegiar
@@ -8633,25 +8242,16 @@ arponero
 arquea
 arqueada
 arqueado, da
-arqueador1
-arqueador2
 arqueaje
 arqueamiento
-arquear1
-arquear2
 arquebacteria
 arqueo-
-arqueo1
-arqueo2
-arqueo3
 arqueobacteria
 arqueolítico, ca
 arqueología
 arqueólogo, ga
 arqueozoología
 arquería
-arquero1
-arquero2, ra
 arqueta
 arqueta
 arquetero, ra
@@ -8690,8 +8290,6 @@ arracasiega
 arrachera
 arracimado, da
 arracimarse
-arraclán1
-arraclán2
 -arraco, ca
 -arrada
 arráez
@@ -8721,8 +8319,6 @@ arrancamoños
 arrancapinos
 arrancar
 arranchadera
-arranchar1
-arranchar2
 arranchón
 arranciarse
 arrancón
@@ -8762,9 +8358,6 @@ arre
 arreada
 arreado, da
 arreador
-arrear1
-arrear2
-arrear3
 arrebañador, ra
 arrebañadura
 arrebañar
@@ -8778,13 +8371,10 @@ arrebatapuñadas
 arrebatar
 arrebatarse
 arrebatiña
-arrebato1
-arrebato2
 arrebatón
 arrebatoso, sa
 arrebiatar
 arrebol
-arrebol2
 arrebolada
 arrebolar
 arrebolarse
@@ -8853,19 +8443,11 @@ arremuesco
 arrendable
 arrendación
 arrendadero
-arrendador1, ra
-arrendador2, ra
 arrendajo
 arrendamiento
-arrendar1
-arrendar2
-arrendar3
 arrendatario, ría
 arrendaticio, cia
 arrentado, da
-arreo1
-arreo2
-arreo3
 arrepanchigarse
 arrepápalo
 arrepentido, da
@@ -8894,15 +8476,11 @@ arrezafe
 arrezagar
 arria
 arriacense
-arriada1
-arriada2
 arriado
 arrial
 arriamiento
 arrianismo
 arriano, na
-arríar1
-arriar2
 arriata
 arriate
 arriaz
@@ -8965,12 +8543,8 @@ arroba
 arrobadera
 arrobadizo, za
 arrobado
-arrobador1, da
-arrobador2, da
 arrobal
 arrobamiento
-arrobar1
-arrobar2
 arrobeño, ña
 arrobero, ra
 arrobo
@@ -9011,8 +8585,6 @@ arrollable
 arrollado
 arrollador, ra
 arrollamiento
-arrollar1
-arrollar2
 arromadizar
 arromanzar
 arromar
@@ -9022,8 +8594,6 @@ arrompido
 arronjar
 arronzar
 arropamiento
-arropar1
-arropar2
 arrope
 arropera
 arropía
@@ -9047,7 +8617,6 @@ arroyuela
 arroz
 arrozal
 arruar
-arrubar1
 arruchar
 arrufadía
 arrufaldado, da
@@ -9077,7 +8646,6 @@ arrumbación
 arrumbada
 arrumbador, ra
 arrumbamiento
-arrumbar2
 arrumueco
 arrunflar
 arruruz
@@ -9138,8 +8706,6 @@ articulación
 articuladamente
 articulado, da
 articulador, ra
-articular1
-articular2
 articulario, ria
 articulatorio, ria
 articulismo
@@ -9222,9 +8788,6 @@ arzolla
 arzón
 as
 -asa
-asa1
-asa2
-asa3
 asaborado, da
 asaborar
 asaborir
@@ -9300,8 +8863,6 @@ asciterio
 ascítico, ca
 ascitis
 asclepiadáceo, a
-asclepiadeo1
-asclepiadeo2, a
 asco
 -asco, ca
 ascomiceto, ta
@@ -9410,8 +8971,6 @@ asesoría
 asesor, ra
 asestadero
 asestadura
-asestar1
-asestar2
 aseveración
 aseverar
 aseverativo, va
@@ -9447,10 +9006,6 @@ asignatario, ria
 asignatura
 asilado, da
 asilar
-asilla1
-asilla2
-asilo1
-asilo2
 asilvestrado, da
 asilvestrarse
 asimesmo
@@ -9539,8 +9094,6 @@ asolador, ra
 asolamiento
 asolanar
 asolapar
-asolar1
-asolar2
 asoldadar
 asoldar
 asoleada
@@ -9567,8 +9120,6 @@ asonandía
 asonantar
 asonante
 asonántico, ca
-asonar1
-asonar2
 asondar
 asordar
 asordinar
@@ -9606,10 +9157,6 @@ asperiego
 asperilla
 asperillo
 asperjar
-áspero1
-áspero2, ra
-asperón1
-asperón2
 aspérrimo, ma
 aspersión
 aspersor
@@ -9674,8 +9221,6 @@ astracán
 astracanada
 astrágalo
 astrago
-astral1
-astral2
 -astre
 astreñir
 astricción
@@ -9717,8 +9262,6 @@ asturianismo
 asturiano, na
 asturicense
 asturiense
-asturión1
-asturión2
 asturleonés, sa
 astuto, ta
 asuardado, da
@@ -9762,17 +9305,12 @@ atablar
 atacable
 atacadera
 atacado, da
-atacador1, ra
-atacador2, ra
 atacadura
 atacama
 atacameño, ña
 atacamiento
 atacamita
 atacante
-atacar1
-atacar2
-atacar3
 atachonado, da
 atacir
 atacola
@@ -9810,8 +9348,6 @@ atal
 atalador, ra
 atalajar
 atalaje
-atalantar1
-atalantar2
 atalar
 atalaya
 atalayador, ra
@@ -9825,8 +9361,6 @@ atamán
 atambor
 atamiento
 atán
-atanasia1
-atanasia2
 atancar
 atanco
 atandador
@@ -9852,8 +9386,6 @@ atarantar
 ataraxia
 atarazana
 atarazar
-atardecer1
-atardecer2
 atardecida
 atarea
 atarear
@@ -9861,8 +9393,6 @@ atarfe
 -atario, ria
 atarjea
 atarquinar
-atarraga1
-atarraga2
 atarragar
 atarrajar
 atarraya
@@ -9927,8 +9457,6 @@ atendimiento
 atenebrarse
 atenedor
 ateneísta
-ateneo1
-ateneo2, a
 atener
 atenido, da
 ateniense
@@ -9936,11 +9464,7 @@ ateniés, sa
 atenorado, da
 atentación
 atentadamente
-atentado1, da
-atentado2
 atentamente
-atentar1
-atentar2
 atentatorio, ría
 atento, ta
 atenuación
@@ -9969,8 +9493,6 @@ aterrador, ra
 aterrajar
 aterraje
 aterramiento
-aterrar1
-aterrar2
 aterrerar
 aterrizaje
 aterrizar
@@ -9981,13 +9503,8 @@ atesar
 atesoramiento
 atesorar
 atestación
-atestado1
-atestado2, da
 atestadura
 atestamiento
-atestar1
-atestar2
-atestar3
 atestiguación
 atestiguamiento
 atestiguar
@@ -10065,8 +9582,6 @@ atlético, ca
 atletismo
 atmósfera
 atmosferíco, ca
--ato1, ta
--ato2, ta
 atoar
 atoba
 atobar
@@ -10074,8 +9589,6 @@ atocha
 atochada
 atochado, da
 atochal
-atochar1
-atochar2
 atochero, ra
 atochón
 atocinado, da
@@ -10126,8 +9639,6 @@ atopia
 atópico, ca
 atora
 atoramiento
-atorar1
-atorar2
 atorcer
 atordecer
 atorgar
@@ -10142,14 +9653,10 @@ atorón
 atorozonarse
 atorra
 atorrante, ta
-atortolar1
-atortolar2
 atortorar
 atortujar
 atosigador, ra
 atosigamiento
-atosigar1
-atosigar2
 atoxicar
 atóxico, ca
 atrabajado, da
@@ -10264,11 +9771,7 @@ atruendo
 atruhanado, da
 atto-
 atuendo
-atufado1, da
-atufado2, da
 atufamiento
-atufar1
-atufar2
 atufo
 atugita
 atún
@@ -10276,8 +9779,6 @@ atunara
 atunero, ra
 aturada
 aturador, ra
-aturar1
-aturar2
 aturbonado, da
 aturdido, da
 aturdidor, ra
@@ -10294,8 +9795,6 @@ aturullar
 atusador, ra
 atusar
 atutía
-auca1
-auca2
 aucción
 aucténtico, ca
 auctor
@@ -10327,8 +9826,6 @@ auditar
 auditivo, va
 audito
 auditoría
-auditorio1
-auditorio2, ría
 auditórium
 auditor, ra
 auge
@@ -10371,8 +9868,6 @@ aunque
 aúpa
 aupar
 auquénido
-aura1
-aura2
 auranciáceo, a
 aurea mediocritas
 aureliense
@@ -10386,8 +9881,6 @@ auricalco
 áurico, ca
 aurícula
 auriculado, da
-auricular1
-auricular2
 auriculoventricular
 auriense
 aurífero, ra
@@ -10418,20 +9911,12 @@ auspicio
 auspicioso, sa
 austeridad
 austero, ra
-austral1
-austral2
 australiano, na
 australipiteco
 austriaco, ca
 austrida
-austrino1, na
-austrino2, na
 austro
 autarcía
-autarquía1
-autarquía2
-autárquico1, ca
-autárquico2, ca
 auténtica
 autenticación
 autenticar
@@ -10440,14 +9925,10 @@ auténtico, ca
 autentificacción
 autentificador, ra
 autentificar
-autillo1
-autillo2
 autismo
 autista
 autístico, ca
 auto-
-auto1
-auto2
 autoabastecerse
 autoabastecimiento
 autoadhesivo, va
@@ -10622,8 +10103,6 @@ autrigón, na
 autumnal
 auxiliado
 auxiliador, ra
-auxiliar1
-auxiliar2
 auxiliaría
 auxilio
 auxina
@@ -10677,8 +10156,6 @@ avasallar
 avatar
 avatí
 AVE
-ave1
-ave2
 avechucho
 avecilla
 avecinar
@@ -10692,8 +10169,6 @@ avellana
 avellanado, da
 avellanador
 avellanal
-avellanar1
-avellanar2
 avellanate
 avellaneda
 avellanedo
@@ -10702,12 +10177,8 @@ avellano
 aveloriado, da
 avemaría
 avena
-avenado1, da
-avenado2, da
 avenamiento
 avenar
-avenate1
-avenate2
 avenedizo, za
 avenenar
 avenencia
@@ -10739,8 +10210,6 @@ averdugar
 avergonzado, da
 avergonzamiento
 avergonzar
-avería1
-avería2
 averiar
 averiguable
 averiguación
@@ -10751,8 +10220,6 @@ averiguar
 averiguata
 averigüetas
 averío
-averno1
-averno2, na
 averroísmo
 averroísta
 averrugado, da
@@ -10771,12 +10238,8 @@ avezadura
 avezar
 avezón
 aviado, da
-aviador1, ra
-aviador2, ra
 aviajado
 aviamiento
-aviar1
-aviar2
 aviario, ria
 aviceñer
 aviciar
@@ -10809,8 +10272,6 @@ avinagrar
 aviñonense
 aviñonés, sa
 avío
-avión1
-avión2
 avionazo
 avioneta
 aviónica
@@ -10828,8 +10289,6 @@ avispa
 avispado, da
 avispar
 avispero
-avispón1
-avispón2
 avistamiento
 avistar
 avitaminosis
@@ -10890,8 +10349,6 @@ ayacaste
 ayaco
 ayacote
 ayacuá
-ayacuchano1, na
-ayacuchano2, na
 ayacuchense
 ayahuasca
 ayalés, sa
@@ -10926,8 +10383,6 @@ ayudista
 ayuga
 ayunador, ra
 ayunar
-ayuno1
-ayuno2, na
 ayunque
 ayuntable
 ayuntador, ra
@@ -10986,8 +10441,6 @@ azanoriate
 azaque
 azaquefa
 azar
-azaramiento1
-azaramiento2
 azarandar
 azarar
 azararse
@@ -11029,13 +10482,9 @@ azofra
 azogado, da
 azogamiento
 azogar
-azogue1
-azogue2
 azogueño, ña
 azoguería
 azoguero
-azoico1
-azoico2
 azoláceo, a
 azolar
 azoleo, a
@@ -11050,7 +10499,6 @@ azoospermia
 azopilotado, da
 azoque
 azor
-azor2
 azorafa
 azoramiento
 azorar
@@ -11111,8 +10559,6 @@ azulear
 azulejar
 azulejería
 azulejero, ra
-azulejo1
-azulejo2
 azulenco, ca
 azulete
 azulgrana
