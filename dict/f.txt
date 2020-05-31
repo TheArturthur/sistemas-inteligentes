@@ -22,8 +22,6 @@ fabuco
 fábula
 fabulación
 fabulador, ra
-fabular1
-fabular2
 fabulario
 fabulista
 fabulístico, ca
@@ -48,9 +46,6 @@ faceta
 facetado, da
 facetar
 faceto, ta
-facha1
-facha2
-facha3
 fachada
 fachadismo
 fachado, da
@@ -149,8 +144,6 @@ fainera
 fainería
 faino, na
 faique
-faisán1, na
-faisán2
 faisanería
 faisanero, ra
 faja
@@ -170,8 +163,6 @@ fajear
 fajero
 fajilla
 fajín
-fajina1
-fajina2
 fajinada
 fajinear
 fajo
@@ -199,8 +190,6 @@ falazmente
 falbalá
 falcada
 falcado, da
-falcar1
-falcar2
 falcario
 falcata
 falce
@@ -242,25 +231,16 @@ fálico, ca
 falido, da
 falimiento
 falisco, ca
-falla1
-falla2
-falla3
 fallada
 fallador, ra
 fallanca
-fallar1
-fallar2
 falleba
 fallecedero, ra
 fallecer
 fallecido, da
 fallecimiento
-fallero1, ra
-fallero2, ra
 fallidero, ra
 fallido, da
-fallo1
-fallo2, lla
 falluca
 falluquear
 falluquero, ra
@@ -421,8 +401,6 @@ farallón
 faramalla
 faramallero, ra
 faramallón, na
-farandola1
-farandola2
 farándula
 farandulear
 farandulero, ra
@@ -431,9 +409,6 @@ faranga
 faraón
 faraónico, ca
 faraute
-farda1
-farda2
-farda2
 fardacho
 fardaje
 fardar
@@ -452,8 +427,6 @@ farfante
 farfantón
 farfantonada
 farfantonería
-fárfara1
-fárfara2
 farfolla
 farfulla
 farfullador, ra
@@ -512,8 +485,6 @@ farota
 farotón, na
 farpa
 farpado, da
-farra1
-farra2
 farraca
 fárrago
 farragoso, sa
@@ -567,8 +538,6 @@ fastidio
 fastidiosamente
 fastidioso, sa
 fastigio
-fasto1, ta
-fasto2
 fastoso, sa
 fastuosamente
 fastuosidad
@@ -591,9 +560,6 @@ fatigosamente
 fatigoso, sa
 fatimí
 fatimita
-fato1
-fato2
-fato3, ta
 fator
 fatoría
 fatúa
@@ -615,8 +581,6 @@ faunístico, ca
 fauno
 faurestina
 fáustico, ca
-fausto1
-fausto2, ta
 faustoso, sa
 fautoría
 fautor, ra
@@ -637,8 +601,6 @@ favoritismo
 favorito, ta
 fax
 faxear
-faya1
-faya2
 fayado
 fayanca
 fayenza
@@ -831,8 +793,6 @@ fermoso, sa
 fermosura
 Fernambuco
 fernandina
-fernandino1, na
-fernandino2, na
 fernet
 ferocidad
 ferodo
@@ -859,8 +819,6 @@ férreo, a
 ferrería
 ferrero
 ferreruelo
-ferrete1
-ferrete2
 ferretear
 ferretería
 ferretero, ra
@@ -958,8 +916,6 @@ feudatario, ria
 feudo
 feúra
 fez
-fi1
-fi2
 fía
 fiabilidad
 fiable
@@ -980,8 +936,6 @@ fíat
 fibiasco
 fibra
 fibrilación
-fibrilar1
-fibrilar2
 fibrina
 fibrinolisis
 fibroblasto
@@ -1031,12 +985,8 @@ fiducia
 fiduciante
 fiduciario, ria
 fiebre
-fiel1
-fiel2
 fielato
 fielazgo
-fieldad1
-fieldad2
 fielmente
 fieltrar
 fieltro
@@ -1098,8 +1048,6 @@ fijar
 fijativo
 fijeza
 fijismo
-fijo1, ja
-fijo2, ja
 fijodalgo
 fijón, na
 fil
@@ -1171,8 +1119,6 @@ fililí
 filin
 filín
 filipéndula
-filipense1
-filipense2
 filípica
 filipichín
 filipina
@@ -1197,8 +1143,6 @@ filmografía
 filmográfico, ca
 filmología
 filmoteca
-filo1
-filo2
 filodio
 filófago, ga
 filo-, -filo, la
@@ -1242,8 +1186,6 @@ filtrador, ra
 filtraje
 filtrante
 filtrar
-filtro1
-filtro2
 filudo, da
 filustre
 filván
@@ -1296,8 +1238,6 @@ finiquito
 finir
 finisecular
 finítimo, ma
-finito1, ta
-finito2, ta
 finitud
 finlaísmo
 finlaísta
@@ -1306,8 +1246,6 @@ finolis
 fino, na
 finoúgrio, gria
 finquero, ra
-finta1
-finta2
 fintar
 fintear
 finteo
@@ -1400,8 +1338,6 @@ fistolar
 fisto, ta
 fístula
 fistulación
-fistular1
-fistular2
 fistuloso, sa
 fisura
 fisurar
@@ -1526,8 +1462,6 @@ flegma
 flegmático, ca
 flegmonoso, sa
 fleja
-flejar1
-flejar2
 flema
 flemático, ca
 fleme
@@ -1657,8 +1591,6 @@ flotador, ra
 flotadura
 flotamiento
 flotante
-flotar1
-flotar2
 flote
 flotilla
 fluctuación
@@ -1735,8 +1667,6 @@ foguero, ra
 foguista
 foie-gras
 foiso, sa
-foja1
-foja2
 folclor
 folclore
 folclórico, ca
@@ -1751,8 +1681,6 @@ folía
 foliáceo, a
 foliación
 foliador, ra
-foliar1
-foliar2
 foliatura
 fólico
 folicular
@@ -1770,9 +1698,6 @@ follado
 follador
 follaje
 follajería
-follar1
-follar2
-follar3
 follar4
 follero
 folleta
@@ -1784,8 +1709,6 @@ folletista
 folleto
 folletón
 follisca
-follón1, na
-follón2
 follonería
 follonero, ra
 follonía
@@ -1805,8 +1728,6 @@ fonador, ra
 fonatorio, ria
 fonazo
 foncarralero, ra
-fonda1
-fonda2
 fondable
 fondac
 fondeadero
@@ -1817,12 +1738,7 @@ fondero, ra
 fondillo
 fondillón
 fondismo
-fondista1
-fondista2
-fondo1
-fondo1, da
 fondón
-fondón2
 fondongo, ga
 fonducho
 fondue
@@ -1907,8 +1823,6 @@ forchina
 forcina
 forcípula
 forcir
-forense1
-forense2
 forero, ra
 foresta
 forestación
@@ -1969,8 +1883,6 @@ formón
 formoseño, ña
 fórmula
 formulación
-formular1
-formular2
 formulario, ria
 formulismo
 formulista
@@ -2016,16 +1928,12 @@ fortachón, na
 fortalecedor, ra
 fortalecimiento
 fortaleza
-forte1
-forte2
 fortepiano
 fortificación
 fortificador, ra
 fortificante
 fortificar
 fortín
-fortísimo1, ma
-fortísimo2, ma
 fortitud
 fortuitamente
 fortuito, ta
@@ -2055,8 +1963,6 @@ fosada
 fosado
 fosadura
 fosal
-fosar1
-fosar2
 fosario
 fosco, ca
 fosfatado, da
@@ -2093,8 +1999,6 @@ fosura
 fotalecer
 fotingo
 foto-
-foto1
-foto2
 fotoalergia
 fotoalérgico, ca
 fotobiología
@@ -2202,12 +2106,8 @@ fracturar
 frade
 fradear
 Fraga
-fraga1
-fraga2
 fragancia
 fragancia
-fragante1
-fragante2
 fragaria
 fragata
 frágil
@@ -2224,8 +2124,6 @@ fragor
 fragoroso, sa
 fragosidad
 fragoso, sa
-fragrante1
-fragrante2
 fragua
 fraguado
 fraguador, ra
@@ -2321,8 +2219,6 @@ franquismo
 franquista
 frañer
 fraque
-frasca1
-frasca2
 frasco
 frase
 frasear
@@ -2429,14 +2325,10 @@ frentero
 frentón, na
 freo
 freón
-fresa1
-fresa2
 fresada
 fresado
 fresador, ra
 fresal
-fresar1
-fresar2
 fresca
 frescachón, na
 frescal
@@ -2466,14 +2358,9 @@ frete
 freudiano, na
 frey
 frez
-freza1
-freza2
 frezada
 frezadero
 frezador
-frezar1
-frezar2
-frezar3
 fría
 friabilidad
 friable
@@ -2524,7 +2411,6 @@ frisa
 frisado
 frisador, ra
 frisadura
-frisar1
 frisca
 Frisia
 frisio, sia
@@ -2532,8 +2418,6 @@ friso
 frísol
 frisolero, ra
 frisón, na
-frisuelo1
-frisuelo2
 frita
 fritada
 fritadería
@@ -2557,8 +2441,6 @@ friz
 froga
 frogar
 froncia
-fronda1
-fronda2
 fronde
 frondío, a
 frondosidad
@@ -2615,8 +2497,6 @@ fruncimiento
 fruncir
 fruslera
 fruslería
-fruslero1
-fruslero2, ra
 frustración
 frustráneo, a
 frustrante
@@ -2652,8 +2532,6 @@ fuagrás
 fúcar
 fuchi
 fúchila
-fuchina1
-fuchina2
 fucia
 fucilar
 fucilazo
@@ -2765,8 +2643,6 @@ fumarada
 fumarel
 fumaria
 fumarola
-fumata1
-fumata2
 fumífero, ra
 fumífugo, ga
 fumigación
@@ -2775,8 +2651,6 @@ fumigante
 fumigar
 fumigatorio, ria
 fumígeno, na
-fumista1
-fumista2
 fumistería
 fumívoro, ra
 fumo
@@ -2874,8 +2748,6 @@ furiosamente
 furioso, sa
 furlón
 furnia
-furo1
-furo2, ra
 furor
 furriel
 furriela

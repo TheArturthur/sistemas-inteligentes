@@ -1,7 +1,4 @@
 l
-la1
-la2
-la3
 lábaro
 labe
 labeo
@@ -45,8 +42,6 @@ labrada
 labradero, ra
 labradío, a
 labrado, da
-labrador1, ra
-labrador2, ra
 labradoresco, ca
 labradoril
 labradorita
@@ -87,23 +82,17 @@ lacero
 lacerto
 lacertoso, sa
 lacetano, na
-lacha1
-lacha2
 lacho
 lacinia
 laciniado, da
 lacio, cia
 lacivo, va
-lacón1, na
-lacón2
 lacónicamente
 lacónico, ca
 laconio, nia
 laconismo
 lacra
 lacrado
-lacrar1
-lacrar2
 lacre
 lacrimable
 lacrimación
@@ -167,8 +156,6 @@ ladrido
 ladriello
 ladrillado
 ladrillador
-ladrillar1
-ladrillar2
 ladrillazo
 ladrillejo
 ladrillero, ra
@@ -212,19 +199,14 @@ lagrimal
 lagrimar
 lagrimear
 lagrimeo
-lagrimón1
 lagrimoso, sa
 lagua
 laguna
 lagunajo
-lagunar1
-lagunar2
 lagunato
 lagunazo
 lagunear
 lagunerío
-lagunero1, ra
-lagunero2, ra
 lagunoso, sa
 laicado
 laical
@@ -241,12 +223,7 @@ lairén
 laísmo
 laissez faire
 laísta
-laja1
-laja2
 lajazo
-lama1
-lama2
-lama3
 lamaísmo
 lamaísta
 lamasería
@@ -302,20 +279,13 @@ lametada
 lametazo
 lametear
 lametón
-lamia1
-lamia2
 lamido, da
 lamín
 lámina
 laminación
 laminado, da
 laminador, ra
-laminar1
-laminar2
-laminar3
 laminera
-laminero1, ra
-laminero2, ra
 laminoso, sa
 lamiscar
 lamista
@@ -333,8 +303,6 @@ lámpara
 lamparear
 lamparería
 lamparero, ra
-lamparilla1
-lamparilla2
 lamparín
 lamparista
 lamparón
@@ -378,9 +346,6 @@ lanceta
 lancetada
 lancetazo
 lancetero
-lancha1
-lancha2
-lancha3
 lanchada
 lanchaje
 lanchar
@@ -404,8 +369,6 @@ landrecilla
 landrero, ra
 landrilla
 lanería
-lanero1, ra
-lanero2
 langa
 langanazo
 lángara
@@ -449,8 +412,6 @@ lanuginoso, sa
 lanza
 lanzacabos
 lanzacohetes
-lanzada1
-lanzada2
 lanzadera
 lanzado, da
 lanzador, ra
@@ -470,9 +431,6 @@ lañador
 lañar
 laodicense
 laosiano, na
-lapa1
-lapa2
-lapa3
 lapacha
 lapachar
 lapachero
@@ -497,8 +455,6 @@ lápiz
 lapizar
 lapo
 lapón, na
-lapso1, sa
-lapso2
 lapsus
 lapsus calami
 lapsus linguae
@@ -581,8 +537,6 @@ lastimosamente
 lastimoso, sa
 lastón
 lastra
-lastre1
-lastre2
 lastrear
 lasún
 lata
@@ -645,11 +599,7 @@ latitudinario, ria
 latitudinarismo
 lativo
 latogero, ra
-latón1
-latón2
 latonería
-latonero1, ra
-latonero2
 lato sensu
 latoso, sa
 lato, ta
@@ -669,8 +619,6 @@ laudablemente
 láudano
 laudar
 laudatorio, ria
-laude1
-laude2
 laudemio
 laudista
 laudo
@@ -695,8 +643,6 @@ lauroceraso
 laus Deo
 lautamente
 lauto, ta
-lava1
-lava2
 lavable
 lavabo
 lavacara
@@ -753,8 +699,6 @@ laxista
 laxitud
 laxo, xa
 lay
-laya1
-laya2
 layador, ra
 layar
 layetano, na
@@ -801,15 +745,10 @@ leccionista
 lecha
 lechada
 lechal
-lechar1
-lechar2
-lechar3
 lechaza
 lechazo
 leche
 lechecillas
-lechera1
-lechera2
 lechería
 lecherón
 lechero, ra
@@ -829,8 +768,6 @@ lechuguero, ra
 lechuguilla
 lechuguino, na
 lechuza
-lechuzo1
-lechuzo2, za
 lecitinia
 leco
 lectisternio
@@ -846,8 +783,6 @@ lectuario
 lectura
 led
 ledamente
-ledanía1
-ledanía2
 ledo, da
 ledón
 ledrilco
@@ -857,8 +792,6 @@ lefa
 lega
 legacía
 legación
-legado1
-legado2
 legador
 legadura
 legajar
@@ -879,8 +812,6 @@ leganoso, sa
 legaña
 legañil
 legañoso, sa
-legar1
-legar2
 legatario, ria
 legendario, ria
 legibilidad
@@ -972,8 +903,6 @@ lempo, pa
 lémur
 lemurias
 len
-lena1
-lena2
 lenca
 lencera
 lencería
@@ -1038,8 +967,6 @@ lento, ta
 lentura
 lenzal
 lenzuelo
-leña1
-leña2
 leñador, ra
 leñame
 leñar
@@ -1058,9 +985,6 @@ leonero, ra
 leonesismo
 leonés, sa
 leónica
-leonino1, na
-leonino2, na
-leonino3, na
 león, na
 leontina
 leopardo, da
@@ -1167,9 +1091,6 @@ leudar
 leude
 leudo, da
 lev
-leva1
-leva2
-leva3
 levada
 levadero, ra
 levadizo, za
@@ -1182,11 +1103,7 @@ levantado, da
 levantador, ra
 levantar
 levantavidrios
-levante1
-levante2
 levantino, na
-levantisco1, ca
-levantisco2, ca
 levar 
 leve
 levedad
@@ -1197,8 +1114,6 @@ levidad
 levigación
 levigar
 levirato
-levita1
-levita2
 levitación
 levitante
 levitar
@@ -1228,8 +1143,6 @@ lezda
 lezdero
 lezna
 lezne
-lía1
-lía2
 liana
 liante, ta
 liar
@@ -1266,7 +1179,6 @@ líberamente
 liberar
 liberatorio, ria
 liberiano, na
-líbero1, ra
 líbero, ra
 libérrimo, ma
 libertad
@@ -1292,8 +1204,6 @@ libracho
 libración
 libraco
 librado, da
-librador1, ra
-librador2, ra
 libramiento
 librancista
 librano, na
@@ -1303,8 +1213,6 @@ libratorio
 librazo
 libre
 librea
-librear1
-librear2
 librecambio
 librecambismo
 librecambista
@@ -1316,16 +1224,12 @@ librería
 libreril
 librero, ra
 libresco, ca
-libreta1
-libreta2
 libretazo
 librete
 libretearse
 libretista
 libreto
 libriano, na
-librillo1
-librillo2
 libro
 licantropía
 licantrópico, ca
@@ -1417,8 +1321,6 @@ lievar
 lieve
 lifara
 lifting
-liga1
-liga2
 ligación
 ligada
 ligado, da
@@ -1449,8 +1351,6 @@ lignificación
 lignificar
 lignito
 lignum crucis
-ligón1
-ligón2, na
 ligona
 ligoso, sa
 lígrime
@@ -1470,26 +1370,14 @@ lija
 lijado
 lijadora
 lijadura
-lijar1
-lijar2
 lijo, ja
-lijoso1, sa
-lijoso2, sa
-lila1
-lila2
-lila3
 lilac
-lilaila1
-lilaila2
 lilao
 liliáceo, a
 lililí
 lilio
 liliputiense
 lilo
-lima1
-lima2
-lima3
 limaco
 limado
 limador, ra
@@ -1524,8 +1412,6 @@ límite
 limítrofe
 limnología
 limo
-limón1
-limón2
 limonado, da
 limonar
 limonaria
@@ -1534,8 +1420,6 @@ limoncillo
 limoncito
 limonense
 limonera
-limonero1, ra
-limonero2, ra
 limonita
 limosidad
 limosín, na
@@ -1545,8 +1429,6 @@ limosnear
 limosnero, ra
 limoso, sa
 limostandor, ra
-limpia1
-limpia2
 limpiabarros
 limpiabotas
 limpiachimeneas
@@ -1589,8 +1471,6 @@ linchar
 lincurio
 lindamente
 lindante
-lindar1
-lindar2
 lindazo
 linde 
 lindel
@@ -1606,8 +1486,6 @@ lineal
 linealidad
 lineamento
 lineamiento
-linear1
-linear2
 linense
 lineo
 líneo, a
@@ -1696,20 +1574,13 @@ liquidar
 liquidez
 líquido, da
 liquilique
-lira1
-lira2
 lirado, da
 liria
 lírica
 liricidad
 lírico, ca
-lirio1
-lirio2
 lirismo
 liróforo, ra
-lirón1
-lirón2
-lirón3
 lironero
 lis
 lisa
@@ -1717,8 +1588,6 @@ lisamente
 lisboeta
 lisbonense
 lisbonés, sa
-lisera1
-lisera2
 lisérgico, ca
 lisiado, da
 lisiadura
@@ -1729,8 +1598,6 @@ lisis
 -lisis
 lislique
 lisol
-lisonja1
-lisonja2
 lisonjar
 lisonjeador, ra
 lisonjear
@@ -1776,8 +1643,6 @@ literero
 litería
 litiásico, ca
 litiasis
-lítico1, ca
-lítico2, ca
 litigación
 litigante
 litigar
@@ -1841,9 +1706,6 @@ livor
 lixiviación
 lixiviado
 lixiviar
-liza1
-liza2
-liza3
 lízaro
 lizo
 ll
@@ -1855,8 +1717,6 @@ llagamiento
 llagar
 llagoso, sa
 llajua
-llama1
-llama2
 llamada
 llamadera
 llamado
@@ -1871,28 +1731,20 @@ llameante
 llamear
 llamerada
 llamingo
-llana1
-llana2
 llanada
 llanamente
 llanca
 llande
 llaneador, ra
 llanear
-llanero1, ra
-llanero2, ra
 llaneza
 llanisco, ca
 llanito, ta
 llano, na
 llanque
 llanquihuano, na
-llanta1
-llanta2
 llantear
 llantén
-llantera1
-llantera2
 llantería
 llanterío
 llantero, ra
@@ -1902,8 +1754,6 @@ llanura
 llapa
 llapar
 llapingacho
-llar1
-llar2
 llareta
 llaulláu
 llave
@@ -1984,9 +1834,6 @@ lluvia
 lluvial
 lluviano, na
 lluvioso, sa
-lo1
-lo2, la
-lo3
 loa
 loable
 loablemente
@@ -1994,11 +1841,7 @@ loador, ra
 loanda
 loanza
 loar
-loba1
-loba2
 lobada
-lobado1
-lobado1, da
 lobagante
 lobanillo
 lobatón
@@ -2013,9 +1856,6 @@ lobero, ra
 lobezno, na
 lobina
 lobisón
-lobo1, ba
-lobo2
-lobo3, ba
 loboso, sa
 lobotomía
 lóbrego, ga
@@ -2046,20 +1886,14 @@ locato, ta
 locear
 locería
 locero, ra
-locha1
-locha2
 loche
 loción
-loco1
-loco2, ca
 loco citato
 locomoción
 locomotor, ra
 locomotriz
 locomovible
 locomóvil
-locrio1
-locrio2, cria
 locuacidad
 locuaz
 locución
@@ -2086,8 +1920,6 @@ loejario
 lofobranquio
 logadero
 loganiáceo, a
-logar1
-logar2
 logarítmico, ca
 logaritmo
 logarro
@@ -2187,8 +2019,6 @@ longincuo, cua
 longitud
 longitudinal
 longitudinalmente
-longo1, ga
-longo2, ga
 longobardo, da
 longor
 longorón
@@ -2200,8 +2030,6 @@ longuiagrete
 longuis
 longuísimo, ma
 longura
-lonja1
-lonja2
 lonjear
 lonjeta
 lonjista
@@ -2222,8 +2050,6 @@ loquinario, ria
 loquios
 lora
 lorantáceo, a
-lorcha1
-lorcha2
 lord
 lordosis
 lorear
@@ -2236,8 +2062,6 @@ lorigado, da
 lorigón
 loriguero, ra
 loriguillo
-loro1
-loro2, ra
 loroco
 lorquiano, na
 lorquino, na
@@ -2315,8 +2139,6 @@ luchadero
 luchador, ra
 luchar
 lucharniego, ga
-luche1
-luche2
 Lucía
 luciaco, ca
 lucianesco, ca
@@ -2340,9 +2162,6 @@ lucillo
 lucilo
 lucimiento
 lucina
-lucio1
-lucio2
-lucio3, cia
 lución
 lucir
 lucma
@@ -2394,10 +2213,6 @@ lúgubre
 lugubremente
 lugués, sa
 luición
-luir1
-luir2
-luis1
-Luis2
 luisa
 luismo
 lujación
@@ -2435,8 +2250,6 @@ lumen
 lumia
 lumiaco
 luminancia
-luminar1
-luminar2
 luminaria
 lumínico, ca
 luminiscencia
@@ -2454,8 +2267,6 @@ lunación
 lunada
 lunado, da
 lunanco, ca
-lunar1
-lunar2
 lunarejo, ja
 lunario, ria
 lunático, ca
@@ -2481,8 +2292,6 @@ lupino, na
 lúpulo
 lupus
 luqués, sa
-luquete1
-luquete2
 lurte
 lusco, ca
 lusetano, na
@@ -2509,8 +2318,6 @@ lustroso, sa
 lutado, da
 lútea
 lutecio
-lúteo1
-lúteo2, a
 luteranismo
 luterano
 lutería
@@ -2526,6 +2333,4 @@ lux
 luxación
 luxar
 luxómetro
-luz1
-luz2
 lycra

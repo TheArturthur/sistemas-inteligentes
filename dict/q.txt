@@ -70,8 +70,6 @@ quejigar
 quejigo
 quejigueta
 quejiloso, sa
-quejo1
-quejo2
 quejosamente
 quejoso, sa
 quejumbrar
@@ -131,8 +129,6 @@ querencia
 querencioso, sa
 querenda
 querendón, na
-querer1
-querer2
 queresa
 queretano, na
 querido, da
@@ -186,8 +182,6 @@ quibdoano, na
 quibey
 quibla
 quiché
-quiche1
-quiche2
 quichelense
 quichua
 quichuismo
@@ -239,8 +233,6 @@ quijo
 quijón
 quijongo
 quijotada
-quijote1
-quijote2
 quijotería
 quijotesa
 quijotesa
@@ -275,9 +267,6 @@ quilma
 quilmalina
 quilmay
 quilo-
-quilo1
-quilo2
-quilo3
 quilográmetro
 quilogramo
 quilolitro
@@ -317,9 +306,6 @@ quimón
 quimono
 quimosina
 quin
-quina1
-quina2
-quina3
 quinado, da
 quinal
 quinao
@@ -336,8 +322,6 @@ quincena
 quincenal
 quincenario, ria
 quinceno, na
-quincha1
-quincha2
 quinchada
 quinchado
 quinchamalí
@@ -384,8 +368,6 @@ quinquies
 quinquillería
 quinquillero, ra
 quinquina
-quinta1
-quinta2
 quintacolumnismo
 quintacolumnista
 quintada
@@ -411,8 +393,6 @@ quintilla
 quintillizo, za
 quintillo
 quintillón
-quintín1
-Quintín2
 quintonil
 quinto, ta
 quintral
