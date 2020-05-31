@@ -160,7 +160,7 @@ public class AnalyzerAgent extends Agent {
 			String line;
 			while ((line = file.readLine()) != null) {
 				line = line.replaceAll(", \\w*", "");
-				if (!insult.equals(line) && pal.equals(line)) {
+				if (!insult.equals(line) && this.levenshteinDistance.apply(pal, line) < 2 && (this.levenshteinDistance.apply(pal, line) < this.levenshteinDistance.apply(pal, insult))) {
 					return true; // It's a word similar to the insult
 				}
 			}
