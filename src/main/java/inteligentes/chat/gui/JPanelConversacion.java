@@ -21,6 +21,7 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 import inteligentes.chat.gui.*;
 
+import inteligentes.chat.auxiliar.TokensEmoji;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.interfaces.*;
 import java.awt.Button;
@@ -92,9 +93,23 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	}
 
 	public void addMensaje(String persona, String mensaje) {
-		if(mensaje==null)
-			return;
-		mensajes=mensajes+"<b>"+persona+"</b>"+": "+mensaje+"<br/>";
+		if(mensaje==null) {return;}
+		
+		
+		String[] lineas = mensaje.split("\n");
+		StringBuilder msgbuilt = new StringBuilder();
+		String toShow = "";
+
+		if (lineas.length > 2) {
+			for (int i = 0; i < lineas.length; i++) {
+				msgbuilt.append(lineas[i].replace(" ", "&nbsp;") +"<br/>");
+			}
+			toShow = msgbuilt.toString();
+		} else {
+			toShow = mensaje;
+		}
+		
+		mensajes=mensajes+"<b>"+persona+"</b>"+": <br/><p>"+toShow+"</p><br/>";
 		jEditorPaneHistorico.setText("<html><body>"+mensajes+"</body></html>");
 	}
 
@@ -107,15 +122,33 @@ public class JPanelConversacion extends JPanel implements KeyListener
 	//Cada vez que se envia un mensaje, se envia al manager para que lo procese.
 	public void keyReleased(KeyEvent e) {
 		if(e.getKeyChar()==KeyEvent.VK_ENTER) {
-			//Hacer un filtro rapido de emoji cogiendo la funcion de Edison
-			String mensaje = sendMessageListener.esComando(jTextAreaMensaje.getText());
-			addMensaje(nombre, mensaje);
-			EncodedMessage em = new EncodedMessage();
-			em.setFrom(nombre);
-			em.setSendTo(amigo);
-			em.setMessage(jTextAreaMensaje.getText());
-			sendMessageListener.sendMsgToManager(em);
-			jTextAreaMensaje.setText("");
+			String special = sendMessageListener.esComandoEspecial(jTextAreaMensaje.getText());
+			if (special.length() > 0) {
+				if (special.length() > 7) {
+					addMensaje(nombre, special);
+				} else if(special.equals("block")) {
+					boolean quiere = sendMessageListener.blockConfirmationMessage(amigo);
+					if (quiere) {
+						addMensaje(nombre, TokensEmoji.blockingMessage);
+						sendMessageListener.blockPerson(amigo);
+					}
+				} else if(special.equals("unblock")) {
+					addMensaje(nombre, TokensEmoji.unblockMessage);
+					sendMessageListener.unblockPerson(amigo);
+				}
+				jTextAreaMensaje.setText("");
+
+			} else {
+				//Hacer un filtro rapido de emoji cogiendo la funcion de Edison
+				String mensaje = sendMessageListener.esComando(jTextAreaMensaje.getText());
+				addMensaje(nombre, mensaje);
+				EncodedMessage em = new EncodedMessage();
+				em.setFrom(nombre);
+				em.setSendTo(amigo);
+				em.setMessage(jTextAreaMensaje.getText());
+				sendMessageListener.sendMsgToManager(em);
+				jTextAreaMensaje.setText("");
+			}
 		}
 	}
 

@@ -153,6 +153,7 @@ public class AnalyzerAgent extends Agent {
 	 * @param insult the insult pal is similar to.
 	 * @return true if pal is a word, false otherwise.
 	 */
+	@SuppressWarnings("resource")
 	private boolean isWord (String pal, String insult) {
 		char startLetter = pal.toCharArray()[0];
 		try {

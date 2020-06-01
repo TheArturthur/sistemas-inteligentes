@@ -2,19 +2,16 @@ package inteligentes.chat.gui;
 
 import java.awt.BorderLayout;
 
-import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
-import javax.swing.KeyStroke;
 
 import inteligentes.chat.interfaces.*;
 
 
 
-public class JPanelVisualMessenger extends JPanel implements ArchivoListener
-{	
+public class JPanelVisualMessenger extends JPanel implements ArchivoListener{	
 	private static final long serialVersionUID = 1L;
 	
 	
@@ -23,6 +20,7 @@ public class JPanelVisualMessenger extends JPanel implements ArchivoListener
 	protected JPanel jPanelPrincipal;
 	protected AccionesMenuArchivo accionesMenuArchivo;
 	protected JPanelPrincipalMessenger jPanelPrincipalMessenger;
+	
 	
 	public JPanelVisualMessenger(String nombre, SendMessageListener sendMessageListener){
 		super();
@@ -58,46 +56,20 @@ public class JPanelVisualMessenger extends JPanel implements ArchivoListener
 	
 	
 	public void iniciarBarraMenu() {
-        //BARRA DE MENU
-        jMenuBar=new JMenuBar();
+        jMenuBar = new JMenuBar();
+    
+        accionesMenuArchivo = new AccionesMenuArchivo(this);
         
-        JMenu jMenuArchivo=new JMenu("File");
-        jMenuArchivo.setMnemonic('F');
+        JMenuItem newfriend = new JMenuItem("Crea un nuevo amigo!");
+        newfriend.addActionListener(accionesMenuArchivo);
         
-        //
-        //ARCHIVO para escuchar lo que ocurre en la barra de manu
-        //
-        accionesMenuArchivo=new AccionesMenuArchivo(this);
-        
-		//A�adimos un tipo de item File al Menu
-        JMenuItem jMenuItemSalir=new JMenuItem("Exit");
-        //no poner letra minusculas que las prepara 'A' y no 'a'
-        jMenuItemSalir.setAccelerator(KeyStroke.getKeyStroke('E', java.awt.Event.CTRL_MASK));
-        //jMenuItemSalir.setIcon(new ImageIcon(JPanelVisualMessenger.class.getResource("/es/upm/ejercicioChat/icon/salir.png")));
-        jMenuItemSalir.setActionCommand("E");
-        jMenuItemSalir.setMnemonic('E');
-        jMenuItemSalir.setToolTipText("Exit");
-        jMenuItemSalir.addActionListener(accionesMenuArchivo);
-        
-        jMenuArchivo.add(jMenuItemSalir);
-        
-        //A�adimos el menu a la barra de menu
-        jMenuBar.add(jMenuArchivo);
+        jMenuBar.add(newfriend);
         
 	}
 	
 	
 	public void iniciarToolBar() {	
 		jToolBar=new JToolBar();
-        
-		/*
-        JButton jButtonSalir=new JButton();
-        jButtonSalir.setToolTipText("Exit");
-        jButtonSalir.setActionCommand("E");
-        jButtonSalir.addActionListener(accionesMenuArchivo);
-
-        jToolBar.add(jButtonSalir);
-        */
 	}
 	
 	public void iniciarPanel(String nombre, SendMessageListener sendMessageListener) {
@@ -107,9 +79,5 @@ public class JPanelVisualMessenger extends JPanel implements ArchivoListener
         add(jPanelPrincipalMessenger, BorderLayout.CENTER);
 	}
 
-
-	@Override
-	public void salir() {
-	}
 
 }

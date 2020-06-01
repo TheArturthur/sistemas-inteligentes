@@ -17,7 +17,6 @@ public class MainGuiMessenger extends Thread
 	//Utilizaremos un interfaz y un string para gestionar la informaci�n del hilo
 	SendMessageListener sendMessageListener;
 	String titulo;
-
 	
 	/**
 	 * @wbp.parser.entryPoint

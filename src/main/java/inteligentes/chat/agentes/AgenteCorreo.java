@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Set;
 
 import javax.swing.JOptionPane;
@@ -27,7 +28,6 @@ import jade.lang.acl.ACLMessage;
 
 
 
-
 public class AgenteCorreo extends Agent implements SendMessageListener {
 	
 	/**
@@ -39,6 +39,7 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 	private int avisos;
 	public static final String NAME = "correo";
 	public static final String MENSAJERIA = "mensajeria";
+	private LinkedList<String> blockedPeople = new LinkedList<String>();
 
 
 	
@@ -116,8 +117,10 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		dfd=Utils.buscarAgentes(this, MENSAJERIA);
 		String usuarios[]=new String[dfd.length];
 		for(int i=0;i<dfd.length;i++) {
-			System.out.println(dfd[i].getName().getLocalName());
-			usuarios[i]=dfd[i].getName().getLocalName();
+			//System.out.println(dfd[i].getName().getLocalName());
+			if (!isBlocked(dfd[i].getName().getLocalName())) {
+				usuarios[i]=dfd[i].getName().getLocalName();
+			}	
 		}
 
 		Iterator<MostrarMensajesListener> iter=setMostrarMensajesListener.iterator();
@@ -132,6 +135,16 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 	
 	public void sendReport(Report report) {
 		Utils.enviarMensaje(this, "reportmanager", report);
+	}
+	
+	public boolean isBlocked(String person) {
+		boolean is = false;
+		for (int i = 0; i < blockedPeople.size() && !is; i++) {
+			if (blockedPeople.get(i).equals(person)) {
+				is = true;
+			}
+		}
+		return is;
 	}
 	
 	@Override
@@ -193,6 +206,27 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 	      return true;
 	}
 	
+	public boolean blockConfirmationMessage(String amigo) {
+	      Object[] options = {"Si, lo quiero bloquear.",
+	        "No, no quiero..."};
+	      int seleccion = JOptionPane.showOptionDialog(
+	    	   new JOptionPane(),
+	           "Has decidido bloquear a " + amigo + ".\n¿De verdad quieres hacerlo?", 
+	           "Mensaje de alerta",
+	           JOptionPane.YES_NO_OPTION,
+	           JOptionPane.INFORMATION_MESSAGE,
+	           null,    // null para icono por defecto.
+	           options,   // null para YES, NO y CANCEL
+	           "opcion 1");
+	      
+	      if (seleccion == JOptionPane.YES_OPTION) { 
+	    	  return true;
+	    }
+	      else {
+	    	  return false;
+	    }
+	}
+	
 	public void reportAdvice() {
 		this.avisos++;
 		switch (this.avisos) {
@@ -209,12 +243,49 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		}
 	}
 	
+	public void blockPerson(String person) {
+		blockedPeople.add(person);
+	}
+	
+	public void unblockPerson(String person) {
+		for (int i = 0; i < blockedPeople.size(); i++) {
+			if (blockedPeople.get(i).equals(person)) {
+				blockedPeople.remove(i);
+			}
+		}
+	}
+	
+	public String esComandoEspecial(String str) {
+		String vuelta = "";
+		String toUse = str.toLowerCase();
+
+		switch (toUse) {
+		case TokensEmoji.special1:
+			vuelta = TokensEmoji.getComandos();
+			break;
+		case TokensEmoji.special2:
+			vuelta = "lista";
+	    	Utils.enviarMensaje(this, "reportmanager", null);
+			break;
+			
+		case TokensEmoji.special3:
+		vuelta = "block";
+			break;
+		case TokensEmoji.special4:
+		vuelta = "unblock";
+			break;	
+
+		}
+		return vuelta;
+	}
+	
 	public String esComando(String str) {		
 
 		String vuelta = "";
 
+		String toUse = str.toLowerCase();
 
-		switch (str) {
+		switch (toUse) {
 		case TokensEmoji.comando1:
 			vuelta = TokensEmoji.comando1value;
 			break;
@@ -258,7 +329,31 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 		case TokensEmoji.comando11:
 			vuelta = TokensEmoji.comando11value;
 			break;
-
+			
+		case TokensEmoji.comando12:
+			vuelta = TokensEmoji.comando12value;
+			break;	
+			
+		case TokensEmoji.comando13:
+			vuelta = TokensEmoji.comando13value;
+			break;
+			
+		case TokensEmoji.comando14:
+			vuelta = TokensEmoji.comando14value;
+			break;	
+			
+		case TokensEmoji.comando15:
+			vuelta = TokensEmoji.comando15value;
+			break;
+			
+		case TokensEmoji.comando16:
+			vuelta = TokensEmoji.comando16value;
+			break;
+			
+		case TokensEmoji.comando17:
+			vuelta = TokensEmoji.comando17value;
+			break;
+			
 		default:
 			vuelta = str;
 			break;

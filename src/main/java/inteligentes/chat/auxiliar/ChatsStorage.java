@@ -15,20 +15,50 @@ public class ChatsStorage {
 	private Map<Pair<String, String>, Integer> chatsid;
 	private int id;
 	
-	public ChatsStorage() {
-		this.chatsid = new HashMap<Pair<String,String>,Integer>();
-		this.chats = new HashMap<Integer,LinkedList<EncodedMessage>>();
-		
+	public ChatsStorage() {		
+		chats = new HashMap<Integer,LinkedList<EncodedMessage>>();
+		chatsid = new HashMap<Pair<String,String>,Integer>();
 		this.id = 10;
+	}
+	
+	public void listAllChats() {
+		for (int i = 0; i < chats.size(); i++) {
+			LinkedList<EncodedMessage> fkchats = chats.get(i+11);
+			if (fkchats == null)  {
+				System.out.println("\n\nNo hay chats almacenados...");
+				return;
+			}
+			EncodedMessage mess = fkchats.getFirst();
+			System.out.println("\n\n_/_/_/_/_/Chat de " + mess.getFrom().toUpperCase() + " y " +
+			mess.getSendTo().toUpperCase() + "\\_\\_\\_\\_\\_\n");
+			String main = mess.getFrom();
+			for (int j = 0; j < fkchats.size(); j++) {
+				String from = fkchats.get(j).getFrom();
+				
+				if (from.equals(main)) {
+					System.out.println(from.toUpperCase() + ": " + fkchats.get(j).getMessage());
+					if (fkchats.get(j).isOffensive()) {
+						System.out.println("**_Mensaje marcado como ofensivo_**\n");
+					}
+				} else {
+					System.out.println("\t\t\t\t"+from.toUpperCase() + ": " + fkchats.get(j).getMessage());
+					if (fkchats.get(j).isOffensive()) {
+						System.out.println("\t\t\t\t**_Mensaje marcado como ofensivo_**\n");
+					}
+				}
+				
+
+			}
+		}
 	}
 	
 	public void addChatMessage(EncodedMessage em) {
 		int idr = this.addChatId(em);
-		LinkedList<EncodedMessage> ml = (LinkedList<EncodedMessage>) this.chats.get(idr);
+		LinkedList<EncodedMessage> ml = (LinkedList<EncodedMessage>) chats.get(idr);
 		
 		ml.add(em);
 		LinkedList<EncodedMessage> toSave = copyList(ml);
-		this.chats.put(idr, toSave);
+		chats.put(idr, toSave);
 	}
 	
 	public EncodedMessage getChatMessage(Report rep) {
@@ -39,7 +69,7 @@ public class ChatsStorage {
 		em.setSendTo(rep.getReceptor());
 		
 		int idr = this.getChatId(em);
-		LinkedList<EncodedMessage> ml = (LinkedList<EncodedMessage>) this.chats.get(idr);
+		LinkedList<EncodedMessage> ml = (LinkedList<EncodedMessage>) chats.get(idr);
 		
 		boolean done = false;
 		for (int i = 0; i < ml.size() && !done; i++) {
@@ -55,10 +85,11 @@ public class ChatsStorage {
 	public void removeChat(EncodedMessage em) {
 		int idr = this.getChatId(em);
 		this.removeChatId(em);
-		this.chats.remove(idr);
+		chats.remove(idr);
 	}
 	
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private int addChatId(EncodedMessage em) {
 		int id = 0;
 		Pair pareja1 = new Pair<String,String>(em.getFrom(),em.getSendTo());
@@ -77,6 +108,7 @@ public class ChatsStorage {
 		}
 	}
 	
+	@SuppressWarnings("rawtypes")
 	private int getChatId(EncodedMessage em) {
 		Pair pareja1 = new Pair<String,String>(em.getFrom(),em.getSendTo());
 		Pair pareja2 = new Pair<String,String>(em.getSendTo(),em.getFrom());
@@ -87,6 +119,7 @@ public class ChatsStorage {
 		return 0;
 	}
 	
+	@SuppressWarnings("rawtypes")
 	private void removeChatId(EncodedMessage em) {
 		Pair pareja1 = new Pair<String,String>(em.getFrom(),em.getSendTo());
 		Pair pareja2 = new Pair<String,String>(em.getSendTo(),em.getFrom());

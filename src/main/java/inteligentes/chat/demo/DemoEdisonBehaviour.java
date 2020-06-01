@@ -4,7 +4,6 @@ package inteligentes.chat.demo;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
 import jade.core.behaviours.OneShotBehaviour;
-import jade.core.behaviours.SimpleBehaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
 import jade.lang.acl.UnreadableException;

@@ -11,5 +11,10 @@ public interface SendMessageListener
 	public void avisarEventos(MostrarMensajesListener mostrarMensajesListener);
 	public void finalizar();
 	public String esComando(String texto);
+	public String esComandoEspecial(String texto);
+	public void blockPerson(String person);
+	public void unblockPerson(String person);
+	public boolean blockConfirmationMessage(String amigo);
+
 }
 

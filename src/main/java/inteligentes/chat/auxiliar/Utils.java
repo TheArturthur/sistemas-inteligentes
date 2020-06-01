@@ -15,10 +15,8 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.Iterator;
 
-import inteligentes.chat.basics.EncodedMessage;
 
-public class Utils 
-{
+public class Utils {
 
 	/**
 	 * Permite buscar a todos los agentes que implementa un servicio de un tipo dado

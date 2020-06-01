@@ -25,21 +25,21 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
 
 	@Override
 	public void action() {
-		System.out.println("Puede que me haya llegado un mensaje...");
 		ACLMessage msg=this.myAgent.blockingReceive(mt1);
+		//System.out.println("Puede que me haya llegado un mensaje...");
 
 		try {
 
 			if (msg.getPerformative() == ACLMessage.INFORM) {
-				System.out.println("\n\n\n\n\n ERA DE TIPO INFORMM");
-				System.out.println("Y de ontologia: " + msg.getOntology());
+				//System.out.println("\n\n\n\n\n ERA DE TIPO INFORMM");
+				//System.out.println("Y de ontologia: " + msg.getOntology());
 
 				if(msg.getOntology().equals("reports")) {
 					Object tipo = msg.getContentObject();    				
 					Report rep = (Report)tipo;
 					//Ver si el mensaje es para mi
 					if(rep.getEmisor().equals(myAgent.getName())) {
-						System.out.println("Vaya, me han reportado un mensaje... Soy " + rep.getEmisor());
+						//System.out.println("Vaya, me han reportado un mensaje... Soy " + rep.getEmisor());
 						ac.reportAdvice();
 					}
 				} else	
@@ -49,7 +49,7 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
 
 						//Fui yo quien mando el mensaje
 						if(em.getFrom().equals(myAgent.getLocalName())) {
-							System.out.println("El mensaje era de tipo reenvio! Alla va!");
+							//System.out.println("El mensaje era de tipo reenvio! Alla va!");
 							//    				System.out.println("El nombre local de mi agente es " + myAgent.getLocalName());
 							//    				System.out.println("El mensaje va para " + em.getSendTo());
 							//    				System.out.println("El mensaje lo ha enviado " + em.getFrom());
@@ -63,20 +63,20 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
 			} else
 
 				if (msg.getPerformative() == ACLMessage.REQUEST) {
-					System.out.println("\n\n\n\n\n ERA DE TIPO REQUEST");
-					System.out.println("Y de ontologia: " + msg.getOntology());
+					//System.out.println("\n\n\n\n\n ERA DE TIPO REQUEST");
+					//System.out.println("Y de ontologia: " + msg.getOntology());
 					
 					
 					if(msg.getOntology().equals("confirmation")) {
 						EncodedMessage em = (EncodedMessage)msg.getContentObject();
-						System.out.println("Estoy dentro de confirmation...");
-						System.out.println("Soy " + myAgent.getName());
-						System.out.println("Y lo ha mandado " + em.getFrom());
+						//System.out.println("Estoy dentro de confirmation...");
+						//System.out.println("Soy " + myAgent.getName());
+						//System.out.println("Y lo ha mandado " + em.getFrom());
 
 
 						//Ver si el mensaje es para mi
 						if(em.getFrom().equals(myAgent.getLocalName())) {
-							System.out.println("Uy!, tengo que mandar un pop up a mi usuario!");
+							//System.out.println("Uy!, tengo que mandar un pop up a mi usuario!");
 							boolean done = false;
 							done = ac.offensiveMessagePopUp(em);
 							while(!done) {
@@ -90,7 +90,7 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
 							//Si recibimos un mensaje en el que el contenido es null, querr� decir que hay nuevos agentes en el chat o agentes que han abandonado el chat
 							//Tendremos que actualizar la lista de agentes que hay en chat y mostrarla en el interfaz
 							if(msg.getContentObject()==null) {
-								System.out.println("Resulta que era un mensaje de tipo actualizacion de usuario");
+								//System.out.println("Resulta que era un mensaje de tipo actualizacion de usuario");
 								ac.actualizarLista();
 							}
 							//Si recibimos un mensaje con un contenido distinto de null, mostraremos el mensaje en el chat
@@ -98,10 +98,12 @@ public class AgenteCorreoBehaviour extends CyclicBehaviour {
 							//A�adiremos el contenido del mensaje a continuaci�n del contenido publicado previamente en el chat.
 							else {
 								//            		System.out.println(msg.getSender().getName()+":"+ (String)msg.getContentObject());
-								System.out.println("Resulta que era un mensaje para mi. ¡Que bien!");
-								Iterator<MostrarMensajesListener> iter=ac.setMostrarMensajesListener.iterator();
-								while(iter.hasNext()) {
-									iter.next().nuevoMensaje(msg.getSender().getLocalName(), (String)msg.getContentObject());
+								//System.out.println("Resulta que era un mensaje para mi. ¡Que bien!");
+								if (!ac.isBlocked(msg.getSender().getLocalName())) {
+									Iterator<MostrarMensajesListener> iter=ac.setMostrarMensajesListener.iterator();
+									while(iter.hasNext()) {
+										iter.next().nuevoMensaje(msg.getSender().getLocalName(), (String)msg.getContentObject());
+									}
 								}
 							}
 						}

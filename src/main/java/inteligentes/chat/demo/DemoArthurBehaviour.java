@@ -2,7 +2,6 @@ package inteligentes.chat.demo;
 
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
-import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
@@ -30,7 +29,6 @@ public class DemoArthurBehaviour extends OneShotBehaviour {
 				}
 				
 			} catch (UnreadableException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			myAgent.doDelete();			
