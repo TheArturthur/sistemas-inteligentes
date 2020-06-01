@@ -2,8 +2,6 @@ package inteligentes.chat.auxiliar;
 
 import java.util.LinkedList;
 
-import jade.core.Agent;
-
 public class TokensEmoji {
 	
 
@@ -25,8 +23,18 @@ public class TokensEmoji {
 	public static final String comando16 = "/tequiero\n";
 	public static final String comando17 = "/casa\n";
 	
+	public static final String blockingMessage = "\n**************************************************\n" +
+												 "******** HAS BLOQUEADO A ESTE USUARIO *******\n" +
+												 "**************************************************\n";
+	
+	public static final String unblockMessage = "\n**************************************************\n" +
+												"****** HAS DESBLOQUEADO A ESTE USUARIO *****\n" +
+												"**************************************************\n";
+	
 	public static final String special1 = "/comandos\n";
 	public static final String special2 = "/list\n";
+	public static final String special3 = "/block\n";
+	public static final String special4 = "/unblock\n";
 	
 	public static String getComandos() {
 		StringBuilder builder = new StringBuilder();
@@ -49,6 +57,13 @@ public class TokensEmoji {
 		comandos.add(comando15);
 		comandos.add(comando16);
 		comandos.add(comando17);
+		
+		comandos.add("\nEspeciales:\n");
+		comandos.add(special1);
+		comandos.add(special2);
+		comandos.add(special3);
+		comandos.add(special4);
+
 
 		for (int i = 0; i < comandos.size(); i++) {
 			builder.append(comandos.get(i));

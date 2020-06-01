@@ -1,24 +1,16 @@
 package inteligentes.chat.auxiliar;
 
-import java.io.IOException;
-
 import inteligentes.chat.agentes.AgenteCorreo;
-import inteligentes.chat.agentes.AnalyzerAgent;
 import inteligentes.chat.agentes.CoordinatorAgent;
 import inteligentes.chat.agentes.ManagerAgent;
 import inteligentes.chat.agentes.ReportManagerAgent;
-import inteligentes.chat.demo.DemoArthur;
-import inteligentes.chat.demo.DemoEdison;
-import jade.core.Agent;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
-import jade.wrapper.AgentContainer;
-import jade.wrapper.AgentController;
 import jade.wrapper.StaleProxyException;
 
 public class SetEnvironment {
 	
-	private static jade.wrapper.AgentContainer cc;
+	public static jade.wrapper.AgentContainer cc;
 	
 	
     public static void loadBoot(){
@@ -55,12 +47,12 @@ public class SetEnvironment {
     private static void createInitialAgents() throws StaleProxyException {
         cc.createNewAgent(CoordinatorAgent.NAME, CoordinatorAgent.class.getName(), new Object[] { }).start();
         cc.createNewAgent(ManagerAgent.NAME, ManagerAgent.class.getName(), new Object[] { }).start();
-		//TODO
 		//cc.createNewAgent(ClasificatorAgent.NAME, ClasificatorAgent.class.getName() , new Object[] { }).start();
 		cc.createNewAgent(ReportManagerAgent.NAME, ReportManagerAgent.class.getName(), new Object[] { }).start();
 		
-		cc.createNewAgent("MariadelaO", AgenteCorreo.class.getName(), new Object[] { }).start();
-		cc.createNewAgent("Juanchinatro", AgenteCorreo.class.getName(), new Object[] { }).start();
+		cc.createNewAgent("Estefania", AgenteCorreo.class.getName(), new Object[] { }).start();
+		cc.createNewAgent("Mario Kartsas", AgenteCorreo.class.getName(), new Object[] { }).start();
+		cc.createNewAgent("Pepito Grillo", AgenteCorreo.class.getName(), new Object[] { }).start();
 		
     }
     

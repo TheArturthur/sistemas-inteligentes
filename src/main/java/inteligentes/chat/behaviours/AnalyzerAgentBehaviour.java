@@ -8,6 +8,8 @@ import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
 
 import jade.core.behaviours.OneShotBehaviour;
+import jade.domain.DFService;
+import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
 import jade.lang.acl.UnreadableException;
@@ -42,7 +44,9 @@ public class AnalyzerAgentBehaviour extends OneShotBehaviour {
 			if (!encodedMessage.isOffensive()) {
 				System.out.println("No parece haber indicios de haber acoso en el mensaje...");
 			} else {
+				System.out.println("\n.\n..\n...");
 				System.out.println("Vaya, vaya, aquí hay algo...");
+				System.out.println("MENSAJE ORIGINAL: " + encodedMessage.getMessage());
 				System.out.println("Estos son los insultos encontrados, con todas sus ocurrencias:");
 				
 				System.out.println("{");
@@ -59,6 +63,7 @@ public class AnalyzerAgentBehaviour extends OneShotBehaviour {
 					System.out.println("\t}");
 				}
 				System.out.println("}");
+				System.out.println("...\n..\n.\n");
 				
 			}
 			Utils.enviarMensajeInform(analyzerAgent, "manager", encodedMessage, "arthur");
@@ -66,6 +71,11 @@ public class AnalyzerAgentBehaviour extends OneShotBehaviour {
 			e.printStackTrace();
 		}
 		
+		try {
+			DFService.deregister(myAgent);
+		} catch (FIPAException e) {
+			e.printStackTrace();
+		}
 		this.analyzerAgent.doDelete();
 	}
 

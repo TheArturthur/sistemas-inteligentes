@@ -4,8 +4,6 @@ import inteligentes.chat.agentes.AnalyzerAgent;
 import inteligentes.chat.agentes.EmojiBuilderAgent;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
-import inteligentes.chat.demo.DemoArthur;
-import inteligentes.chat.demo.DemoEdison;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
@@ -64,13 +62,13 @@ public class ManagerAgentBehaviour extends CyclicBehaviour {
         	} else 
         		
         		if(msg.getPerformative() == ACLMessage.INFORM && msg.getOntology().equals(ARTHUR)) {
-        		System.out.println("Anda!, Arthur me ha contestado");
+        		//System.out.println("Anda!, Arthur me ha contestado");
         		EncodedMessage em1 = (EncodedMessage)msg.getContentObject();
         		if(em1.isOffensive()) { //Si es ofensivo, le mandamos al agente de correo una notificacion para ver si lo quiere mandar
-    				System.out.println("Vaya, es ofensivo, pues lo mando a los reports");
+    				//System.out.println("Vaya, es ofensivo, pues lo mando a los reports");
         			Utils.enviarMensaje(myAgent, MENSAJERIA, em1, CONFIRMATION);
         		} else {
-        			System.out.println("Anda!, no es ofensivo, pues lo mando directamente");
+        			//System.out.println("Anda!, no es ofensivo, pues lo mando directamente");
         			enviarMensajeADestino(em1);
         		}
         	} else 

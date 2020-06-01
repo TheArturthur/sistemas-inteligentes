@@ -18,21 +18,6 @@ public class MainGuiMessenger extends Thread
 	SendMessageListener sendMessageListener;
 	String titulo;
 	
-	/*
-	 * JMenuBar va a ser una clase llamada BarraIrene,
-	 *  que extiende JMenuBar, y va a recibir como parametro
-	 *  de entrada un SendMensajesListener y JPanelConversacion. 
-	 *  
-	 *  La barra de menus va a ofrecer estas caracteristicas:
-	 *  - Bloquear un usuario, llamando a sendMensajesListener.blockPerson(amigo),
-	 *   cuyo amigo se obtendra de JPanelConversacion. 
-	 *  - Hacer un close (eliminar agente de correo)
-	 *  - Crear un nuevo agente, del cual se tiene que pedir un nombre para asignarselo (JPanel
-	 *  
-	 */
-	// TODO private BarraIrene irene;
-
-	
 	/**
 	 * @wbp.parser.entryPoint
 	 */
@@ -62,7 +47,6 @@ public class MainGuiMessenger extends Thread
         jFrame.setTitle(titulo);
         jFrame.setVisible(true);
         jFrame.setResizable(true);
-        // TODO jFrame.setJMenuBar(irene);
 	}
 }
 

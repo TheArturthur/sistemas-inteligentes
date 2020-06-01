@@ -9,7 +9,6 @@ import java.util.Set;
 
 import javax.swing.JOptionPane;
 
-import inteligentes.chat.auxiliar.ChatsStorage;
 import inteligentes.chat.auxiliar.TokensEmoji;
 import inteligentes.chat.auxiliar.Utils;
 import inteligentes.chat.basics.EncodedMessage;
@@ -26,7 +25,6 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.Envelope;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.lang.acl.ACLMessage;
-
 
 
 
@@ -208,6 +206,27 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 	      return true;
 	}
 	
+	public boolean blockConfirmationMessage(String amigo) {
+	      Object[] options = {"Si, lo quiero bloquear.",
+	        "No, no quiero..."};
+	      int seleccion = JOptionPane.showOptionDialog(
+	    	   new JOptionPane(),
+	           "Has decidido bloquear a " + amigo + ".\n¿De verdad quieres hacerlo?", 
+	           "Mensaje de alerta",
+	           JOptionPane.YES_NO_OPTION,
+	           JOptionPane.INFORMATION_MESSAGE,
+	           null,    // null para icono por defecto.
+	           options,   // null para YES, NO y CANCEL
+	           "opcion 1");
+	      
+	      if (seleccion == JOptionPane.YES_OPTION) { 
+	    	  return true;
+	    }
+	      else {
+	    	  return false;
+	    }
+	}
+	
 	public void reportAdvice() {
 		this.avisos++;
 		switch (this.avisos) {
@@ -248,6 +267,13 @@ public class AgenteCorreo extends Agent implements SendMessageListener {
 			vuelta = "lista";
 	    	Utils.enviarMensaje(this, "reportmanager", null);
 			break;
+			
+		case TokensEmoji.special3:
+		vuelta = "block";
+			break;
+		case TokensEmoji.special4:
+		vuelta = "unblock";
+			break;	
 
 		}
 		return vuelta;

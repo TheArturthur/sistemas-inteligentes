@@ -4,7 +4,6 @@
 package inteligentes.chat.agentes;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
@@ -138,6 +137,7 @@ public class AnalyzerAgent extends Agent {
 	 * @param insult the insult pal is similar to.
 	 * @return true if pal is a word, false otherwise.
 	 */
+	@SuppressWarnings("resource")
 	private boolean isWord (String pal, String insult) {
 		char startLetter = pal.toCharArray()[0];
 		try {

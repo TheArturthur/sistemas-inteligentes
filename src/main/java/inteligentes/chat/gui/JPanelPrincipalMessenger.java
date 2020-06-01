@@ -124,7 +124,7 @@ public class JPanelPrincipalMessenger extends JPanel implements MouseListener, M
 	public void usuariosListener(String[] usuarios) 
 	{
 		// TODO Auto-generated method stub
-		System.out.println("Me han llegado nuevos usuarios");
+		//System.out.println("Me han llegado nuevos usuarios");
 		jList.setListData(usuarios);
 	}
 

@@ -37,13 +37,17 @@ public class ChatsStorage {
 				
 				if (from.equals(main)) {
 					System.out.println(from.toUpperCase() + ": " + fkchats.get(j).getMessage());
+					if (fkchats.get(j).isOffensive()) {
+						System.out.println("**_Mensaje marcado como ofensivo_**\n");
+					}
 				} else {
 					System.out.println("\t\t\t\t"+from.toUpperCase() + ": " + fkchats.get(j).getMessage());
+					if (fkchats.get(j).isOffensive()) {
+						System.out.println("\t\t\t\t**_Mensaje marcado como ofensivo_**\n");
+					}
 				}
 				
-				if (fkchats.get(j).isOffensive()) {
-					System.out.println("**_Mensaje marcado como ofensivo_**\n");
-				}
+
 			}
 		}
 	}
@@ -85,6 +89,7 @@ public class ChatsStorage {
 	}
 	
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private int addChatId(EncodedMessage em) {
 		int id = 0;
 		Pair pareja1 = new Pair<String,String>(em.getFrom(),em.getSendTo());
@@ -103,6 +108,7 @@ public class ChatsStorage {
 		}
 	}
 	
+	@SuppressWarnings("rawtypes")
 	private int getChatId(EncodedMessage em) {
 		Pair pareja1 = new Pair<String,String>(em.getFrom(),em.getSendTo());
 		Pair pareja2 = new Pair<String,String>(em.getSendTo(),em.getFrom());
@@ -113,6 +119,7 @@ public class ChatsStorage {
 		return 0;
 	}
 	
+	@SuppressWarnings("rawtypes")
 	private void removeChatId(EncodedMessage em) {
 		Pair pareja1 = new Pair<String,String>(em.getFrom(),em.getSendTo());
 		Pair pareja2 = new Pair<String,String>(em.getSendTo(),em.getFrom());

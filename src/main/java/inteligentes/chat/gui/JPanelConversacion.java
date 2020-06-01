@@ -12,6 +12,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 
+import inteligentes.chat.auxiliar.TokensEmoji;
 import inteligentes.chat.basics.EncodedMessage;
 import inteligentes.chat.interfaces.*;
 
@@ -92,8 +93,17 @@ public class JPanelConversacion extends JPanel implements KeyListener
 		if(e.getKeyChar()==KeyEvent.VK_ENTER) {
 			String special = sendMessageListener.esComandoEspecial(jTextAreaMensaje.getText());
 			if (special.length() > 0) {
-				if (!special .equals("lista")) {
+				if (special.length() > 7) {
 					addMensaje(nombre, special);
+				} else if(special.equals("block")) {
+					boolean quiere = sendMessageListener.blockConfirmationMessage(amigo);
+					if (quiere) {
+						addMensaje(nombre, TokensEmoji.blockingMessage);
+						sendMessageListener.blockPerson(amigo);
+					}
+				} else if(special.equals("unblock")) {
+					addMensaje(nombre, TokensEmoji.unblockMessage);
+					sendMessageListener.unblockPerson(amigo);
 				}
 				jTextAreaMensaje.setText("");
 
